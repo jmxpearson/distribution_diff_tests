@@ -8,7 +8,8 @@ tests = [
     "mvnormalcanon",
     "mvtdist",
     "wishart",
-    "inversewishart"
+    "inversewishart",
+    "dirichlet"
     ]
 
 print_with_color(:blue, "Running tests:\n")
