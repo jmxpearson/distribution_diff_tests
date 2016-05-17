@@ -9,7 +9,8 @@ tests = [
     "mvtdist",
     "wishart",
     "inversewishart",
-    "dirichlet"
+    "dirichlet",
+    "poisson"
     ]
 
 print_with_color(:blue, "Running tests:\n")
