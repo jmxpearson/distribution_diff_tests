@@ -1,3 +1,4 @@
+
 function f1(x)
     d = Normal(x[1], x[2])
     mean(d) / std(d)

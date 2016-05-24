@@ -3,14 +3,17 @@ using ForwardDiff
 using Base.Test
 
 tests = [
-    "normal",
-    "mvnormal",
-    "mvnormalcanon",
-    "mvtdist",
-    "wishart",
-    "inversewishart",
-    "dirichlet",
-    "poisson"
+    "binomial",
+    "betabinomial",
+    "beta",
+    "geometric",
+    "bernoulli",
+    "rayleigh",
+    "erlang",
+    "laplace",
+    #"logistic",
+    "cosine",
+    "arcsine"
     ]
 
 print_with_color(:blue, "Running tests:\n")
