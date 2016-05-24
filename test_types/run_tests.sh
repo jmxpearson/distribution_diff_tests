@@ -9,3 +9,5 @@ $julia laplace_types.jl > results/laplace_type_test_results.txt
 $julia beta_types.jl > results/beta_type_test_results.txt
 $julia cosine_types.jl > results/cosine_type_test_results.txt
 $julia arcsine_types.jl > results/arcsine_type_test_results.txt
+$julia betaprime_types.jl > results/betaprime_type_test_results.txt
+$julia cauchy_types.jl > results/cauchy_type_test_results.txt

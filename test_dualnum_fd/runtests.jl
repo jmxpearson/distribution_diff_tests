@@ -13,7 +13,10 @@ tests = [
     "laplace",
     #"logistic",
     "cosine",
-    "arcsine"
+    "arcsine",
+    "betaprime",
+    "cauchy",
+    "chi"
     ]
 
 print_with_color(:blue, "Running tests:\n")

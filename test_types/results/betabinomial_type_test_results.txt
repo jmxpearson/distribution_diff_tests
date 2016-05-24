@@ -1497,8 +1497,7 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/betabinomial.jl, line 81:
-      GenSym(8) = (Distributions.pdf)(d::Distributions.BetaBinomial{Int64})::Array{Float64,1}
-      GenSym(0) = (Distributions.modes)(call(Distributions.Categorical{Float64},GenSym(8))::Distributions.Categorical{Float64})::Array{Int64,1}
+      GenSym(0) = (Distributions.modes)(call(Distributions.Categorical,(Distributions.pdf)(d::Distributions.BetaBinomial{Int64})::Array{Float64,1})::Distributions.Categorical)::Array{Int64,1}
       GenSym(1) = (Base.arraylen)(GenSym(0))::Int64
       0: 
       GenSym(3) = (top(ccall))(:jl_alloc_array_1d,(top(apply_type))(Base.Array,Int64,1)::Type{Array{Int64,1}},(top(svec))(Base.Any,Base.Int)::SimpleVector,Array{Int64,1},0,GenSym(1),0)::Array{Int64,1}
@@ -1508,17 +1507,17 @@ Body:
       unless (Base.box)(Base.Bool,(Base.not_int)(#s6::Int64 === GenSym(1)::Bool)) goto 2
       3: 
       #s6 = (Base.box)(Base.Int,(Base.add_int)(#s6::Int64,1))
-      GenSym(10) = (Base.arrayref)(GenSym(0),#s7::Int64)::Int64
-      GenSym(11) = (Base.box)(Base.Int,(Base.add_int)(#s7::Int64,1))
+      GenSym(9) = (Base.arrayref)(GenSym(0),#s7::Int64)::Int64
+      GenSym(10) = (Base.box)(Base.Int,(Base.add_int)(#s7::Int64,1))
       #s3 = 1
-      GenSym(12) = GenSym(10)
-      GenSym(13) = (Base.box)(Base.Int,(Base.add_int)(1,1))
-      x = GenSym(12)
-      #s3 = GenSym(13)
-      GenSym(14) = GenSym(11)
-      GenSym(15) = (Base.box)(Base.Int,(Base.add_int)(2,1))
-      #s7 = GenSym(14)
-      #s3 = GenSym(15)
+      GenSym(11) = GenSym(9)
+      GenSym(12) = (Base.box)(Base.Int,(Base.add_int)(1,1))
+      x = GenSym(11)
+      #s3 = GenSym(12)
+      GenSym(13) = GenSym(10)
+      GenSym(14) = (Base.box)(Base.Int,(Base.add_int)(2,1))
+      #s7 = GenSym(13)
+      #s3 = GenSym(14)
       GenSym(4) = (Base.box)(Int64,(Base.sub_int)(x::Int64,1))
       $(Expr(:type_goto, 0, GenSym(4)))
       $(Expr(:boundscheck, false))
@@ -1544,8 +1543,7 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/betabinomial.jl, line 81:
-      GenSym(8) = (Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1}
-      GenSym(0) = (Distributions.modes)(call(Distributions.Categorical{Float64},GenSym(8))::Distributions.Categorical{Float64})::Array{Int64,1}
+      GenSym(0) = (Distributions.modes)(call(Distributions.Categorical,(Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1})::Distributions.Categorical)::Array{Int64,1}
       GenSym(1) = (Base.arraylen)(GenSym(0))::Int64
       0: 
       GenSym(3) = (top(ccall))(:jl_alloc_array_1d,(top(apply_type))(Base.Array,Int64,1)::Type{Array{Int64,1}},(top(svec))(Base.Any,Base.Int)::SimpleVector,Array{Int64,1},0,GenSym(1),0)::Array{Int64,1}
@@ -1555,17 +1553,17 @@ Body:
       unless (Base.box)(Base.Bool,(Base.not_int)(#s6::Int64 === GenSym(1)::Bool)) goto 2
       3: 
       #s6 = (Base.box)(Base.Int,(Base.add_int)(#s6::Int64,1))
-      GenSym(10) = (Base.arrayref)(GenSym(0),#s7::Int64)::Int64
-      GenSym(11) = (Base.box)(Base.Int,(Base.add_int)(#s7::Int64,1))
+      GenSym(9) = (Base.arrayref)(GenSym(0),#s7::Int64)::Int64
+      GenSym(10) = (Base.box)(Base.Int,(Base.add_int)(#s7::Int64,1))
       #s3 = 1
-      GenSym(12) = GenSym(10)
-      GenSym(13) = (Base.box)(Base.Int,(Base.add_int)(1,1))
-      x = GenSym(12)
-      #s3 = GenSym(13)
-      GenSym(14) = GenSym(11)
-      GenSym(15) = (Base.box)(Base.Int,(Base.add_int)(2,1))
-      #s7 = GenSym(14)
-      #s3 = GenSym(15)
+      GenSym(11) = GenSym(9)
+      GenSym(12) = (Base.box)(Base.Int,(Base.add_int)(1,1))
+      x = GenSym(11)
+      #s3 = GenSym(12)
+      GenSym(13) = GenSym(10)
+      GenSym(14) = (Base.box)(Base.Int,(Base.add_int)(2,1))
+      #s7 = GenSym(13)
+      #s3 = GenSym(14)
       GenSym(4) = (Base.box)(Int64,(Base.sub_int)(x::Int64,1))
       $(Expr(:type_goto, 0, GenSym(4)))
       $(Expr(:boundscheck, false))
@@ -1634,8 +1632,7 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/betabinomial.jl, line 81:
-      GenSym(8) = (Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1}
-      GenSym(0) = (Distributions.modes)(call(Distributions.Categorical{Float64},GenSym(8))::Distributions.Categorical{Float64})::Array{Int64,1}
+      GenSym(0) = (Distributions.modes)(call(Distributions.Categorical,(Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1})::Distributions.Categorical)::Array{Int64,1}
       GenSym(1) = (Base.arraylen)(GenSym(0))::Int64
       0: 
       GenSym(3) = (top(ccall))(:jl_alloc_array_1d,(top(apply_type))(Base.Array,Int64,1)::Type{Array{Int64,1}},(top(svec))(Base.Any,Base.Int)::SimpleVector,Array{Int64,1},0,GenSym(1),0)::Array{Int64,1}
@@ -1645,17 +1642,17 @@ Body:
       unless (Base.box)(Base.Bool,(Base.not_int)(#s6::Int64 === GenSym(1)::Bool)) goto 2
       3: 
       #s6 = (Base.box)(Base.Int,(Base.add_int)(#s6::Int64,1))
-      GenSym(10) = (Base.arrayref)(GenSym(0),#s7::Int64)::Int64
-      GenSym(11) = (Base.box)(Base.Int,(Base.add_int)(#s7::Int64,1))
+      GenSym(9) = (Base.arrayref)(GenSym(0),#s7::Int64)::Int64
+      GenSym(10) = (Base.box)(Base.Int,(Base.add_int)(#s7::Int64,1))
       #s3 = 1
-      GenSym(12) = GenSym(10)
-      GenSym(13) = (Base.box)(Base.Int,(Base.add_int)(1,1))
-      x = GenSym(12)
-      #s3 = GenSym(13)
-      GenSym(14) = GenSym(11)
-      GenSym(15) = (Base.box)(Base.Int,(Base.add_int)(2,1))
-      #s7 = GenSym(14)
-      #s3 = GenSym(15)
+      GenSym(11) = GenSym(9)
+      GenSym(12) = (Base.box)(Base.Int,(Base.add_int)(1,1))
+      x = GenSym(11)
+      #s3 = GenSym(12)
+      GenSym(13) = GenSym(10)
+      GenSym(14) = (Base.box)(Base.Int,(Base.add_int)(2,1))
+      #s7 = GenSym(13)
+      #s3 = GenSym(14)
       GenSym(4) = (Base.box)(Int64,(Base.sub_int)(x::Int64,1))
       $(Expr(:type_goto, 0, GenSym(4)))
       $(Expr(:boundscheck, false))
@@ -1681,8 +1678,7 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/betabinomial.jl, line 81:
-      GenSym(8) = (Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1}
-      GenSym(0) = (Distributions.modes)(call(Distributions.Categorical{Float64},GenSym(8))::Distributions.Categorical{Float64})::Array{Int64,1}
+      GenSym(0) = (Distributions.modes)(call(Distributions.Categorical,(Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1})::Distributions.Categorical)::Array{Int64,1}
       GenSym(1) = (Base.arraylen)(GenSym(0))::Int64
       0: 
       GenSym(3) = (top(ccall))(:jl_alloc_array_1d,(top(apply_type))(Base.Array,Int64,1)::Type{Array{Int64,1}},(top(svec))(Base.Any,Base.Int)::SimpleVector,Array{Int64,1},0,GenSym(1),0)::Array{Int64,1}
@@ -1692,17 +1688,17 @@ Body:
       unless (Base.box)(Base.Bool,(Base.not_int)(#s6::Int64 === GenSym(1)::Bool)) goto 2
       3: 
       #s6 = (Base.box)(Base.Int,(Base.add_int)(#s6::Int64,1))
-      GenSym(10) = (Base.arrayref)(GenSym(0),#s7::Int64)::Int64
-      GenSym(11) = (Base.box)(Base.Int,(Base.add_int)(#s7::Int64,1))
+      GenSym(9) = (Base.arrayref)(GenSym(0),#s7::Int64)::Int64
+      GenSym(10) = (Base.box)(Base.Int,(Base.add_int)(#s7::Int64,1))
       #s3 = 1
-      GenSym(12) = GenSym(10)
-      GenSym(13) = (Base.box)(Base.Int,(Base.add_int)(1,1))
-      x = GenSym(12)
-      #s3 = GenSym(13)
-      GenSym(14) = GenSym(11)
-      GenSym(15) = (Base.box)(Base.Int,(Base.add_int)(2,1))
-      #s7 = GenSym(14)
-      #s3 = GenSym(15)
+      GenSym(11) = GenSym(9)
+      GenSym(12) = (Base.box)(Base.Int,(Base.add_int)(1,1))
+      x = GenSym(11)
+      #s3 = GenSym(12)
+      GenSym(13) = GenSym(10)
+      GenSym(14) = (Base.box)(Base.Int,(Base.add_int)(2,1))
+      #s7 = GenSym(13)
+      #s3 = GenSym(14)
       GenSym(4) = (Base.box)(Int64,(Base.sub_int)(x::Int64,1))
       $(Expr(:type_goto, 0, GenSym(4)))
       $(Expr(:boundscheck, false))
@@ -1902,9 +1898,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/betabinomial.jl, line 79:
-      GenSym(0) = (Distributions.pdf)(d::Distributions.BetaBinomial{Int64})::Array{Float64,1}
-      GenSym(1) = (Distributions.median)(call(Distributions.Categorical{Float64},GenSym(0))::Distributions.Categorical{Float64})::Int64
-      return (Base.box)(Int64,(Base.sub_int)(GenSym(1),1))
+      GenSym(0) = (Distributions.median)(call(Distributions.Categorical,(Distributions.pdf)(d::Distributions.BetaBinomial{Int64})::Array{Float64,1})::Distributions.Categorical)::Int64
+      return (Base.box)(Int64,(Base.sub_int)(GenSym(0),1))
   end::Int64
 
 ---- integer, float ----
@@ -1914,9 +1909,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/betabinomial.jl, line 79:
-      GenSym(0) = (Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1}
-      GenSym(1) = (Distributions.median)(call(Distributions.Categorical{Float64},GenSym(0))::Distributions.Categorical{Float64})::Int64
-      return (Base.box)(Int64,(Base.sub_int)(GenSym(1),1))
+      GenSym(0) = (Distributions.median)(call(Distributions.Categorical,(Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1})::Distributions.Categorical)::Int64
+      return (Base.box)(Int64,(Base.sub_int)(GenSym(0),1))
   end::Int64
 
 ---- integer, dual ----
@@ -1936,9 +1930,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/betabinomial.jl, line 79:
-      GenSym(0) = (Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1}
-      GenSym(1) = (Distributions.median)(call(Distributions.Categorical{Float64},GenSym(0))::Distributions.Categorical{Float64})::Int64
-      return (Base.box)(Int64,(Base.sub_int)(GenSym(1),1))
+      GenSym(0) = (Distributions.median)(call(Distributions.Categorical,(Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1})::Distributions.Categorical)::Int64
+      return (Base.box)(Int64,(Base.sub_int)(GenSym(0),1))
   end::Int64
 
 ---- float, float ----
@@ -1948,9 +1941,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/betabinomial.jl, line 79:
-      GenSym(0) = (Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1}
-      GenSym(1) = (Distributions.median)(call(Distributions.Categorical{Float64},GenSym(0))::Distributions.Categorical{Float64})::Int64
-      return (Base.box)(Int64,(Base.sub_int)(GenSym(1),1))
+      GenSym(0) = (Distributions.median)(call(Distributions.Categorical,(Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1})::Distributions.Categorical)::Int64
+      return (Base.box)(Int64,(Base.sub_int)(GenSym(0),1))
   end::Int64
 
 ---- float, dual ----
@@ -5020,9 +5012,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/betabinomial.jl, line 78:
-      GenSym(0) = (Distributions.pdf)(d::Distributions.BetaBinomial{Int64})::Array{Float64,1}
-      GenSym(1) = call(Distributions.Categorical{Float64},GenSym(0))::Distributions.Categorical{Float64}
-      return (Distributions.entropy)((top(getfield))(GenSym(1),:p)::Array{Float64,1})::Float64
+      GenSym(0) = call(Distributions.Categorical,(Distributions.pdf)(d::Distributions.BetaBinomial{Int64})::Array{Float64,1})::Distributions.Categorical
+      return (Distributions.entropy)((top(getfield))(GenSym(0),:p)::Array{Float64,1})::Float64
   end::Float64
 
 ---- integer, float ----
@@ -5032,9 +5023,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/betabinomial.jl, line 78:
-      GenSym(0) = (Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1}
-      GenSym(1) = call(Distributions.Categorical{Float64},GenSym(0))::Distributions.Categorical{Float64}
-      return (Distributions.entropy)((top(getfield))(GenSym(1),:p)::Array{Float64,1})::Float64
+      GenSym(0) = call(Distributions.Categorical,(Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1})::Distributions.Categorical
+      return (Distributions.entropy)((top(getfield))(GenSym(0),:p)::Array{Float64,1})::Float64
   end::Float64
 
 ---- integer, dual ----
@@ -5054,9 +5044,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/betabinomial.jl, line 78:
-      GenSym(0) = (Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1}
-      GenSym(1) = call(Distributions.Categorical{Float64},GenSym(0))::Distributions.Categorical{Float64}
-      return (Distributions.entropy)((top(getfield))(GenSym(1),:p)::Array{Float64,1})::Float64
+      GenSym(0) = call(Distributions.Categorical,(Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1})::Distributions.Categorical
+      return (Distributions.entropy)((top(getfield))(GenSym(0),:p)::Array{Float64,1})::Float64
   end::Float64
 
 ---- float, float ----
@@ -5066,9 +5055,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/betabinomial.jl, line 78:
-      GenSym(0) = (Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1}
-      GenSym(1) = call(Distributions.Categorical{Float64},GenSym(0))::Distributions.Categorical{Float64}
-      return (Distributions.entropy)((top(getfield))(GenSym(1),:p)::Array{Float64,1})::Float64
+      GenSym(0) = call(Distributions.Categorical,(Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1})::Distributions.Categorical
+      return (Distributions.entropy)((top(getfield))(GenSym(0),:p)::Array{Float64,1})::Float64
   end::Float64
 
 ---- float, dual ----
@@ -5142,9 +5130,8 @@ Body:
       ########_var0#7802#7803#7805#7807 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
       GenSym(2) = (Base.box)(Base.Float64,(Base.sub_float)(########_var0#7802#7803#7805#7807::Float64,1.0))
-      GenSym(3) = (Distributions.pdf)(d::Distributions.BetaBinomial{Int64})::Array{Float64,1}
-      GenSym(4) = (Distributions.quantile)(call(Distributions.Categorical{Float64},GenSym(3))::Distributions.Categorical{Float64},GenSym(2))::Int64
-      return (Base.box)(Int64,(Base.sub_int)(GenSym(4),1))
+      GenSym(3) = (Distributions.quantile)(call(Distributions.Categorical,(Distributions.pdf)(d::Distributions.BetaBinomial{Int64})::Array{Float64,1})::Distributions.Categorical,GenSym(2))::Int64
+      return (Base.box)(Int64,(Base.sub_int)(GenSym(3),1))
   end::Int64
 
 ---- integer, float ----
@@ -5171,9 +5158,8 @@ Body:
       ########_var0#7802#7803#7805#7809 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
       GenSym(2) = (Base.box)(Base.Float64,(Base.sub_float)(########_var0#7802#7803#7805#7809::Float64,1.0))
-      GenSym(3) = (Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1}
-      GenSym(4) = (Distributions.quantile)(call(Distributions.Categorical{Float64},GenSym(3))::Distributions.Categorical{Float64},GenSym(2))::Int64
-      return (Base.box)(Int64,(Base.sub_int)(GenSym(4),1))
+      GenSym(3) = (Distributions.quantile)(call(Distributions.Categorical,(Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1})::Distributions.Categorical,GenSym(2))::Int64
+      return (Base.box)(Int64,(Base.sub_int)(GenSym(3),1))
   end::Int64
 
 ---- integer, dual ----
@@ -5227,9 +5213,8 @@ Body:
       ########_var0#7802#7803#7805#7809 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
       GenSym(2) = (Base.box)(Base.Float64,(Base.sub_float)(########_var0#7802#7803#7805#7809::Float64,1.0))
-      GenSym(3) = (Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1}
-      GenSym(4) = (Distributions.quantile)(call(Distributions.Categorical{Float64},GenSym(3))::Distributions.Categorical{Float64},GenSym(2))::Int64
-      return (Base.box)(Int64,(Base.sub_int)(GenSym(4),1))
+      GenSym(3) = (Distributions.quantile)(call(Distributions.Categorical,(Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1})::Distributions.Categorical,GenSym(2))::Int64
+      return (Base.box)(Int64,(Base.sub_int)(GenSym(3),1))
   end::Int64
 
 ---- float, float ----
@@ -5256,9 +5241,8 @@ Body:
       ########_var0#7802#7803#7805#7809 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
       GenSym(2) = (Base.box)(Base.Float64,(Base.sub_float)(########_var0#7802#7803#7805#7809::Float64,1.0))
-      GenSym(3) = (Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1}
-      GenSym(4) = (Distributions.quantile)(call(Distributions.Categorical{Float64},GenSym(3))::Distributions.Categorical{Float64},GenSym(2))::Int64
-      return (Base.box)(Int64,(Base.sub_int)(GenSym(4),1))
+      GenSym(3) = (Distributions.quantile)(call(Distributions.Categorical,(Distributions.pdf)(d::Distributions.BetaBinomial{Float64})::Array{Float64,1})::Distributions.Categorical,GenSym(2))::Int64
+      return (Base.box)(Int64,(Base.sub_int)(GenSym(3),1))
   end::Int64
 
 ---- float, dual ----

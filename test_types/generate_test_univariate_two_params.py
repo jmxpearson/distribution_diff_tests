@@ -1,5 +1,5 @@
-dist = 'arcsine'
-dist_name = 'Arcsine'
+dist = 'cauchy'
+dist_name = 'Cauchy'
 script_name = dist + '_types.jl'
 
 funcs = ['ntrials', 'succprob', 'failprob', 'params', 'mean', 'var', \

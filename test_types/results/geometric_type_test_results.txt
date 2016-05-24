@@ -235,8 +235,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 32:
-      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
-  end::Float64
+      return 0
+  end::Int64
 
 ----dual----
 
@@ -245,8 +245,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 32:
-      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
-  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      return 0
+  end::Int64
 
 
 
@@ -262,8 +262,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 74:
-      return (top(vect))((Base.box)(Float64,(Base.sitofp)(Float64,0)))::Array{Float64,1}
-  end::Array{Float64,1}
+      return (top(vect))(0)::Array{Int64,1}
+  end::Array{Int64,1}
 
 ----dual----
 
@@ -272,8 +272,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 74:
-      return (top(vect))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))))::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1}
-  end::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1}
+      return (top(vect))(0)::Array{Int64,1}
+  end::Array{Int64,1}
 
 
 

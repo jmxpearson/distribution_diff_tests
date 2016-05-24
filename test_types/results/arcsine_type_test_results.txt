@@ -1582,7 +1582,7 @@ Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 103:
       GenSym(0) = (Base.box)(Float64,(Base.sitofp)(Float64,x::Int64))
       unless (Distributions.insupport)(d::Distributions.Arcsine{Int64},GenSym(0))::Bool goto 2
-      _var0 = (Base.box)(Base.Float64,(Base.div_float)(1.0,(Base.box)(Base.Float64,(Base.mul_float)(3.141592653589793,(Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.sub_float)(GenSym(0),(Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Arcsine{Int64},:a)::Int64)))),(Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Arcsine{Int64},:b)::Int64)),GenSym(0)))))))::Float64))))
+      _var0 = (Base.box)(Base.Float64,(Base.div_float)((Base.box)(Float64,(Base.sitofp)(Float64,1)),(Base.box)(Base.Float64,(Base.mul_float)(3.141592653589793,(Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.sub_float)(GenSym(0),(Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Arcsine{Int64},:a)::Int64)))),(Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Arcsine{Int64},:b)::Int64)),GenSym(0)))))))::Float64))))
       goto 3
       2: 
       _var0 = 0
