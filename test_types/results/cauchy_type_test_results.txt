@@ -107,12 +107,12 @@ ____________________________
 ---- integer, integer ----
 
 Variables:
-  d::Distributions.Cauchy{Int64}
+  d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 31:
-      return (top(tuple))((top(getfield))(d::Distributions.Cauchy{Int64},:μ)::Int64,(top(getfield))(d::Distributions.Cauchy{Int64},:σ)::Int64)::Tuple{Int64,Int64}
-  end::Tuple{Int64,Int64}
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 57:
+      return (top(tuple))((top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64,(top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64)::Tuple{Float64,Float64}
+  end::Tuple{Float64,Float64}
 
 ---- integer, float ----
 
@@ -120,7 +120,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 57:
       return (top(tuple))((top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64,(top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64)::Tuple{Float64,Float64}
   end::Tuple{Float64,Float64}
 
@@ -130,7 +130,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 57:
       return (top(tuple))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},(top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   end::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
@@ -140,7 +140,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 57:
       return (top(tuple))((top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64,(top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64)::Tuple{Float64,Float64}
   end::Tuple{Float64,Float64}
 
@@ -150,7 +150,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 57:
       return (top(tuple))((top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64,(top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64)::Tuple{Float64,Float64}
   end::Tuple{Float64,Float64}
 
@@ -160,7 +160,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 57:
       return (top(tuple))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},(top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   end::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
@@ -170,7 +170,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 57:
       return (top(tuple))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},(top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   end::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
@@ -180,7 +180,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 57:
       return (top(tuple))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},(top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   end::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
@@ -190,7 +190,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 57:
       return (top(tuple))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},(top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   end::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
@@ -204,10 +204,10 @@ ____________________________
 ---- integer, integer ----
 
 Variables:
-  d::Distributions.Cauchy{Int64}
+  d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 62:
       return Distributions.NaN
   end::Float64
 
@@ -217,7 +217,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 62:
       return Distributions.NaN
   end::Float64
 
@@ -227,7 +227,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 62:
       return Distributions.NaN
   end::Float64
 
@@ -237,7 +237,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 62:
       return Distributions.NaN
   end::Float64
 
@@ -247,7 +247,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 62:
       return Distributions.NaN
   end::Float64
 
@@ -257,7 +257,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 62:
       return Distributions.NaN
   end::Float64
 
@@ -267,7 +267,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 62:
       return Distributions.NaN
   end::Float64
 
@@ -277,7 +277,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 62:
       return Distributions.NaN
   end::Float64
 
@@ -287,7 +287,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 62:
       return Distributions.NaN
   end::Float64
 
@@ -301,10 +301,10 @@ ____________________________
 ---- integer, integer ----
 
 Variables:
-  d::Distributions.Cauchy{Int64}
+  d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 40:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 66:
       return Distributions.NaN
   end::Float64
 
@@ -314,7 +314,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 40:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 66:
       return Distributions.NaN
   end::Float64
 
@@ -324,7 +324,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 40:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 66:
       return Distributions.NaN
   end::Float64
 
@@ -334,7 +334,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 40:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 66:
       return Distributions.NaN
   end::Float64
 
@@ -344,7 +344,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 40:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 66:
       return Distributions.NaN
   end::Float64
 
@@ -354,7 +354,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 40:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 66:
       return Distributions.NaN
   end::Float64
 
@@ -364,7 +364,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 40:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 66:
       return Distributions.NaN
   end::Float64
 
@@ -374,7 +374,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 40:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 66:
       return Distributions.NaN
   end::Float64
 
@@ -384,7 +384,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 40:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 66:
       return Distributions.NaN
   end::Float64
 
@@ -398,12 +398,12 @@ ____________________________
 ---- integer, integer ----
 
 Variables:
-  d::Distributions.Cauchy{Int64}
+  d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 38:
-      return (top(getfield))(d::Distributions.Cauchy{Int64},:μ)::Int64
-  end::Int64
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 64:
+      return (top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64
+  end::Float64
 
 ---- integer, float ----
 
@@ -411,7 +411,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 64:
       return (top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64
   end::Float64
 
@@ -421,7 +421,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 64:
       return (top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -431,7 +431,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 64:
       return (top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64
   end::Float64
 
@@ -441,7 +441,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 64:
       return (top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64
   end::Float64
 
@@ -451,7 +451,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 64:
       return (top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -461,7 +461,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 64:
       return (top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -471,7 +471,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 64:
       return (top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -481,7 +481,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 64:
       return (top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -495,12 +495,12 @@ ____________________________
 ---- integer, integer ----
 
 Variables:
-  d::Distributions.Cauchy{Int64}
+  d::Distributions.Cauchy{Float64}
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 74:
-      return (top(vect))((top(getfield))(d::Distributions.Cauchy{Int64},:μ)::Int64)::Array{Int64,1}
-  end::Array{Int64,1}
+      return (top(vect))((top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64)::Array{Float64,1}
+  end::Array{Float64,1}
 
 ---- integer, float ----
 
@@ -592,12 +592,12 @@ ____________________________
 ---- integer, integer ----
 
 Variables:
-  d::Distributions.Cauchy{Int64}
+  d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 37:
-      return (top(getfield))(d::Distributions.Cauchy{Int64},:μ)::Int64
-  end::Int64
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 63:
+      return (top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64
+  end::Float64
 
 ---- integer, float ----
 
@@ -605,7 +605,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 63:
       return (top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64
   end::Float64
 
@@ -615,7 +615,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 63:
       return (top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -625,7 +625,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 63:
       return (top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64
   end::Float64
 
@@ -635,7 +635,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 63:
       return (top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64
   end::Float64
 
@@ -645,7 +645,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 63:
       return (top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -655,7 +655,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 63:
       return (top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -665,7 +665,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 63:
       return (top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -675,7 +675,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 63:
       return (top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -689,10 +689,10 @@ ____________________________
 ---- integer, integer ----
 
 Variables:
-  d::Distributions.Cauchy{Int64}
+  d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 41:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 67:
       return Distributions.NaN
   end::Float64
 
@@ -702,7 +702,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 41:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 67:
       return Distributions.NaN
   end::Float64
 
@@ -712,7 +712,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 41:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 67:
       return Distributions.NaN
   end::Float64
 
@@ -722,7 +722,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 41:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 67:
       return Distributions.NaN
   end::Float64
 
@@ -732,7 +732,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 41:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 67:
       return Distributions.NaN
   end::Float64
 
@@ -742,7 +742,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 41:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 67:
       return Distributions.NaN
   end::Float64
 
@@ -752,7 +752,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 41:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 67:
       return Distributions.NaN
   end::Float64
 
@@ -762,7 +762,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 41:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 67:
       return Distributions.NaN
   end::Float64
 
@@ -772,7 +772,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 41:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 67:
       return Distributions.NaN
   end::Float64
 
@@ -786,10 +786,10 @@ ____________________________
 ---- integer, integer ----
 
 Variables:
-  d::Distributions.Cauchy{Int64}
+  d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 42:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 68:
       return Distributions.NaN
   end::Float64
 
@@ -799,7 +799,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 42:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 68:
       return Distributions.NaN
   end::Float64
 
@@ -809,7 +809,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 42:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 68:
       return Distributions.NaN
   end::Float64
 
@@ -819,7 +819,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 42:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 68:
       return Distributions.NaN
   end::Float64
 
@@ -829,7 +829,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 42:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 68:
       return Distributions.NaN
   end::Float64
 
@@ -839,7 +839,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 42:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 68:
       return Distributions.NaN
   end::Float64
 
@@ -849,7 +849,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 42:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 68:
       return Distributions.NaN
   end::Float64
 
@@ -859,7 +859,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 42:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 68:
       return Distributions.NaN
   end::Float64
 
@@ -869,7 +869,7 @@ Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 42:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 68:
       return Distributions.NaN
   end::Float64
 
@@ -883,11 +883,11 @@ ____________________________
 ---- integer, integer ----
 
 Variables:
-  d::Distributions.Cauchy{Int64}
+  d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 44:
-      GenSym(0) = (Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Cauchy{Int64},:σ)::Int64))
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 70:
+      GenSym(0) = (top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64
       GenSym(2) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(0),0)::Float64
       return (Base.box)(Base.Float64,(Base.add_float)(2.5310242469692907,(Base.Math.nan_dom_err)(GenSym(2),GenSym(0))::Float64))
   end::Float64
@@ -898,7 +898,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 44:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 70:
       GenSym(0) = (top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64
       GenSym(2) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(0),0)::Float64
       return (Base.box)(Base.Float64,(Base.add_float)(2.5310242469692907,(Base.Math.nan_dom_err)(GenSym(2),GenSym(0))::Float64))
@@ -908,25 +908,25 @@ Body:
 
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ##a#7093::Float64
-  ####G#7085#7094::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ########types#7075#7081#7086#7095::Tuple{Type{Float64},Type{Float64}}
-  ##########tup#7076#7078#7082#7087#7096::Tuple{}
-  ##########x#7077#7079#7083#7088#7097::Float64
-  ########_var0#7080#7084#7089#7098::Tuple{}
-  ########types#7090#7091#7092#7099::Tuple{Type{Irrational{:log4π}}}
+  ##a#7088::Float64
+  ####G#7080#7089::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7070#7076#7081#7090::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7071#7073#7077#7082#7091::Tuple{}
+  ##########x#7072#7074#7078#7083#7092::Float64
+  ########_var0#7075#7079#7084#7093::Tuple{}
+  ########types#7085#7086#7087#7094::Tuple{Type{Irrational{:log4π}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 44:
-      ##a#7093 = (top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
-      GenSym(1) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,##a#7093::Float64,0)::Float64
-      ####G#7085#7094 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 70:
+      ##a#7088 = (top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
+      GenSym(1) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,##a#7088::Float64,0)::Float64
+      ####G#7080#7089 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       $(Expr(:boundscheck, false))
-      ########_var0#7080#7084#7089#7098 = (top(tuple))()::Tuple{}
+      ########_var0#7075#7079#7084#7093 = (top(tuple))()::Tuple{}
       goto 1
-      ########_var0#7080#7084#7089#7098 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7075#7079#7084#7093 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       1: 
-      GenSym(2) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.Math.nan_dom_err)(GenSym(1),##a#7093::Float64)::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      GenSym(2) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.Math.nan_dom_err)(GenSym(1),##a#7088::Float64)::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(GenSym(2),:value)::Float64,2.5310242469692907))), :((top(getfield))(GenSym(2),:partials)::ForwardDiff.Partials{Float64,Tuple{}})))
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -936,7 +936,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 44:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 70:
       GenSym(0) = (top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64
       GenSym(2) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(0),0)::Float64
       return (Base.box)(Base.Float64,(Base.add_float)(2.5310242469692907,(Base.Math.nan_dom_err)(GenSym(2),GenSym(0))::Float64))
@@ -948,7 +948,7 @@ Variables:
   d::Distributions.Cauchy{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 44:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 70:
       GenSym(0) = (top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64
       GenSym(2) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(0),0)::Float64
       return (Base.box)(Base.Float64,(Base.add_float)(2.5310242469692907,(Base.Math.nan_dom_err)(GenSym(2),GenSym(0))::Float64))
@@ -958,25 +958,25 @@ Body:
 
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ##a#7093::Float64
-  ####G#7085#7094::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ########types#7075#7081#7086#7095::Tuple{Type{Float64},Type{Float64}}
-  ##########tup#7076#7078#7082#7087#7096::Tuple{}
-  ##########x#7077#7079#7083#7088#7097::Float64
-  ########_var0#7080#7084#7089#7098::Tuple{}
-  ########types#7090#7091#7092#7099::Tuple{Type{Irrational{:log4π}}}
+  ##a#7088::Float64
+  ####G#7080#7089::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7070#7076#7081#7090::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7071#7073#7077#7082#7091::Tuple{}
+  ##########x#7072#7074#7078#7083#7092::Float64
+  ########_var0#7075#7079#7084#7093::Tuple{}
+  ########types#7085#7086#7087#7094::Tuple{Type{Irrational{:log4π}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 44:
-      ##a#7093 = (top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
-      GenSym(1) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,##a#7093::Float64,0)::Float64
-      ####G#7085#7094 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 70:
+      ##a#7088 = (top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
+      GenSym(1) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,##a#7088::Float64,0)::Float64
+      ####G#7080#7089 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       $(Expr(:boundscheck, false))
-      ########_var0#7080#7084#7089#7098 = (top(tuple))()::Tuple{}
+      ########_var0#7075#7079#7084#7093 = (top(tuple))()::Tuple{}
       goto 1
-      ########_var0#7080#7084#7089#7098 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7075#7079#7084#7093 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       1: 
-      GenSym(2) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.Math.nan_dom_err)(GenSym(1),##a#7093::Float64)::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      GenSym(2) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.Math.nan_dom_err)(GenSym(1),##a#7088::Float64)::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(GenSym(2),:value)::Float64,2.5310242469692907))), :((top(getfield))(GenSym(2),:partials)::ForwardDiff.Partials{Float64,Tuple{}})))
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -984,25 +984,25 @@ Body:
 
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ##a#7093::Float64
-  ####G#7085#7094::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ########types#7075#7081#7086#7095::Tuple{Type{Float64},Type{Float64}}
-  ##########tup#7076#7078#7082#7087#7096::Tuple{}
-  ##########x#7077#7079#7083#7088#7097::Float64
-  ########_var0#7080#7084#7089#7098::Tuple{}
-  ########types#7090#7091#7092#7099::Tuple{Type{Irrational{:log4π}}}
+  ##a#7088::Float64
+  ####G#7080#7089::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7070#7076#7081#7090::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7071#7073#7077#7082#7091::Tuple{}
+  ##########x#7072#7074#7078#7083#7092::Float64
+  ########_var0#7075#7079#7084#7093::Tuple{}
+  ########types#7085#7086#7087#7094::Tuple{Type{Irrational{:log4π}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 44:
-      ##a#7093 = (top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
-      GenSym(1) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,##a#7093::Float64,0)::Float64
-      ####G#7085#7094 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 70:
+      ##a#7088 = (top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
+      GenSym(1) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,##a#7088::Float64,0)::Float64
+      ####G#7080#7089 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       $(Expr(:boundscheck, false))
-      ########_var0#7080#7084#7089#7098 = (top(tuple))()::Tuple{}
+      ########_var0#7075#7079#7084#7093 = (top(tuple))()::Tuple{}
       goto 1
-      ########_var0#7080#7084#7089#7098 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7075#7079#7084#7093 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       1: 
-      GenSym(2) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.Math.nan_dom_err)(GenSym(1),##a#7093::Float64)::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      GenSym(2) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.Math.nan_dom_err)(GenSym(1),##a#7088::Float64)::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(GenSym(2),:value)::Float64,2.5310242469692907))), :((top(getfield))(GenSym(2),:partials)::ForwardDiff.Partials{Float64,Tuple{}})))
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -1010,25 +1010,25 @@ Body:
 
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ##a#7093::Float64
-  ####G#7085#7094::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ########types#7075#7081#7086#7095::Tuple{Type{Float64},Type{Float64}}
-  ##########tup#7076#7078#7082#7087#7096::Tuple{}
-  ##########x#7077#7079#7083#7088#7097::Float64
-  ########_var0#7080#7084#7089#7098::Tuple{}
-  ########types#7090#7091#7092#7099::Tuple{Type{Irrational{:log4π}}}
+  ##a#7088::Float64
+  ####G#7080#7089::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7070#7076#7081#7090::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7071#7073#7077#7082#7091::Tuple{}
+  ##########x#7072#7074#7078#7083#7092::Float64
+  ########_var0#7075#7079#7084#7093::Tuple{}
+  ########types#7085#7086#7087#7094::Tuple{Type{Irrational{:log4π}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 44:
-      ##a#7093 = (top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
-      GenSym(1) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,##a#7093::Float64,0)::Float64
-      ####G#7085#7094 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 70:
+      ##a#7088 = (top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
+      GenSym(1) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,##a#7088::Float64,0)::Float64
+      ####G#7080#7089 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       $(Expr(:boundscheck, false))
-      ########_var0#7080#7084#7089#7098 = (top(tuple))()::Tuple{}
+      ########_var0#7075#7079#7084#7093 = (top(tuple))()::Tuple{}
       goto 1
-      ########_var0#7080#7084#7089#7098 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7075#7079#7084#7093 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       1: 
-      GenSym(2) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.Math.nan_dom_err)(GenSym(1),##a#7093::Float64)::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      GenSym(2) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.Math.nan_dom_err)(GenSym(1),##a#7088::Float64)::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(GenSym(2),:value)::Float64,2.5310242469692907))), :((top(getfield))(GenSym(2),:partials)::ForwardDiff.Partials{Float64,Tuple{}})))
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -1036,25 +1036,25 @@ Body:
 
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ##a#7093::Float64
-  ####G#7085#7094::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ########types#7075#7081#7086#7095::Tuple{Type{Float64},Type{Float64}}
-  ##########tup#7076#7078#7082#7087#7096::Tuple{}
-  ##########x#7077#7079#7083#7088#7097::Float64
-  ########_var0#7080#7084#7089#7098::Tuple{}
-  ########types#7090#7091#7092#7099::Tuple{Type{Irrational{:log4π}}}
+  ##a#7088::Float64
+  ####G#7080#7089::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7070#7076#7081#7090::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7071#7073#7077#7082#7091::Tuple{}
+  ##########x#7072#7074#7078#7083#7092::Float64
+  ########_var0#7075#7079#7084#7093::Tuple{}
+  ########types#7085#7086#7087#7094::Tuple{Type{Irrational{:log4π}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 44:
-      ##a#7093 = (top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
-      GenSym(1) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,##a#7093::Float64,0)::Float64
-      ####G#7085#7094 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 70:
+      ##a#7088 = (top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
+      GenSym(1) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,##a#7088::Float64,0)::Float64
+      ####G#7080#7089 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       $(Expr(:boundscheck, false))
-      ########_var0#7080#7084#7089#7098 = (top(tuple))()::Tuple{}
+      ########_var0#7075#7079#7084#7093 = (top(tuple))()::Tuple{}
       goto 1
-      ########_var0#7080#7084#7089#7098 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7075#7079#7084#7093 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       1: 
-      GenSym(2) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.Math.nan_dom_err)(GenSym(1),##a#7093::Float64)::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      GenSym(2) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.Math.nan_dom_err)(GenSym(1),##a#7088::Float64)::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(GenSym(2),:value)::Float64,2.5310242469692907))), :((top(getfield))(GenSym(2),:partials)::ForwardDiff.Partials{Float64,Tuple{}})))
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -1068,235 +1068,235 @@ ____________________________
 ---- integer, integer ----
 
 Variables:
-  d::Distributions.Cauchy{Int64}
-  ####_var0#7103#7105::UNION{BOOL,INT64}
-  ########_var0#7101#7102#7104#7106::Float64
+  d::Distributions.Cauchy{Float64}
+  ####_var0#7101#7103::UNION{BOOL,INT64}
+  ########_var0#7099#7100#7102#7104::Float64
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
-      ####_var0#7103#7105 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      ####_var0#7101#7103 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 2
       1: 
-      ####_var0#7103#7105 = false
+      ####_var0#7101#7103 = false
       2: 
-      ####_var0#7103#7105::UNION{BOOL,INT64}
+      ####_var0#7101#7103::UNION{BOOL,INT64}
       $(Expr(:boundscheck, false))
       GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
       GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
-      ########_var0#7101#7102#7104#7106 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      ########_var0#7099#7100#7102#7104 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
       goto 3
-      ########_var0#7101#7102#7104#7106 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7099#7100#7102#7104 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
-      return (Distributions.quantile)(d::Distributions.Cauchy{Int64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7101#7102#7104#7106::Float64,1.0)))::Float64
+      return (Distributions.quantile)(d::Distributions.Cauchy{Float64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7099#7100#7102#7104::Float64,1.0)))::Float64
   end::Float64
 
 ---- integer, float ----
 
 Variables:
   d::Distributions.Cauchy{Float64}
-  ####_var0#7103#7110::UNION{BOOL,INT64}
-  ########_var0#7101#7102#7104#7111::Float64
+  ####_var0#7101#7103::UNION{BOOL,INT64}
+  ########_var0#7099#7100#7102#7104::Float64
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
-      ####_var0#7103#7110 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      ####_var0#7101#7103 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 2
       1: 
-      ####_var0#7103#7110 = false
+      ####_var0#7101#7103 = false
       2: 
-      ####_var0#7103#7110::UNION{BOOL,INT64}
+      ####_var0#7101#7103::UNION{BOOL,INT64}
       $(Expr(:boundscheck, false))
       GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
       GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
-      ########_var0#7101#7102#7104#7111 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      ########_var0#7099#7100#7102#7104 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
       goto 3
-      ########_var0#7101#7102#7104#7111 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7099#7100#7102#7104 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
-      return (Distributions.quantile)(d::Distributions.Cauchy{Float64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7101#7102#7104#7111::Float64,1.0)))::Float64
+      return (Distributions.quantile)(d::Distributions.Cauchy{Float64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7099#7100#7102#7104::Float64,1.0)))::Float64
   end::Float64
 
 ---- integer, dual ----
 
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ####_var0#7103#7129::UNION{BOOL,INT64}
-  ########_var0#7101#7102#7104#7130::Float64
+  ####_var0#7101#7125::UNION{BOOL,INT64}
+  ########_var0#7099#7100#7102#7126::Float64
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
-      ####_var0#7103#7129 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      ####_var0#7101#7125 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 2
       1: 
-      ####_var0#7103#7129 = false
+      ####_var0#7101#7125 = false
       2: 
-      ####_var0#7103#7129::UNION{BOOL,INT64}
+      ####_var0#7101#7125::UNION{BOOL,INT64}
       $(Expr(:boundscheck, false))
       GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
       GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
-      ########_var0#7101#7102#7104#7130 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      ########_var0#7099#7100#7102#7126 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
       goto 3
-      ########_var0#7101#7102#7104#7130 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7099#7100#7102#7126 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
-      return (Distributions.quantile)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7101#7102#7104#7130::Float64,1.0)))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      return (Distributions.quantile)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7099#7100#7102#7126::Float64,1.0)))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- float, integer ----
 
 Variables:
   d::Distributions.Cauchy{Float64}
-  ####_var0#7103#7110::UNION{BOOL,INT64}
-  ########_var0#7101#7102#7104#7111::Float64
+  ####_var0#7101#7103::UNION{BOOL,INT64}
+  ########_var0#7099#7100#7102#7104::Float64
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
-      ####_var0#7103#7110 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      ####_var0#7101#7103 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 2
       1: 
-      ####_var0#7103#7110 = false
+      ####_var0#7101#7103 = false
       2: 
-      ####_var0#7103#7110::UNION{BOOL,INT64}
+      ####_var0#7101#7103::UNION{BOOL,INT64}
       $(Expr(:boundscheck, false))
       GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
       GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
-      ########_var0#7101#7102#7104#7111 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      ########_var0#7099#7100#7102#7104 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
       goto 3
-      ########_var0#7101#7102#7104#7111 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7099#7100#7102#7104 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
-      return (Distributions.quantile)(d::Distributions.Cauchy{Float64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7101#7102#7104#7111::Float64,1.0)))::Float64
+      return (Distributions.quantile)(d::Distributions.Cauchy{Float64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7099#7100#7102#7104::Float64,1.0)))::Float64
   end::Float64
 
 ---- float, float ----
 
 Variables:
   d::Distributions.Cauchy{Float64}
-  ####_var0#7103#7110::UNION{BOOL,INT64}
-  ########_var0#7101#7102#7104#7111::Float64
+  ####_var0#7101#7103::UNION{BOOL,INT64}
+  ########_var0#7099#7100#7102#7104::Float64
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
-      ####_var0#7103#7110 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      ####_var0#7101#7103 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 2
       1: 
-      ####_var0#7103#7110 = false
+      ####_var0#7101#7103 = false
       2: 
-      ####_var0#7103#7110::UNION{BOOL,INT64}
+      ####_var0#7101#7103::UNION{BOOL,INT64}
       $(Expr(:boundscheck, false))
       GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
       GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
-      ########_var0#7101#7102#7104#7111 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      ########_var0#7099#7100#7102#7104 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
       goto 3
-      ########_var0#7101#7102#7104#7111 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7099#7100#7102#7104 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
-      return (Distributions.quantile)(d::Distributions.Cauchy{Float64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7101#7102#7104#7111::Float64,1.0)))::Float64
+      return (Distributions.quantile)(d::Distributions.Cauchy{Float64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7099#7100#7102#7104::Float64,1.0)))::Float64
   end::Float64
 
 ---- float, dual ----
 
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ####_var0#7103#7129::UNION{BOOL,INT64}
-  ########_var0#7101#7102#7104#7130::Float64
+  ####_var0#7101#7125::UNION{BOOL,INT64}
+  ########_var0#7099#7100#7102#7126::Float64
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
-      ####_var0#7103#7129 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      ####_var0#7101#7125 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 2
       1: 
-      ####_var0#7103#7129 = false
+      ####_var0#7101#7125 = false
       2: 
-      ####_var0#7103#7129::UNION{BOOL,INT64}
+      ####_var0#7101#7125::UNION{BOOL,INT64}
       $(Expr(:boundscheck, false))
       GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
       GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
-      ########_var0#7101#7102#7104#7130 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      ########_var0#7099#7100#7102#7126 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
       goto 3
-      ########_var0#7101#7102#7104#7130 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7099#7100#7102#7126 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
-      return (Distributions.quantile)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7101#7102#7104#7130::Float64,1.0)))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      return (Distributions.quantile)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7099#7100#7102#7126::Float64,1.0)))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- dual, integer ----
 
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ####_var0#7103#7129::UNION{BOOL,INT64}
-  ########_var0#7101#7102#7104#7130::Float64
+  ####_var0#7101#7125::UNION{BOOL,INT64}
+  ########_var0#7099#7100#7102#7126::Float64
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
-      ####_var0#7103#7129 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      ####_var0#7101#7125 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 2
       1: 
-      ####_var0#7103#7129 = false
+      ####_var0#7101#7125 = false
       2: 
-      ####_var0#7103#7129::UNION{BOOL,INT64}
+      ####_var0#7101#7125::UNION{BOOL,INT64}
       $(Expr(:boundscheck, false))
       GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
       GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
-      ########_var0#7101#7102#7104#7130 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      ########_var0#7099#7100#7102#7126 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
       goto 3
-      ########_var0#7101#7102#7104#7130 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7099#7100#7102#7126 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
-      return (Distributions.quantile)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7101#7102#7104#7130::Float64,1.0)))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      return (Distributions.quantile)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7099#7100#7102#7126::Float64,1.0)))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- dual, float ----
 
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ####_var0#7103#7129::UNION{BOOL,INT64}
-  ########_var0#7101#7102#7104#7130::Float64
+  ####_var0#7101#7125::UNION{BOOL,INT64}
+  ########_var0#7099#7100#7102#7126::Float64
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
-      ####_var0#7103#7129 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      ####_var0#7101#7125 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 2
       1: 
-      ####_var0#7103#7129 = false
+      ####_var0#7101#7125 = false
       2: 
-      ####_var0#7103#7129::UNION{BOOL,INT64}
+      ####_var0#7101#7125::UNION{BOOL,INT64}
       $(Expr(:boundscheck, false))
       GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
       GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
-      ########_var0#7101#7102#7104#7130 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      ########_var0#7099#7100#7102#7126 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
       goto 3
-      ########_var0#7101#7102#7104#7130 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7099#7100#7102#7126 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
-      return (Distributions.quantile)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7101#7102#7104#7130::Float64,1.0)))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      return (Distributions.quantile)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7099#7100#7102#7126::Float64,1.0)))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- dual, dual ----
 
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ####_var0#7103#7129::UNION{BOOL,INT64}
-  ########_var0#7101#7102#7104#7130::Float64
+  ####_var0#7101#7125::UNION{BOOL,INT64}
+  ########_var0#7099#7100#7102#7126::Float64
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
-      ####_var0#7103#7129 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      ####_var0#7101#7125 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 2
       1: 
-      ####_var0#7103#7129 = false
+      ####_var0#7101#7125 = false
       2: 
-      ####_var0#7103#7129::UNION{BOOL,INT64}
+      ####_var0#7101#7125::UNION{BOOL,INT64}
       $(Expr(:boundscheck, false))
       GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
       GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
-      ########_var0#7101#7102#7104#7130 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      ########_var0#7099#7100#7102#7126 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
       goto 3
-      ########_var0#7101#7102#7104#7130 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7099#7100#7102#7126 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
-      return (Distributions.quantile)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7101#7102#7104#7130::Float64,1.0)))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      return (Distributions.quantile)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7099#7100#7102#7126::Float64,1.0)))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 
@@ -1309,13 +1309,13 @@ ____________________________
 ---- integer, integer ----
 
 Variables:
-  d::Distributions.Cauchy{Int64}
+  d::Distributions.Cauchy{Float64}
   x::Int64
-  ####xs#7131#7132::Tuple{}
+  ##xs#7127::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 103:
-      return (Base.box)(Base.Float64,(Base.div_float)(1.0,(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)(3.141592653589793,(Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Cauchy{Int64},:σ)::Int64)))),(Base.box)(Base.Float64,(Base.add_float)(1.0,(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((Base.box)(Base.Float64,(Base.div_float)((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)),(Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Cauchy{Int64},:μ)::Int64)))),(Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Cauchy{Int64},:σ)::Int64)))),(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2))))::Float64))))))
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 78:
+      return (Base.box)(Base.Float64,(Base.div_float)(1.0,(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)(3.141592653589793,(top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64)),(Base.box)(Base.Float64,(Base.add_float)(1.0,(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((Base.box)(Base.Float64,(Base.div_float)((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)),(top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64)),(top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64)),(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2))))::Float64))))))
   end::Float64
 
 ---- integer, float ----
@@ -1323,10 +1323,10 @@ Body:
 Variables:
   d::Distributions.Cauchy{Float64}
   x::Int64
-  ####xs#7133#7134::Tuple{}
+  ##xs#7127::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 103:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 78:
       return (Base.box)(Base.Float64,(Base.div_float)(1.0,(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)(3.141592653589793,(top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64)),(Base.box)(Base.Float64,(Base.add_float)(1.0,(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((Base.box)(Base.Float64,(Base.div_float)((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)),(top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64)),(top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64)),(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2))))::Float64))))))
   end::Float64
 
@@ -1335,10 +1335,74 @@ Body:
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   x::Int64
+  ##a#7204::Float64
+  ##exp_a#7205::Float64
+  ##deriv#7206::Float64
+  ####G#7165#7207::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7070#7076#7166#7208::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7071#7073#7077#7167#7209::Tuple{}
+  ##########x#7072#7074#7078#7168#7210::Float64
+  ########_var0#7075#7079#7169#7211::Tuple{}
+  ########types#7108#7170#7171#7212::Tuple{Type{Float64}}
+  ##xs#7213::Tuple{}
+  ##########tup#7172#7175#7179#7188#7214::Tuple{}
+  ##########x#7173#7176#7180#7189#7215::Irrational{:π}
+  ########_var0#7177#7181#7190#7216::Tuple{}
+  ##########types#7174#7178#7182#7191#7217::Tuple{Type{Irrational{:π}}}
+  ####a1#7192#7218::Float64
+  ####a2#7193#7219::Float64
+  ########a#7133#7183#7194#7220::Tuple{}
+  ########b#7134#7184#7195#7221::Tuple{}
+  ########afactor#7135#7185#7196#7222::Float64
+  ########bfactor#7136#7186#7197#7223::Float64
+  ######_var0#7187#7198#7224::Tuple{}
+  ##a#7225::Float64
+  ##div_a#7226::Float64
+  ##deriv#7227::Float64
+  ####G#7199#7228::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7070#7076#7200#7229::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7071#7073#7077#7201#7230::Tuple{}
+  ##########x#7072#7074#7078#7202#7231::Float64
+  ########_var0#7075#7079#7203#7232::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 103:
-      return (Distributions.pdf)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 78:
+      GenSym(0) = (Distributions.zval)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},x::Int64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      ##a#7204 = (top(getfield))(GenSym(0),:value)::Float64
+      ##exp_a#7205 = (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7204::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2)))::ANY)::Float64
+      ##deriv#7206 = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,2)),(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7204::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,(Base.box)(Int64,(Base.sub_int)(2,1))))))::Float64))
+      ####G#7165#7207 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7075#7079#7169#7211 = (top(tuple))()::Tuple{}
+      goto 1
+      ########_var0#7075#7079#7169#7211 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      1: 
+      GenSym(1) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##exp_a#7205::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      $(Expr(:boundscheck, false))
+      ########_var0#7177#7181#7190#7216 = (top(tuple))()::Tuple{}
+      goto 5
+      ########_var0#7177#7181#7190#7216 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      5: 
+      GenSym(2) = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,3.141592653589793))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64
+      GenSym(3) = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(GenSym(1),:value)::Float64,1.0))), :((top(getfield))(GenSym(1),:partials)::ForwardDiff.Partials{Float64,Tuple{}}))),:value)::Float64
+      ####a1#7192#7218 = GenSym(2)
+      ####a2#7193#7219 = GenSym(3)
+      $(Expr(:boundscheck, false))
+      ######_var0#7187#7198#7224 = (top(tuple))()::Tuple{}
+      goto 6
+      ######_var0#7187#7198#7224 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      6: 
+      GenSym(4) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(####a1#7192#7218::Float64,####a2#7193#7219::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      ##a#7225 = (top(getfield))(GenSym(4),:value)::Float64
+      ##div_a#7226 = (Base.box)(Base.Float64,(Base.div_float)(1.0,##a#7225::Float64))
+      ##deriv#7227 = (Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Base.Float64,(Base.div_float)(##div_a#7226::Float64,##a#7225::Float64))))
+      ####G#7199#7228 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7075#7079#7203#7232 = (top(tuple))()::Tuple{}
+      goto 8
+      ########_var0#7075#7079#7203#7232 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      8: 
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##div_a#7226::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- float, integer ----
@@ -1346,10 +1410,10 @@ Body:
 Variables:
   d::Distributions.Cauchy{Float64}
   x::Int64
-  ####xs#7133#7134::Tuple{}
+  ##xs#7127::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 103:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 78:
       return (Base.box)(Base.Float64,(Base.div_float)(1.0,(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)(3.141592653589793,(top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64)),(Base.box)(Base.Float64,(Base.add_float)(1.0,(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((Base.box)(Base.Float64,(Base.div_float)((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)),(top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64)),(top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64)),(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2))))::Float64))))))
   end::Float64
 
@@ -1358,10 +1422,10 @@ Body:
 Variables:
   d::Distributions.Cauchy{Float64}
   x::Int64
-  ####xs#7133#7134::Tuple{}
+  ##xs#7127::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 103:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 78:
       return (Base.box)(Base.Float64,(Base.div_float)(1.0,(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)(3.141592653589793,(top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64)),(Base.box)(Base.Float64,(Base.add_float)(1.0,(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((Base.box)(Base.Float64,(Base.div_float)((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)),(top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64)),(top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64)),(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2))))::Float64))))))
   end::Float64
 
@@ -1370,10 +1434,74 @@ Body:
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   x::Int64
+  ##a#7204::Float64
+  ##exp_a#7205::Float64
+  ##deriv#7206::Float64
+  ####G#7165#7207::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7070#7076#7166#7208::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7071#7073#7077#7167#7209::Tuple{}
+  ##########x#7072#7074#7078#7168#7210::Float64
+  ########_var0#7075#7079#7169#7211::Tuple{}
+  ########types#7108#7170#7171#7212::Tuple{Type{Float64}}
+  ##xs#7213::Tuple{}
+  ##########tup#7172#7175#7179#7188#7214::Tuple{}
+  ##########x#7173#7176#7180#7189#7215::Irrational{:π}
+  ########_var0#7177#7181#7190#7216::Tuple{}
+  ##########types#7174#7178#7182#7191#7217::Tuple{Type{Irrational{:π}}}
+  ####a1#7192#7218::Float64
+  ####a2#7193#7219::Float64
+  ########a#7133#7183#7194#7220::Tuple{}
+  ########b#7134#7184#7195#7221::Tuple{}
+  ########afactor#7135#7185#7196#7222::Float64
+  ########bfactor#7136#7186#7197#7223::Float64
+  ######_var0#7187#7198#7224::Tuple{}
+  ##a#7225::Float64
+  ##div_a#7226::Float64
+  ##deriv#7227::Float64
+  ####G#7199#7228::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7070#7076#7200#7229::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7071#7073#7077#7201#7230::Tuple{}
+  ##########x#7072#7074#7078#7202#7231::Float64
+  ########_var0#7075#7079#7203#7232::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 103:
-      return (Distributions.pdf)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 78:
+      GenSym(0) = (Distributions.zval)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},x::Int64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      ##a#7204 = (top(getfield))(GenSym(0),:value)::Float64
+      ##exp_a#7205 = (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7204::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2)))::ANY)::Float64
+      ##deriv#7206 = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,2)),(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7204::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,(Base.box)(Int64,(Base.sub_int)(2,1))))))::Float64))
+      ####G#7165#7207 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7075#7079#7169#7211 = (top(tuple))()::Tuple{}
+      goto 1
+      ########_var0#7075#7079#7169#7211 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      1: 
+      GenSym(1) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##exp_a#7205::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      $(Expr(:boundscheck, false))
+      ########_var0#7177#7181#7190#7216 = (top(tuple))()::Tuple{}
+      goto 5
+      ########_var0#7177#7181#7190#7216 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      5: 
+      GenSym(2) = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,3.141592653589793))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64
+      GenSym(3) = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(GenSym(1),:value)::Float64,1.0))), :((top(getfield))(GenSym(1),:partials)::ForwardDiff.Partials{Float64,Tuple{}}))),:value)::Float64
+      ####a1#7192#7218 = GenSym(2)
+      ####a2#7193#7219 = GenSym(3)
+      $(Expr(:boundscheck, false))
+      ######_var0#7187#7198#7224 = (top(tuple))()::Tuple{}
+      goto 6
+      ######_var0#7187#7198#7224 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      6: 
+      GenSym(4) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(####a1#7192#7218::Float64,####a2#7193#7219::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      ##a#7225 = (top(getfield))(GenSym(4),:value)::Float64
+      ##div_a#7226 = (Base.box)(Base.Float64,(Base.div_float)(1.0,##a#7225::Float64))
+      ##deriv#7227 = (Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Base.Float64,(Base.div_float)(##div_a#7226::Float64,##a#7225::Float64))))
+      ####G#7199#7228 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7075#7079#7203#7232 = (top(tuple))()::Tuple{}
+      goto 8
+      ########_var0#7075#7079#7203#7232 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      8: 
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##div_a#7226::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- dual, integer ----
@@ -1381,10 +1509,74 @@ Body:
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   x::Int64
+  ##a#7204::Float64
+  ##exp_a#7205::Float64
+  ##deriv#7206::Float64
+  ####G#7165#7207::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7070#7076#7166#7208::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7071#7073#7077#7167#7209::Tuple{}
+  ##########x#7072#7074#7078#7168#7210::Float64
+  ########_var0#7075#7079#7169#7211::Tuple{}
+  ########types#7108#7170#7171#7212::Tuple{Type{Float64}}
+  ##xs#7213::Tuple{}
+  ##########tup#7172#7175#7179#7188#7214::Tuple{}
+  ##########x#7173#7176#7180#7189#7215::Irrational{:π}
+  ########_var0#7177#7181#7190#7216::Tuple{}
+  ##########types#7174#7178#7182#7191#7217::Tuple{Type{Irrational{:π}}}
+  ####a1#7192#7218::Float64
+  ####a2#7193#7219::Float64
+  ########a#7133#7183#7194#7220::Tuple{}
+  ########b#7134#7184#7195#7221::Tuple{}
+  ########afactor#7135#7185#7196#7222::Float64
+  ########bfactor#7136#7186#7197#7223::Float64
+  ######_var0#7187#7198#7224::Tuple{}
+  ##a#7225::Float64
+  ##div_a#7226::Float64
+  ##deriv#7227::Float64
+  ####G#7199#7228::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7070#7076#7200#7229::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7071#7073#7077#7201#7230::Tuple{}
+  ##########x#7072#7074#7078#7202#7231::Float64
+  ########_var0#7075#7079#7203#7232::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 103:
-      return (Distributions.pdf)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 78:
+      GenSym(0) = (Distributions.zval)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},x::Int64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      ##a#7204 = (top(getfield))(GenSym(0),:value)::Float64
+      ##exp_a#7205 = (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7204::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2)))::ANY)::Float64
+      ##deriv#7206 = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,2)),(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7204::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,(Base.box)(Int64,(Base.sub_int)(2,1))))))::Float64))
+      ####G#7165#7207 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7075#7079#7169#7211 = (top(tuple))()::Tuple{}
+      goto 1
+      ########_var0#7075#7079#7169#7211 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      1: 
+      GenSym(1) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##exp_a#7205::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      $(Expr(:boundscheck, false))
+      ########_var0#7177#7181#7190#7216 = (top(tuple))()::Tuple{}
+      goto 5
+      ########_var0#7177#7181#7190#7216 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      5: 
+      GenSym(2) = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,3.141592653589793))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64
+      GenSym(3) = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(GenSym(1),:value)::Float64,1.0))), :((top(getfield))(GenSym(1),:partials)::ForwardDiff.Partials{Float64,Tuple{}}))),:value)::Float64
+      ####a1#7192#7218 = GenSym(2)
+      ####a2#7193#7219 = GenSym(3)
+      $(Expr(:boundscheck, false))
+      ######_var0#7187#7198#7224 = (top(tuple))()::Tuple{}
+      goto 6
+      ######_var0#7187#7198#7224 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      6: 
+      GenSym(4) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(####a1#7192#7218::Float64,####a2#7193#7219::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      ##a#7225 = (top(getfield))(GenSym(4),:value)::Float64
+      ##div_a#7226 = (Base.box)(Base.Float64,(Base.div_float)(1.0,##a#7225::Float64))
+      ##deriv#7227 = (Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Base.Float64,(Base.div_float)(##div_a#7226::Float64,##a#7225::Float64))))
+      ####G#7199#7228 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7075#7079#7203#7232 = (top(tuple))()::Tuple{}
+      goto 8
+      ########_var0#7075#7079#7203#7232 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      8: 
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##div_a#7226::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- dual, float ----
@@ -1392,10 +1584,74 @@ Body:
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   x::Int64
+  ##a#7204::Float64
+  ##exp_a#7205::Float64
+  ##deriv#7206::Float64
+  ####G#7165#7207::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7070#7076#7166#7208::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7071#7073#7077#7167#7209::Tuple{}
+  ##########x#7072#7074#7078#7168#7210::Float64
+  ########_var0#7075#7079#7169#7211::Tuple{}
+  ########types#7108#7170#7171#7212::Tuple{Type{Float64}}
+  ##xs#7213::Tuple{}
+  ##########tup#7172#7175#7179#7188#7214::Tuple{}
+  ##########x#7173#7176#7180#7189#7215::Irrational{:π}
+  ########_var0#7177#7181#7190#7216::Tuple{}
+  ##########types#7174#7178#7182#7191#7217::Tuple{Type{Irrational{:π}}}
+  ####a1#7192#7218::Float64
+  ####a2#7193#7219::Float64
+  ########a#7133#7183#7194#7220::Tuple{}
+  ########b#7134#7184#7195#7221::Tuple{}
+  ########afactor#7135#7185#7196#7222::Float64
+  ########bfactor#7136#7186#7197#7223::Float64
+  ######_var0#7187#7198#7224::Tuple{}
+  ##a#7225::Float64
+  ##div_a#7226::Float64
+  ##deriv#7227::Float64
+  ####G#7199#7228::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7070#7076#7200#7229::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7071#7073#7077#7201#7230::Tuple{}
+  ##########x#7072#7074#7078#7202#7231::Float64
+  ########_var0#7075#7079#7203#7232::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 103:
-      return (Distributions.pdf)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 78:
+      GenSym(0) = (Distributions.zval)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},x::Int64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      ##a#7204 = (top(getfield))(GenSym(0),:value)::Float64
+      ##exp_a#7205 = (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7204::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2)))::ANY)::Float64
+      ##deriv#7206 = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,2)),(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7204::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,(Base.box)(Int64,(Base.sub_int)(2,1))))))::Float64))
+      ####G#7165#7207 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7075#7079#7169#7211 = (top(tuple))()::Tuple{}
+      goto 1
+      ########_var0#7075#7079#7169#7211 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      1: 
+      GenSym(1) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##exp_a#7205::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      $(Expr(:boundscheck, false))
+      ########_var0#7177#7181#7190#7216 = (top(tuple))()::Tuple{}
+      goto 5
+      ########_var0#7177#7181#7190#7216 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      5: 
+      GenSym(2) = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,3.141592653589793))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64
+      GenSym(3) = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(GenSym(1),:value)::Float64,1.0))), :((top(getfield))(GenSym(1),:partials)::ForwardDiff.Partials{Float64,Tuple{}}))),:value)::Float64
+      ####a1#7192#7218 = GenSym(2)
+      ####a2#7193#7219 = GenSym(3)
+      $(Expr(:boundscheck, false))
+      ######_var0#7187#7198#7224 = (top(tuple))()::Tuple{}
+      goto 6
+      ######_var0#7187#7198#7224 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      6: 
+      GenSym(4) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(####a1#7192#7218::Float64,####a2#7193#7219::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      ##a#7225 = (top(getfield))(GenSym(4),:value)::Float64
+      ##div_a#7226 = (Base.box)(Base.Float64,(Base.div_float)(1.0,##a#7225::Float64))
+      ##deriv#7227 = (Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Base.Float64,(Base.div_float)(##div_a#7226::Float64,##a#7225::Float64))))
+      ####G#7199#7228 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7075#7079#7203#7232 = (top(tuple))()::Tuple{}
+      goto 8
+      ########_var0#7075#7079#7203#7232 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      8: 
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##div_a#7226::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- dual, dual ----
@@ -1403,10 +1659,74 @@ Body:
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   x::Int64
+  ##a#7204::Float64
+  ##exp_a#7205::Float64
+  ##deriv#7206::Float64
+  ####G#7165#7207::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7070#7076#7166#7208::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7071#7073#7077#7167#7209::Tuple{}
+  ##########x#7072#7074#7078#7168#7210::Float64
+  ########_var0#7075#7079#7169#7211::Tuple{}
+  ########types#7108#7170#7171#7212::Tuple{Type{Float64}}
+  ##xs#7213::Tuple{}
+  ##########tup#7172#7175#7179#7188#7214::Tuple{}
+  ##########x#7173#7176#7180#7189#7215::Irrational{:π}
+  ########_var0#7177#7181#7190#7216::Tuple{}
+  ##########types#7174#7178#7182#7191#7217::Tuple{Type{Irrational{:π}}}
+  ####a1#7192#7218::Float64
+  ####a2#7193#7219::Float64
+  ########a#7133#7183#7194#7220::Tuple{}
+  ########b#7134#7184#7195#7221::Tuple{}
+  ########afactor#7135#7185#7196#7222::Float64
+  ########bfactor#7136#7186#7197#7223::Float64
+  ######_var0#7187#7198#7224::Tuple{}
+  ##a#7225::Float64
+  ##div_a#7226::Float64
+  ##deriv#7227::Float64
+  ####G#7199#7228::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7070#7076#7200#7229::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7071#7073#7077#7201#7230::Tuple{}
+  ##########x#7072#7074#7078#7202#7231::Float64
+  ########_var0#7075#7079#7203#7232::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 103:
-      return (Distributions.pdf)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 78:
+      GenSym(0) = (Distributions.zval)(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},x::Int64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      ##a#7204 = (top(getfield))(GenSym(0),:value)::Float64
+      ##exp_a#7205 = (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7204::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2)))::ANY)::Float64
+      ##deriv#7206 = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,2)),(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7204::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,(Base.box)(Int64,(Base.sub_int)(2,1))))))::Float64))
+      ####G#7165#7207 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7075#7079#7169#7211 = (top(tuple))()::Tuple{}
+      goto 1
+      ########_var0#7075#7079#7169#7211 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      1: 
+      GenSym(1) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##exp_a#7205::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      $(Expr(:boundscheck, false))
+      ########_var0#7177#7181#7190#7216 = (top(tuple))()::Tuple{}
+      goto 5
+      ########_var0#7177#7181#7190#7216 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      5: 
+      GenSym(2) = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,3.141592653589793))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64
+      GenSym(3) = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(GenSym(1),:value)::Float64,1.0))), :((top(getfield))(GenSym(1),:partials)::ForwardDiff.Partials{Float64,Tuple{}}))),:value)::Float64
+      ####a1#7192#7218 = GenSym(2)
+      ####a2#7193#7219 = GenSym(3)
+      $(Expr(:boundscheck, false))
+      ######_var0#7187#7198#7224 = (top(tuple))()::Tuple{}
+      goto 6
+      ######_var0#7187#7198#7224 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      6: 
+      GenSym(4) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(####a1#7192#7218::Float64,####a2#7193#7219::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      ##a#7225 = (top(getfield))(GenSym(4),:value)::Float64
+      ##div_a#7226 = (Base.box)(Base.Float64,(Base.div_float)(1.0,##a#7225::Float64))
+      ##deriv#7227 = (Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Base.Float64,(Base.div_float)(##div_a#7226::Float64,##a#7225::Float64))))
+      ####G#7199#7228 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7075#7079#7203#7232 = (top(tuple))()::Tuple{}
+      goto 8
+      ########_var0#7075#7079#7203#7232 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      8: 
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##div_a#7226::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 
@@ -1419,11 +1739,11 @@ ____________________________
 ---- integer, integer ----
 
 Variables:
-  d::Distributions.Cauchy{Int64}
+  d::Distributions.Cauchy{Float64}
   t::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 75:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 101:
       unless t::Int64 === 0::Bool goto 0
       return 1.0
       0: 
@@ -1437,7 +1757,7 @@ Variables:
   t::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 75:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 101:
       unless t::Int64 === 0::Bool goto 0
       return 1.0
       0: 
@@ -1451,7 +1771,7 @@ Variables:
   t::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 75:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 101:
       unless t::Int64 === 0::Bool goto 0
       return 1.0
       0: 
@@ -1465,7 +1785,7 @@ Variables:
   t::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 75:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 101:
       unless t::Int64 === 0::Bool goto 0
       return 1.0
       0: 
@@ -1479,7 +1799,7 @@ Variables:
   t::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 75:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 101:
       unless t::Int64 === 0::Bool goto 0
       return 1.0
       0: 
@@ -1493,7 +1813,7 @@ Variables:
   t::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 75:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 101:
       unless t::Int64 === 0::Bool goto 0
       return 1.0
       0: 
@@ -1507,7 +1827,7 @@ Variables:
   t::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 75:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 101:
       unless t::Int64 === 0::Bool goto 0
       return 1.0
       0: 
@@ -1521,7 +1841,7 @@ Variables:
   t::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 75:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 101:
       unless t::Int64 === 0::Bool goto 0
       return 1.0
       0: 
@@ -1535,7 +1855,7 @@ Variables:
   t::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 75:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 101:
       unless t::Int64 === 0::Bool goto 0
       return 1.0
       0: 
@@ -1552,15 +1872,15 @@ ____________________________
 ---- integer, integer ----
 
 Variables:
-  d::Distributions.Cauchy{Int64}
+  d::Distributions.Cauchy{Float64}
   t::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 76:
-      GenSym(0) = (Base.box)(Int64,(Base.mul_int)(t::Int64,(top(getfield))(d::Distributions.Cauchy{Int64},:μ)::Int64))
-      GenSym(1) = $(Expr(:new, Complex{Int64}, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:re)::Bool,GenSym(0),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)(GenSym(0),0)::Bool,(Base.box)(Int64,(Base.neg_int)(0)),0)::Int64)::Int64), :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:im)::Bool,GenSym(0),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)(GenSym(0),0)::Bool,(Base.box)(Int64,(Base.neg_int)(0)),0)::Int64)::Int64)))
-      return (Distributions.exp)($(Expr(:new, Complex{Int64}, :((Base.box)(Int64,(Base.sub_int)((top(getfield))(GenSym(1),:re)::Int64,(Base.box)(Int64,(Base.mul_int)((top(getfield))(d::Distributions.Cauchy{Int64},:σ)::Int64,(Base.box)(Int64,(Base.flipsign_int)(t::Int64,t::Int64))))))), :((top(getfield))(GenSym(1),:im)::Int64))))::UNION{COMPLEX{FLOAT64},COMPLEX{INT64}}
-  end::UNION{COMPLEX{FLOAT64},COMPLEX{INT64}}
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 102:
+      GenSym(0) = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)),(top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64))
+      GenSym(1) = $(Expr(:new, Complex{Float64}, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:re)::Bool,GenSym(0),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)((Base.box)(Int64,GenSym(0)),0)::Bool,(Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)))),(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Float64)::Float64), :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:im)::Bool,GenSym(0),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)((Base.box)(Int64,GenSym(0)),0)::Bool,(Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)))),(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Float64)::Float64)))
+      return (Distributions.exp)($(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.sub_float)((top(getfield))(GenSym(1),:re)::Float64,(Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,(Base.box)(Int64,(Base.flipsign_int)(t::Int64,t::Int64))))))))), :((top(getfield))(GenSym(1),:im)::Float64))))::Complex{Float64}
+  end::Complex{Float64}
 
 ---- integer, float ----
 
@@ -1569,7 +1889,7 @@ Variables:
   t::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 76:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 102:
       GenSym(0) = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)),(top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64))
       GenSym(1) = $(Expr(:new, Complex{Float64}, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:re)::Bool,GenSym(0),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)((Base.box)(Int64,GenSym(0)),0)::Bool,(Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)))),(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Float64)::Float64), :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:im)::Bool,GenSym(0),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)((Base.box)(Int64,GenSym(0)),0)::Bool,(Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)))),(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Float64)::Float64)))
       return (Distributions.exp)($(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.sub_float)((top(getfield))(GenSym(1),:re)::Float64,(Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,(Base.box)(Int64,(Base.flipsign_int)(t::Int64,t::Int64))))))))), :((top(getfield))(GenSym(1),:im)::Float64))))::Complex{Float64}
@@ -1580,27 +1900,27 @@ Body:
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   t::Int64
-  ######tup#7244#7247#7337::Tuple{}
-  ######x#7245#7248#7338::Int64
-  ####_var0#7249#7339::Tuple{}
-  ######types#7246#7250#7340::Tuple{Type{Int64}}
-  ########tup#7244#7247#7251#7341::Tuple{}
-  ########x#7245#7248#7252#7342::Int64
-  ######_var0#7249#7253#7343::Tuple{}
-  ########types#7246#7250#7254#7344::Tuple{Type{Int64}}
+  ######tup#7238#7240#7330::Tuple{}
+  ######x#7239#7241#7331::Int64
+  ####_var0#7242#7332::Tuple{}
+  ######types#7129#7243#7333::Tuple{Type{Int64}}
+  ########tup#7238#7240#7244#7334::Tuple{}
+  ########x#7239#7241#7245#7335::Int64
+  ######_var0#7242#7246#7336::Tuple{}
+  ########types#7129#7243#7247#7337::Tuple{Type{Int64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 76:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 102:
       $(Expr(:boundscheck, false))
-      ######_var0#7249#7253#7343 = (top(tuple))()::Tuple{}
+      ######_var0#7242#7246#7336 = (top(tuple))()::Tuple{}
       goto 4
-      ######_var0#7249#7253#7343 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ######_var0#7242#7246#7336 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       4: 
       GenSym(0) = Distributions.im * $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
       $(Expr(:boundscheck, false))
-      ####_var0#7249#7339 = (top(tuple))()::Tuple{}
+      ####_var0#7242#7332 = (top(tuple))()::Tuple{}
       goto 2
-      ####_var0#7249#7339 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ####_var0#7242#7332 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       2: 
       return (Distributions.exp)(GenSym(0) - $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,(Base.box)(Int64,(Base.flipsign_int)(t::Int64,t::Int64))))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   end::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
@@ -1612,7 +1932,7 @@ Variables:
   t::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 76:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 102:
       GenSym(0) = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)),(top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64))
       GenSym(1) = $(Expr(:new, Complex{Float64}, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:re)::Bool,GenSym(0),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)((Base.box)(Int64,GenSym(0)),0)::Bool,(Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)))),(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Float64)::Float64), :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:im)::Bool,GenSym(0),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)((Base.box)(Int64,GenSym(0)),0)::Bool,(Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)))),(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Float64)::Float64)))
       return (Distributions.exp)($(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.sub_float)((top(getfield))(GenSym(1),:re)::Float64,(Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,(Base.box)(Int64,(Base.flipsign_int)(t::Int64,t::Int64))))))))), :((top(getfield))(GenSym(1),:im)::Float64))))::Complex{Float64}
@@ -1625,7 +1945,7 @@ Variables:
   t::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 76:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 102:
       GenSym(0) = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)),(top(getfield))(d::Distributions.Cauchy{Float64},:μ)::Float64))
       GenSym(1) = $(Expr(:new, Complex{Float64}, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:re)::Bool,GenSym(0),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)((Base.box)(Int64,GenSym(0)),0)::Bool,(Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)))),(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Float64)::Float64), :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:im)::Bool,GenSym(0),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)((Base.box)(Int64,GenSym(0)),0)::Bool,(Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)))),(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Float64)::Float64)))
       return (Distributions.exp)($(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.sub_float)((top(getfield))(GenSym(1),:re)::Float64,(Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(d::Distributions.Cauchy{Float64},:σ)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,(Base.box)(Int64,(Base.flipsign_int)(t::Int64,t::Int64))))))))), :((top(getfield))(GenSym(1),:im)::Float64))))::Complex{Float64}
@@ -1636,27 +1956,27 @@ Body:
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   t::Int64
-  ######tup#7244#7247#7337::Tuple{}
-  ######x#7245#7248#7338::Int64
-  ####_var0#7249#7339::Tuple{}
-  ######types#7246#7250#7340::Tuple{Type{Int64}}
-  ########tup#7244#7247#7251#7341::Tuple{}
-  ########x#7245#7248#7252#7342::Int64
-  ######_var0#7249#7253#7343::Tuple{}
-  ########types#7246#7250#7254#7344::Tuple{Type{Int64}}
+  ######tup#7238#7240#7330::Tuple{}
+  ######x#7239#7241#7331::Int64
+  ####_var0#7242#7332::Tuple{}
+  ######types#7129#7243#7333::Tuple{Type{Int64}}
+  ########tup#7238#7240#7244#7334::Tuple{}
+  ########x#7239#7241#7245#7335::Int64
+  ######_var0#7242#7246#7336::Tuple{}
+  ########types#7129#7243#7247#7337::Tuple{Type{Int64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 76:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 102:
       $(Expr(:boundscheck, false))
-      ######_var0#7249#7253#7343 = (top(tuple))()::Tuple{}
+      ######_var0#7242#7246#7336 = (top(tuple))()::Tuple{}
       goto 4
-      ######_var0#7249#7253#7343 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ######_var0#7242#7246#7336 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       4: 
       GenSym(0) = Distributions.im * $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
       $(Expr(:boundscheck, false))
-      ####_var0#7249#7339 = (top(tuple))()::Tuple{}
+      ####_var0#7242#7332 = (top(tuple))()::Tuple{}
       goto 2
-      ####_var0#7249#7339 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ####_var0#7242#7332 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       2: 
       return (Distributions.exp)(GenSym(0) - $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,(Base.box)(Int64,(Base.flipsign_int)(t::Int64,t::Int64))))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   end::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
@@ -1666,27 +1986,27 @@ Body:
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   t::Int64
-  ######tup#7244#7247#7337::Tuple{}
-  ######x#7245#7248#7338::Int64
-  ####_var0#7249#7339::Tuple{}
-  ######types#7246#7250#7340::Tuple{Type{Int64}}
-  ########tup#7244#7247#7251#7341::Tuple{}
-  ########x#7245#7248#7252#7342::Int64
-  ######_var0#7249#7253#7343::Tuple{}
-  ########types#7246#7250#7254#7344::Tuple{Type{Int64}}
+  ######tup#7238#7240#7330::Tuple{}
+  ######x#7239#7241#7331::Int64
+  ####_var0#7242#7332::Tuple{}
+  ######types#7129#7243#7333::Tuple{Type{Int64}}
+  ########tup#7238#7240#7244#7334::Tuple{}
+  ########x#7239#7241#7245#7335::Int64
+  ######_var0#7242#7246#7336::Tuple{}
+  ########types#7129#7243#7247#7337::Tuple{Type{Int64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 76:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 102:
       $(Expr(:boundscheck, false))
-      ######_var0#7249#7253#7343 = (top(tuple))()::Tuple{}
+      ######_var0#7242#7246#7336 = (top(tuple))()::Tuple{}
       goto 4
-      ######_var0#7249#7253#7343 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ######_var0#7242#7246#7336 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       4: 
       GenSym(0) = Distributions.im * $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
       $(Expr(:boundscheck, false))
-      ####_var0#7249#7339 = (top(tuple))()::Tuple{}
+      ####_var0#7242#7332 = (top(tuple))()::Tuple{}
       goto 2
-      ####_var0#7249#7339 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ####_var0#7242#7332 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       2: 
       return (Distributions.exp)(GenSym(0) - $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,(Base.box)(Int64,(Base.flipsign_int)(t::Int64,t::Int64))))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   end::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
@@ -1696,27 +2016,27 @@ Body:
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   t::Int64
-  ######tup#7244#7247#7337::Tuple{}
-  ######x#7245#7248#7338::Int64
-  ####_var0#7249#7339::Tuple{}
-  ######types#7246#7250#7340::Tuple{Type{Int64}}
-  ########tup#7244#7247#7251#7341::Tuple{}
-  ########x#7245#7248#7252#7342::Int64
-  ######_var0#7249#7253#7343::Tuple{}
-  ########types#7246#7250#7254#7344::Tuple{Type{Int64}}
+  ######tup#7238#7240#7330::Tuple{}
+  ######x#7239#7241#7331::Int64
+  ####_var0#7242#7332::Tuple{}
+  ######types#7129#7243#7333::Tuple{Type{Int64}}
+  ########tup#7238#7240#7244#7334::Tuple{}
+  ########x#7239#7241#7245#7335::Int64
+  ######_var0#7242#7246#7336::Tuple{}
+  ########types#7129#7243#7247#7337::Tuple{Type{Int64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 76:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 102:
       $(Expr(:boundscheck, false))
-      ######_var0#7249#7253#7343 = (top(tuple))()::Tuple{}
+      ######_var0#7242#7246#7336 = (top(tuple))()::Tuple{}
       goto 4
-      ######_var0#7249#7253#7343 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ######_var0#7242#7246#7336 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       4: 
       GenSym(0) = Distributions.im * $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
       $(Expr(:boundscheck, false))
-      ####_var0#7249#7339 = (top(tuple))()::Tuple{}
+      ####_var0#7242#7332 = (top(tuple))()::Tuple{}
       goto 2
-      ####_var0#7249#7339 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ####_var0#7242#7332 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       2: 
       return (Distributions.exp)(GenSym(0) - $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,(Base.box)(Int64,(Base.flipsign_int)(t::Int64,t::Int64))))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   end::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
@@ -1726,27 +2046,27 @@ Body:
 Variables:
   d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   t::Int64
-  ######tup#7244#7247#7337::Tuple{}
-  ######x#7245#7248#7338::Int64
-  ####_var0#7249#7339::Tuple{}
-  ######types#7246#7250#7340::Tuple{Type{Int64}}
-  ########tup#7244#7247#7251#7341::Tuple{}
-  ########x#7245#7248#7252#7342::Int64
-  ######_var0#7249#7253#7343::Tuple{}
-  ########types#7246#7250#7254#7344::Tuple{Type{Int64}}
+  ######tup#7238#7240#7330::Tuple{}
+  ######x#7239#7241#7331::Int64
+  ####_var0#7242#7332::Tuple{}
+  ######types#7129#7243#7333::Tuple{Type{Int64}}
+  ########tup#7238#7240#7244#7334::Tuple{}
+  ########x#7239#7241#7245#7335::Int64
+  ######_var0#7242#7246#7336::Tuple{}
+  ########types#7129#7243#7247#7337::Tuple{Type{Int64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 76:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/cauchy.jl, line 102:
       $(Expr(:boundscheck, false))
-      ######_var0#7249#7253#7343 = (top(tuple))()::Tuple{}
+      ######_var0#7242#7246#7336 = (top(tuple))()::Tuple{}
       goto 4
-      ######_var0#7249#7253#7343 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ######_var0#7242#7246#7336 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       4: 
       GenSym(0) = Distributions.im * $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
       $(Expr(:boundscheck, false))
-      ####_var0#7249#7339 = (top(tuple))()::Tuple{}
+      ####_var0#7242#7332 = (top(tuple))()::Tuple{}
       goto 2
-      ####_var0#7249#7339 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ####_var0#7242#7332 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       2: 
       return (Distributions.exp)(GenSym(0) - $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.Cauchy{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,(Base.box)(Int64,(Base.flipsign_int)(t::Int64,t::Int64))))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   end::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}

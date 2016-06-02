@@ -21,7 +21,7 @@ Variables:
   d::Distributions.Geometric{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 21:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 44:
       return (top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64
   end::Float64
 
@@ -31,7 +31,7 @@ Variables:
   d::Distributions.Geometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 21:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 44:
       return (top(getfield))(d::Distributions.Geometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -48,7 +48,7 @@ Variables:
   d::Distributions.Geometric{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 22:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 45:
       return (Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,1)),(top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64))
   end::Float64
 
@@ -61,7 +61,7 @@ Variables:
   ####_var0#7068#7071::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 22:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 45:
       $(Expr(:boundscheck, false))
       ####_var0#7068#7071 = (top(tuple))()::Tuple{}
       goto 2
@@ -83,7 +83,7 @@ Variables:
   d::Distributions.Geometric{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 23:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 46:
       return (top(tuple))((top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64)::Tuple{Float64}
   end::Tuple{Float64}
 
@@ -93,7 +93,7 @@ Variables:
   d::Distributions.Geometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 23:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 46:
       return (top(tuple))((top(getfield))(d::Distributions.Geometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   end::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
@@ -110,7 +110,7 @@ Variables:
   d::Distributions.Geometric{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 28:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 51:
       return (Base.box)(Base.Float64,(Base.div_float)((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,1)),(top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64)),(top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64))
   end::Float64
 
@@ -131,7 +131,7 @@ Variables:
   ######types#7082#7090#7101::Tuple{Type{Float64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 28:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 51:
       GenSym(0) = (Distributions.failprob)(d::Distributions.Geometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       GenSym(1) = (top(getfield))(GenSym(0),:value)::Float64
       GenSym(2) = (top(getfield))((top(getfield))(d::Distributions.Geometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
@@ -161,7 +161,7 @@ Variables:
   d::Distributions.Geometric{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 34:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 57:
       GenSym(0) = (top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64
       return (Base.box)(Base.Float64,(Base.div_float)((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,1)),(top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64)),(Base.box)(Base.Float64,(Base.mul_float)(GenSym(0),GenSym(0)))))
   end::Float64
@@ -192,7 +192,7 @@ Variables:
   ######types#7082#7090#7142::Tuple{Type{Float64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 34:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 57:
       $(Expr(:boundscheck, false))
       ####_var0#7068#7131 = (top(tuple))()::Tuple{}
       goto 4
@@ -234,7 +234,7 @@ Variables:
   d::Distributions.Geometric{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 32:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 55:
       return 0
   end::Int64
 
@@ -244,7 +244,7 @@ Variables:
   d::Distributions.Geometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 32:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 55:
       return 0
   end::Int64
 
@@ -288,7 +288,7 @@ Variables:
   d::Distributions.Geometric{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 30:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 53:
       GenSym(0) = (Base.box)(Base.Float64,(Base.neg_float)((top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64))
       GenSym(2) = (top(ccall))((top(tuple))("log1p",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(0),0)::Float64
       GenSym(3) = (Base.Math.nan_dom_err)(GenSym(2),GenSym(0))::Float64
@@ -311,7 +311,7 @@ Variables:
   ##########s#7156#7157#7158#7159#7168::Tuple{ASCIIString,ASCIIString,Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 30:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 53:
       $(Expr(:boundscheck, false))
       ####_var0#7148#7161 = (top(tuple))()::Tuple{}
       goto 1
@@ -342,7 +342,7 @@ Variables:
   d::Distributions.Geometric{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 59:
       return (Base.box)(Base.Float64,(Base.div_float)((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,2)),(Base.box)(Float64,(Base.sitofp)(Float64,1)))),(top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64)),(Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,1)),(top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64))))::Float64))
   end::Float64
 
@@ -380,7 +380,7 @@ Variables:
   ######types#7082#7090#7216::Tuple{Type{Float64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 59:
       $(Expr(:boundscheck, false))
       ######_var0#7178#7182#7201 = (top(tuple))()::Tuple{}
       goto 7
@@ -433,7 +433,7 @@ Variables:
   d::Distributions.Geometric{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 61:
       GenSym(0) = (top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64
       return (Base.box)(Base.Float64,(Base.add_float)((Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,6)),(Base.box)(Float64,(Base.sitofp)(Float64,1)))),(Base.box)(Base.Float64,(Base.div_float)((Base.box)(Base.Float64,(Base.mul_float)(GenSym(0),GenSym(0))),(Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,1)),(top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64))))))
   end::Float64
@@ -471,7 +471,7 @@ Variables:
   ####_var0#7221#7248::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 61:
       $(Expr(:boundscheck, false))
       ######_var0#7178#7182#7244 = (top(tuple))()::Tuple{}
       goto 9
@@ -526,7 +526,7 @@ Variables:
   _var1::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 40:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 63:
       GenSym(3) = (top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64
       unless (Base.lt_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)),GenSym(3))::Bool goto 5
       GenSym(5) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(3),0)::Float64
@@ -555,7 +555,7 @@ Variables:
   ####T#7249#7251::Type{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 40:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 63:
       ####T#7249#7251 = Float64
       GenSym(1) = -((StatsFuns.xlogx)((top(getfield))(d::Distributions.Geometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::UNION{})::UNION{}
       GenSym(0) = (Distributions.failprob)(d::Distributions.Geometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
@@ -582,7 +582,7 @@ Variables:
   ##_var0#7272::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 114:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 137:
       $(Expr(:boundscheck, false))
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 3
       ########_var0#7254#7260#7265#7270 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
@@ -643,7 +643,7 @@ Variables:
   ########_var0#7113#7117#7278#7300::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 114:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 137:
       $(Expr(:boundscheck, false))
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 5
       ########_var0#7254#7260#7265#7290 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
@@ -713,10 +713,10 @@ Variables:
   p::ANY
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 46:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 69:
       NewvarNode(:p)
-      unless (Base.sle_int)(0,x::Int64)::Bool goto 1 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 47:
-      p = (top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 48:
+      unless (Base.sle_int)(0,x::Int64)::Bool goto 1 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 70:
+      p = (top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 71:
       unless (Base.lt_float)(p::Float64,(Base.box)(Base.Float64,(Base.div_float)((Base.box)(Float64,(Base.sitofp)(Float64,1)),(Base.box)(Float64,(Base.sitofp)(Float64,10)))))::Bool goto 0
       GenSym(0) = (Base.box)(Base.Float64,(Base.neg_float)(p::Float64))
       GenSym(2) = (top(ccall))((top(tuple))("log1p",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(0),0)::Float64
@@ -725,7 +725,7 @@ Body:
       0: 
       return (Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64,(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,1)),p::Float64)),(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,x::Int64))))::Float64))
       goto 2
-      1:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 50:
+      1:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 73:
       return (Distributions.zero)(p::UNION{})::UNION{}
       2: 
   end::Float64
@@ -786,10 +786,10 @@ Variables:
   ####_var0#7320#7373::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 46:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 69:
       NewvarNode(:p)
-      unless (Base.sle_int)(0,x::Int64)::Bool goto 1 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 47:
-      p = (top(getfield))(d::Distributions.Geometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 48:
+      unless (Base.sle_int)(0,x::Int64)::Bool goto 1 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 70:
+      p = (top(getfield))(d::Distributions.Geometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 71:
       ##div_a#7326 = (Base.box)(Base.Float64,(Base.div_float)((top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,10))))
       $(Expr(:boundscheck, false))
       ####_var0#7309#7329 = (top(tuple))()::Tuple{}
@@ -861,7 +861,7 @@ Body:
       24: 
       return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a1#7367::Float64,##a2#7368::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       goto 2
-      1:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 50:
+      1:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 73:
       return (Distributions.zero)(p::UNION{})::UNION{}
       2: 
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
@@ -881,8 +881,8 @@ Variables:
   p::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 101:
-      p = (top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 102:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 124:
+      p = (top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 125:
       GenSym(1) = (top(ccall))((top(tuple))("expm1",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Float64,(Base.sitofp)(Float64,(Base.box)(Int64,(Base.neg_int)(t::Int64)))),0)::Float64
       return (Base.box)(Base.Float64,(Base.div_float)(p::Float64,(Base.box)(Base.Float64,(Base.add_float)(GenSym(1),p::Float64))))
   end::Float64
@@ -907,8 +907,8 @@ Variables:
   ######types#7082#7090#7387::Tuple{Type{Float64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 101:
-      p = (top(getfield))(d::Distributions.Geometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 102:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 124:
+      p = (top(getfield))(d::Distributions.Geometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 125:
       GenSym(1) = (top(ccall))((top(tuple))("expm1",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Float64,(Base.sitofp)(Float64,(Base.box)(Int64,(Base.neg_int)(t::Int64)))),0)::Float64
       GenSym(2) = (top(getfield))(p::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
       GenSym(3) = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(p::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,GenSym(1)))), :((top(getfield))(p::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:partials)::ForwardDiff.Partials{Float64,Tuple{}}))),:value)::Float64
@@ -940,8 +940,8 @@ Variables:
   p::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 106:
-      p = (top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 108:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 129:
+      p = (top(getfield))(d::Distributions.Geometric{Float64},:p)::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 131:
       GenSym(0) = (Base.box)(Int64,(Base.neg_int)(t::Int64))
       GenSym(1) = (Distributions.exp)($(Expr(:new, Complex{Int64}, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:re)::Bool,GenSym(0),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)(GenSym(0),0)::Bool,(Base.box)(Int64,(Base.neg_int)(0)),0)::Int64)::Int64), :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:im)::Bool,GenSym(0),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)(GenSym(0),0)::Bool,(Base.box)(Int64,(Base.neg_int)(0)),0)::Int64)::Int64))))::UNION{COMPLEX{FLOAT64},COMPLEX{INT64}} - (Base.box)(Float64,(Base.sitofp)(Float64,1))::Complex{Float64}
       GenSym(2) = (Base.inv)($(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.add_float)(p::Float64,(top(getfield))(GenSym(1),:re)::Float64))), :((top(getfield))(GenSym(1),:im)::Float64))))::Complex{Float64}
@@ -956,8 +956,8 @@ Variables:
   p::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 106:
-      p = (top(getfield))(d::Distributions.Geometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 108:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 129:
+      p = (top(getfield))(d::Distributions.Geometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/geometric.jl, line 131:
       GenSym(0) = (Base.box)(Int64,(Base.neg_int)(t::Int64))
       GenSym(1) = ((Distributions.exp)($(Expr(:new, Complex{Int64}, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:re)::Bool,GenSym(0),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)(GenSym(0),0)::Bool,(Base.box)(Int64,(Base.neg_int)(0)),0)::Int64)::Int64), :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:im)::Bool,GenSym(0),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)(GenSym(0),0)::Bool,(Base.box)(Int64,(Base.neg_int)(0)),0)::Int64)::Int64))))::UNION{COMPLEX{FLOAT64},COMPLEX{INT64}} - $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))))::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}} + p::ForwardDiff.GradientNumber{0,Float64,Tuple{}}::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
       return p::ForwardDiff.GradientNumber{0,Float64,Tuple{}} * ((Base.conj)(GenSym(1))::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}} / (Base.abs2)(GenSym(1))::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}

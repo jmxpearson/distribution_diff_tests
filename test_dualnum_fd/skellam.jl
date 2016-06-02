@@ -1,18 +1,18 @@
 function f1(p)
-    Θ = 2
-    d = Logistic(p[1], Θ)
-    mean(d)
+    μ2 = 1
+    d = Skellam(p[1], μ2)
+    var(d)
 end
 
 function f2(p)
-    μ = 0
-    d = Logistic(μ, p[1])
+    μ1 = 1
+    d = Skellam(μ1, p[1])
     var(d)
 end
 
 function f3(x)
-    d = Logistic(x[1], x[2])
-    mean(d)
+    d = Skellam(x[1], x[2])
+    var(d)
 end
 
 function grad1(p)
@@ -20,11 +20,11 @@ function grad1(p)
 end
 
 function grad2(p)
-    [2p[1]*pi^2/3]
+    [1]
 end
 
 function grad3(x)
-    [1, 0]
+    [1, 1]
 end
 
 agrad1 = ForwardDiff.gradient(f1)
@@ -48,8 +48,8 @@ vec_pts = Vector{Float64}[
 ]
 
 for p in pts
-    @assert grad2(p) ≈ agrad2(p)
     @assert grad1(p) ≈ agrad1(p)
+    @assert grad2(p) ≈ agrad2(p)
 end
 
 for vp in vec_pts

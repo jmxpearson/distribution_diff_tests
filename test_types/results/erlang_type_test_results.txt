@@ -56,7 +56,7 @@ Variables:
   d::Distributions.Erlang{Int64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 30:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 47:
       return (top(tuple))((top(getfield))(d::Distributions.Erlang{Int64},:α)::Int64,(top(getfield))(d::Distributions.Erlang{Int64},:θ)::Int64)::Tuple{Int64,Int64}
   end::Tuple{Int64,Int64}
 
@@ -66,7 +66,7 @@ Variables:
   d::Distributions.Erlang{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 30:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 47:
       return (top(tuple))((top(getfield))(d::Distributions.Erlang{Float64},:α)::Int64,(top(getfield))(d::Distributions.Erlang{Float64},:θ)::Float64)::Tuple{Int64,Float64}
   end::Tuple{Int64,Float64}
 
@@ -76,7 +76,7 @@ Variables:
   d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 30:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 47:
       return (top(tuple))((top(getfield))(d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:α)::Int64,(top(getfield))(d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:θ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Tuple{Int64,ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   end::Tuple{Int64,ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
@@ -93,7 +93,7 @@ Variables:
   d::Distributions.Erlang{Int64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 34:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 51:
       return (Base.box)(Int64,(Base.mul_int)((top(getfield))(d::Distributions.Erlang{Int64},:α)::Int64,(top(getfield))(d::Distributions.Erlang{Int64},:θ)::Int64))
   end::Int64
 
@@ -103,7 +103,7 @@ Variables:
   d::Distributions.Erlang{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 34:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 51:
       return (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Erlang{Float64},:α)::Int64)),(top(getfield))(d::Distributions.Erlang{Float64},:θ)::Float64))
   end::Float64
 
@@ -117,7 +117,7 @@ Variables:
   ########types#7066#7070#7074#7078::Tuple{Type{Int64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 34:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 51:
       $(Expr(:boundscheck, false))
       ######_var0#7069#7073#7077 = (top(tuple))()::Tuple{}
       goto 1
@@ -139,7 +139,7 @@ Variables:
   d::Distributions.Erlang{Int64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 35:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 52:
       GenSym(0) = (Base.power_by_squaring)((top(getfield))(d::Distributions.Erlang{Int64},:θ)::Int64,2)::Int64
       return (Base.box)(Int64,(Base.mul_int)((top(getfield))(d::Distributions.Erlang{Int64},:α)::Int64,GenSym(0)))
   end::Int64
@@ -150,7 +150,7 @@ Variables:
   d::Distributions.Erlang{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 35:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 52:
       return (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Erlang{Float64},:α)::Int64)),(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((top(getfield))(d::Distributions.Erlang{Float64},:θ)::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2))))::Float64))
   end::Float64
 
@@ -172,7 +172,7 @@ Variables:
   ########types#7066#7070#7074#7110::Tuple{Type{Int64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 35:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 52:
       ##a#7099 = (top(getfield))((top(getfield))(d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:θ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
       ##exp_a#7100 = (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7099::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2)))::ANY)::Float64
       ##deriv#7101 = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,2)),(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7099::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,(Base.box)(Int64,(Base.sub_int)(2,1))))))::Float64))
@@ -207,7 +207,7 @@ Variables:
   #s25::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 40:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 57:
       GenSym(3) = (top(getfield))(d::Distributions.Erlang{Int64},:α)::Int64
       GenSym(4) = (top(getfield))(d::Distributions.Erlang{Int64},:θ)::Int64
       #s25 = 1
@@ -218,7 +218,7 @@ Body:
       GenSym(7) = GenSym(4)
       GenSym(8) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       θ = GenSym(7)
-      #s25 = GenSym(8) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 41:
+      #s25 = GenSym(8) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 58:
       unless (Base.sle_int)(1,α::Int64)::Bool goto 0
       return (Base.box)(Int64,(Base.mul_int)(θ::Int64,(Base.box)(Int64,(Base.sub_int)(α::Int64,1))))
       0: 
@@ -234,7 +234,7 @@ Variables:
   #s25::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 40:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 57:
       GenSym(3) = (top(getfield))(d::Distributions.Erlang{Float64},:α)::Int64
       GenSym(4) = (top(getfield))(d::Distributions.Erlang{Float64},:θ)::Float64
       #s25 = 1
@@ -245,7 +245,7 @@ Body:
       GenSym(7) = GenSym(4)
       GenSym(8) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       θ = GenSym(7)
-      #s25 = GenSym(8) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 41:
+      #s25 = GenSym(8) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 58:
       unless (Base.sle_int)(1,α::Int64)::Bool goto 0
       return (Base.box)(Base.Float64,(Base.mul_float)(θ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,(Base.box)(Int64,(Base.sub_int)(α::Int64,1))))))
       0: 
@@ -265,7 +265,7 @@ Variables:
   ######types#7066#7070#7121::Tuple{Type{Int64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 40:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 57:
       GenSym(3) = (top(getfield))(d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:α)::Int64
       GenSym(4) = (top(getfield))(d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:θ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       #s25 = 1
@@ -276,7 +276,7 @@ Body:
       GenSym(7) = GenSym(4)
       GenSym(8) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       θ = GenSym(7)
-      #s25 = GenSym(8) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 41:
+      #s25 = GenSym(8) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 58:
       unless (Base.sle_int)(1,α::Int64)::Bool goto 0
       $(Expr(:boundscheck, false))
       ####_var0#7069#7120 = (top(tuple))()::Tuple{}
@@ -380,7 +380,7 @@ Variables:
   d::Distributions.Erlang{Int64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 53:
       return (Base.box)(Base.Float64,(Base.div_float)(2.0,(Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Erlang{Int64},:α)::Int64))))::Float64))
   end::Float64
 
@@ -390,7 +390,7 @@ Variables:
   d::Distributions.Erlang{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 53:
       return (Base.box)(Base.Float64,(Base.div_float)(2.0,(Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Erlang{Float64},:α)::Int64))))::Float64))
   end::Float64
 
@@ -400,7 +400,7 @@ Variables:
   d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 53:
       return (Base.box)(Base.Float64,(Base.div_float)(2.0,(Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:α)::Int64))))::Float64))
   end::Float64
 
@@ -417,7 +417,7 @@ Variables:
   d::Distributions.Erlang{Int64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 54:
       return (Base.box)(Base.Float64,(Base.div_float)(6.0,(Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Erlang{Int64},:α)::Int64))))
   end::Float64
 
@@ -427,7 +427,7 @@ Variables:
   d::Distributions.Erlang{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 54:
       return (Base.box)(Base.Float64,(Base.div_float)(6.0,(Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Erlang{Float64},:α)::Int64))))
   end::Float64
 
@@ -437,7 +437,7 @@ Variables:
   d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 54:
       return (Base.box)(Base.Float64,(Base.div_float)(6.0,(Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:α)::Int64))))
   end::Float64
 
@@ -458,7 +458,7 @@ Variables:
   ##xs#7128::Tuple{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 45:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 62:
       GenSym(10) = (top(getfield))(d::Distributions.Erlang{Int64},:α)::Int64
       GenSym(11) = (top(getfield))(d::Distributions.Erlang{Int64},:θ)::Int64
       #s25 = 1
@@ -469,7 +469,7 @@ Body:
       GenSym(14) = GenSym(11)
       GenSym(15) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       θ = GenSym(14)
-      #s25 = GenSym(15) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 46:
+      #s25 = GenSym(15) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 63:
       GenSym(7) = (Base.box)(Float64,(Base.sitofp)(Float64,α::Int64))
       GenSym(9) = (top(ccall))((top(tuple))("lgamma",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(7),0)::Float64
       GenSym(6) = (Base.Math.digamma)((Base.box)(Float64,(Base.sitofp)(Float64,α::Int64)))::Float64
@@ -488,7 +488,7 @@ Variables:
   ##xs#7129::Tuple{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 45:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 62:
       GenSym(9) = (top(getfield))(d::Distributions.Erlang{Float64},:α)::Int64
       GenSym(10) = (top(getfield))(d::Distributions.Erlang{Float64},:θ)::Float64
       #s25 = 1
@@ -499,7 +499,7 @@ Body:
       GenSym(13) = GenSym(10)
       GenSym(14) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       θ = GenSym(13)
-      #s25 = GenSym(14) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 46:
+      #s25 = GenSym(14) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 63:
       GenSym(6) = (Base.box)(Float64,(Base.sitofp)(Float64,α::Int64))
       GenSym(8) = (top(ccall))((top(tuple))("lgamma",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(6),0)::Float64
       GenSym(5) = (Base.Math.digamma)((Base.box)(Float64,(Base.sitofp)(Float64,α::Int64)))::Float64
@@ -524,7 +524,7 @@ Variables:
   ##############types#7135#7136#7137#7138#7139#7140#7148::Tuple{Type{Float64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 45:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 62:
       GenSym(11) = (top(getfield))(d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:α)::Int64
       GenSym(12) = (top(getfield))(d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:θ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       #s25 = 1
@@ -535,7 +535,7 @@ Body:
       GenSym(15) = GenSym(12)
       GenSym(16) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       θ = GenSym(15)
-      #s25 = GenSym(16) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 46:
+      #s25 = GenSym(16) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 63:
       GenSym(6) = (Base.box)(Float64,(Base.sitofp)(Float64,α::Int64))
       GenSym(8) = (top(ccall))((top(tuple))("lgamma",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(6),0)::Float64
       GenSym(5) = (Base.Math.digamma)((Base.box)(Float64,(Base.sitofp)(Float64,α::Int64)))::Float64
@@ -565,7 +565,7 @@ Variables:
   d::Distributions.Erlang{Int64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 57:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 74:
       GenSym(48) = (Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Erlang{Int64},:α)::Int64))
       GenSym(49) = (Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Erlang{Int64},:θ)::Int64))
       return (top(ccall))((top(tuple))("rgamma",StatsFuns.Rmath.rmathlib)::Tuple{ASCIIString,ASCIIString},StatsFuns.Rmath.Float64,(top(svec))(StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble)::SimpleVector,GenSym(48),0,GenSym(49),0)::Float64
@@ -577,7 +577,7 @@ Variables:
   d::Distributions.Erlang{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 57:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 74:
       GenSym(48) = (Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Erlang{Float64},:α)::Int64))
       return (top(ccall))((top(tuple))("rgamma",StatsFuns.Rmath.rmathlib)::Tuple{ASCIIString,ASCIIString},StatsFuns.Rmath.Float64,(top(svec))(StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble)::SimpleVector,GenSym(48),0,(top(getfield))(d::Distributions.Erlang{Float64},:θ)::Float64,0)::Float64
   end::Float64
@@ -588,7 +588,7 @@ Variables:
   d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 57:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 74:
       return ((top(getfield))((top(getfield))(Distributions.StatsFuns,:Rmath)::ANY,:gammarand)::F)((top(getfield))(d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:α)::Int64,(top(getfield))(d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:θ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Float64
   end::Float64
 
@@ -606,11 +606,12 @@ Variables:
   x::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 103:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 320:
+      GenSym(0) = (Base.box)(Float64,(Base.sitofp)(Float64,x::Int64))
       GenSym(1) = (Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Erlang{Int64},:α)::Int64))
       GenSym(2) = (Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Erlang{Int64},:θ)::Int64))
       GenSym(3) = (Base.box)(Int32,(Base.checked_trunc_sint)(Int32,0))
-      return (top(ccall))((top(tuple))("dgamma",StatsFuns.Rmath.rmathlib)::Tuple{ASCIIString,ASCIIString},StatsFuns.Rmath.Float64,(top(svec))(StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cint)::SimpleVector,(Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)),0,GenSym(1),0,GenSym(2),0,GenSym(3),0)::Float64
+      return (top(ccall))((top(tuple))("dgamma",StatsFuns.Rmath.rmathlib)::Tuple{ASCIIString,ASCIIString},StatsFuns.Rmath.Float64,(top(svec))(StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cint)::SimpleVector,GenSym(0),0,GenSym(1),0,GenSym(2),0,GenSym(3),0)::Float64
   end::Float64
 
 ----float----
@@ -620,10 +621,11 @@ Variables:
   x::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 103:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 320:
+      GenSym(0) = (Base.box)(Float64,(Base.sitofp)(Float64,x::Int64))
       GenSym(1) = (Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Erlang{Float64},:α)::Int64))
       GenSym(3) = (Base.box)(Int32,(Base.checked_trunc_sint)(Int32,0))
-      return (top(ccall))((top(tuple))("dgamma",StatsFuns.Rmath.rmathlib)::Tuple{ASCIIString,ASCIIString},StatsFuns.Rmath.Float64,(top(svec))(StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cint)::SimpleVector,(Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)),0,GenSym(1),0,(top(getfield))(d::Distributions.Erlang{Float64},:θ)::Float64,0,GenSym(3),0)::Float64
+      return (top(ccall))((top(tuple))("dgamma",StatsFuns.Rmath.rmathlib)::Tuple{ASCIIString,ASCIIString},StatsFuns.Rmath.Float64,(top(svec))(StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cint)::SimpleVector,GenSym(0),0,GenSym(1),0,(top(getfield))(d::Distributions.Erlang{Float64},:θ)::Float64,0,GenSym(3),0)::Float64
   end::Float64
 
 ----dual----
@@ -633,8 +635,8 @@ Variables:
   x::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 103:
-      return (Distributions.gammapdf)((top(getfield))(d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:α)::Int64,(top(getfield))(d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:θ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},(Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)))::Float64
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 320:
+      return (Distributions.gammapdf)((top(getfield))(d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:α)::Int64,(top(getfield))(d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:θ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},x::Int64)::Float64
   end::Float64
 
 
@@ -651,7 +653,7 @@ Variables:
   t::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 49:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 66:
       return (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((Base.box)(Base.Float64,(Base.sub_float)(1.0,(Base.box)(Float64,(Base.sitofp)(Float64,(Base.box)(Int64,(Base.mul_int)(t::Int64,(top(getfield))(d::Distributions.Erlang{Int64},:θ)::Int64)))))),(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,(Base.box)(Int64,(Base.neg_int)((top(getfield))(d::Distributions.Erlang{Int64},:α)::Int64)))))::ANY)::Float64
   end::Float64
 
@@ -662,7 +664,7 @@ Variables:
   t::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 49:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 66:
       return (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((Base.box)(Base.Float64,(Base.sub_float)(1.0,(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)),(top(getfield))(d::Distributions.Erlang{Float64},:θ)::Float64)))),(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,(Base.box)(Int64,(Base.neg_int)((top(getfield))(d::Distributions.Erlang{Float64},:α)::Int64)))))::ANY)::Float64
   end::Float64
 
@@ -688,7 +690,7 @@ Variables:
   ########_var0#7089#7093#7098#7169::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 49:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 66:
       $(Expr(:boundscheck, false))
       ######_var0#7069#7073#7157 = (top(tuple))()::Tuple{}
       goto 2
@@ -729,7 +731,7 @@ Variables:
   _var0::Complex{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 50:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 67:
       GenSym(0) = (top(getfield))(d::Distributions.Erlang{Int64},:θ)::Int64
       GenSym(1) = $(Expr(:new, Complex{Int64}, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:re)::Bool,t::Int64,((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)(t::Int64,0)::Bool,(Base.box)(Int64,(Base.neg_int)(0)),0)::Int64)::Int64), :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:im)::Bool,t::Int64,((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)(t::Int64,0)::Bool,(Base.box)(Int64,(Base.neg_int)(0)),0)::Int64)::Int64)))
       GenSym(2) = $(Expr(:new, Complex{Int64}, :((Base.box)(Int64,(Base.mul_int)(GenSym(0),(top(getfield))(GenSym(1),:re)::Int64))), :((Base.box)(Int64,(Base.mul_int)(GenSym(0),(top(getfield))(GenSym(1),:im)::Int64)))))
@@ -755,7 +757,7 @@ Variables:
   _var0::Complex{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 50:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 67:
       GenSym(0) = (top(getfield))(d::Distributions.Erlang{Float64},:θ)::Float64
       GenSym(1) = $(Expr(:new, Complex{Int64}, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:re)::Bool,t::Int64,((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)(t::Int64,0)::Bool,(Base.box)(Int64,(Base.neg_int)(0)),0)::Int64)::Int64), :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:im)::Bool,t::Int64,((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)(t::Int64,0)::Bool,(Base.box)(Int64,(Base.neg_int)(0)),0)::Int64)::Int64)))
       GenSym(2) = $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.mul_float)(GenSym(0),(Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(GenSym(1),:re)::Int64))))), :((Base.box)(Base.Float64,(Base.mul_float)(GenSym(0),(Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(GenSym(1),:im)::Int64)))))))
@@ -779,7 +781,7 @@ Variables:
   ##xs#7425::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 50:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/erlang.jl, line 67:
       GenSym(0) = $(Expr(:new, Complex{Int64}, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:re)::Bool,t::Int64,((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)(t::Int64,0)::Bool,(Base.box)(Int64,(Base.neg_int)(0)),0)::Int64)::Int64), :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:im)::Bool,t::Int64,((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)(t::Int64,0)::Bool,(Base.box)(Int64,(Base.neg_int)(0)),0)::Int64)::Int64))) * (top(getfield))(d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:θ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
       GenSym(1) = 1.0 - GenSym(0)::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
       GenSym(2) = $(Expr(:new, Complex{Int64}, :((Base.box)(Int64,(Base.neg_int)((top(getfield))(d::Distributions.Erlang{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:α)::Int64))), 0))

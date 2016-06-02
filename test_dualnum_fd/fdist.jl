@@ -1,34 +1,37 @@
-function f1(α)
-    β = 2
-    d = BetaPrime(α[1], β)
-    mean(d)
+function f1(ν1)
+    ν2
+    ν2 = 2
+    d = FDist(ν1[1], ν2)
+    mode(d)
 end
 
-function f2(β)
-    α = 3
-    d = BetaPrime(α, β[1])
-    mean(d)
+function f2(ν2)
+    ν1 = 3
+    d = FDist(ν1, ν2[1])
+    mode(d)
 end
 
 function f3(x)
-    d = BetaPrime(x[1], x[2])
-    mean(d)
+    d = FDist(x[1], x[2])
+    mode(d)
 end
 
-function grad1(α)
-    β = 2
-    [1/(β - 1)]
+function grad1(p)
+    ν1 = p[1]
+    ν2 = 2
+    [(ν2/(ν2+2))(1/ν1 - (ν1-2)/ν1^2)]
 end
 
-function grad2(β)
-    α = 3
-    [-α/(β[1] - 1)^2]
+function grad2(p)
+    ν1 = 3
+    ν2 = p[1]
+    [((ν1-2)/ν1)(1/(ν2+2) - ν2/(ν2+2)^2)]
 end
 
 function grad3(x)
-    α = x[1]
-    β = x[2]
-    [1/(β - 1), -α/(β - 1)^2]
+    ν1 = x[1]
+    ν2 = x[2]
+    [(ν2/(ν2+2))(1/ν1 - (ν1-2)/ν1^2), ((ν1-2)/ν1)(1/(ν2+2) - ν2/(ν2+2)^2)]
 end
 
 agrad1 = ForwardDiff.gradient(f1)

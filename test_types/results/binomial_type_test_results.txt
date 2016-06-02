@@ -8,7 +8,7 @@ Variables:
   d::Distributions.Binomial{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 30:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 55:
       return (top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64
   end::Int64
 
@@ -18,7 +18,7 @@ Variables:
   d::Distributions.Binomial{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 30:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 55:
       return (top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64
   end::Int64
 
@@ -28,7 +28,7 @@ Variables:
   d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 30:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 55:
       return (top(getfield))(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:n)::Int64
   end::Int64
 
@@ -45,7 +45,7 @@ Variables:
   d::Distributions.Binomial{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 56:
       return (top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64
   end::Float64
 
@@ -55,7 +55,7 @@ Variables:
   d::Distributions.Binomial{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 56:
       return (top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64
   end::Float64
 
@@ -65,7 +65,7 @@ Variables:
   d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 56:
       return (top(getfield))(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -82,7 +82,7 @@ Variables:
   d::Distributions.Binomial{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 32:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 57:
       return (Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,1)),(top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64))
   end::Float64
 
@@ -92,7 +92,7 @@ Variables:
   d::Distributions.Binomial{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 32:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 57:
       return (Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,1)),(top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64))
   end::Float64
 
@@ -105,7 +105,7 @@ Variables:
   ######types#7065#7068#7071::Tuple{Type{Int64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 32:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 57:
       $(Expr(:boundscheck, false))
       ####_var0#7067#7070 = (top(tuple))()::Tuple{}
       goto 1
@@ -127,7 +127,7 @@ Variables:
   d::Distributions.Binomial{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 34:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 59:
       return (top(tuple))((top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64,(top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64)::Tuple{Int64,Float64}
   end::Tuple{Int64,Float64}
 
@@ -137,7 +137,7 @@ Variables:
   d::Distributions.Binomial{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 34:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 59:
       return (top(tuple))((top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64,(top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64)::Tuple{Int64,Float64}
   end::Tuple{Int64,Float64}
 
@@ -147,7 +147,7 @@ Variables:
   d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 34:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 59:
       return (top(tuple))((top(getfield))(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:n)::Int64,(top(getfield))(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Tuple{Int64,ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   end::Tuple{Int64,ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
@@ -164,7 +164,7 @@ Variables:
   d::Distributions.Binomial{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 39:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 64:
       return (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64)),(top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64))
   end::Float64
 
@@ -174,7 +174,7 @@ Variables:
   d::Distributions.Binomial{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 39:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 64:
       return (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64)),(top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64))
   end::Float64
 
@@ -188,7 +188,7 @@ Variables:
   ########types#7065#7078#7082#7086::Tuple{Type{Int64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 39:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 64:
       $(Expr(:boundscheck, false))
       ######_var0#7077#7081#7085 = (top(tuple))()::Tuple{}
       goto 3
@@ -211,7 +211,7 @@ Variables:
   ##xs#7087::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 40:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 65:
       return (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64)),(top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64)),(Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,1)),(top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64))))
   end::Float64
 
@@ -222,7 +222,7 @@ Variables:
   ##xs#7087::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 40:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 65:
       return (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64)),(top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64)),(Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,1)),(top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64))))
   end::Float64
 
@@ -244,7 +244,7 @@ Variables:
   ######_var0#7096#7107#7119::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 40:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 65:
       GenSym(0) = (Distributions.failprob)(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       $(Expr(:boundscheck, false))
       ########_var0#7077#7081#7099#7111 = (top(tuple))()::Tuple{}
@@ -279,7 +279,7 @@ Variables:
   #s8::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 41:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 66:
       GenSym(3) = (top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64
       GenSym(4) = (top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64
       #s8 = 1
@@ -306,7 +306,7 @@ Variables:
   #s8::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 41:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 66:
       GenSym(3) = (top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64
       GenSym(4) = (top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64
       #s8 = 1
@@ -333,7 +333,7 @@ Variables:
   #s8::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 41:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 66:
       GenSym(3) = (top(getfield))(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:n)::Int64
       GenSym(4) = (top(getfield))(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       #s8 = 1
@@ -364,7 +364,7 @@ Variables:
   d::Distributions.Binomial{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 42:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 67:
       return (Distributions.getindex)(Distributions.Int,(Distributions.mode)(d::Distributions.Binomial{Float64})::Int64)::Array{Int64,1}
   end::Array{Int64,1}
 
@@ -374,7 +374,7 @@ Variables:
   d::Distributions.Binomial{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 42:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 67:
       return (Distributions.getindex)(Distributions.Int,(Distributions.mode)(d::Distributions.Binomial{Float64})::Int64)::Array{Int64,1}
   end::Array{Int64,1}
 
@@ -384,7 +384,7 @@ Variables:
   d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 42:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 67:
       return (Distributions.getindex)(Distributions.Int,(Distributions.mode)(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::Int64)::Array{Int64,1}
   end::Array{Int64,1}
 
@@ -401,7 +401,7 @@ Variables:
   d::Distributions.Binomial{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 44:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 69:
       return (Base.trunc)(Int64,(Base.box)(Base.Float64,(Base.rint_llvm)((Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64)),(top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64)))))::Int64
   end::Int64
 
@@ -411,7 +411,7 @@ Variables:
   d::Distributions.Binomial{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 44:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 69:
       return (Base.trunc)(Int64,(Base.box)(Base.Float64,(Base.rint_llvm)((Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64)),(top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64)))))::Int64
   end::Int64
 
@@ -421,7 +421,7 @@ Variables:
   d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 44:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 69:
       GenSym(0) = (Distributions.mean)(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       return (Base.trunc)(Int64,(Base.box)(Base.Float64,(Base.rint_llvm)((top(getfield))(GenSym(0),:value)::Float64)))::Int64
   end::Int64
@@ -444,7 +444,7 @@ Variables:
   ##xs#7127::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 47:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 72:
       GenSym(3) = (top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64
       GenSym(4) = (top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64
       #s8 = 1
@@ -455,8 +455,8 @@ Body:
       GenSym(7) = GenSym(4)
       GenSym(8) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       p1 = GenSym(7)
-      #s8 = GenSym(8) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 48:
-      p0 = (Base.box)(Base.Float64,(Base.sub_float)(1.0,p1::Float64)) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 49:
+      #s8 = GenSym(8) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 73:
+      p0 = (Base.box)(Base.Float64,(Base.sub_float)(1.0,p1::Float64)) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 74:
       return (Base.box)(Base.Float64,(Base.div_float)((Base.box)(Base.Float64,(Base.sub_float)(p0::Float64,p1::Float64)),(Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,n::Int64)),p0::Float64)),p1::Float64))))::Float64))
   end::Float64
 
@@ -471,7 +471,7 @@ Variables:
   ##xs#7127::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 47:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 72:
       GenSym(3) = (top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64
       GenSym(4) = (top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64
       #s8 = 1
@@ -482,8 +482,8 @@ Body:
       GenSym(7) = GenSym(4)
       GenSym(8) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       p1 = GenSym(7)
-      #s8 = GenSym(8) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 48:
-      p0 = (Base.box)(Base.Float64,(Base.sub_float)(1.0,p1::Float64)) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 49:
+      #s8 = GenSym(8) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 73:
+      p0 = (Base.box)(Base.Float64,(Base.sub_float)(1.0,p1::Float64)) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 74:
       return (Base.box)(Base.Float64,(Base.div_float)((Base.box)(Base.Float64,(Base.sub_float)(p0::Float64,p1::Float64)),(Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,n::Int64)),p0::Float64)),p1::Float64))))::Float64))
   end::Float64
 
@@ -533,7 +533,7 @@ Variables:
   ######types#7158#7166#7202::Tuple{Type{Float64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 47:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 72:
       GenSym(9) = (top(getfield))(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:n)::Int64
       GenSym(10) = (top(getfield))(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       #s8 = 1
@@ -544,13 +544,13 @@ Body:
       GenSym(13) = GenSym(10)
       GenSym(14) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       p1 = GenSym(13)
-      #s8 = GenSym(14) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 48:
+      #s8 = GenSym(14) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 73:
       $(Expr(:boundscheck, false))
       ####_var0#7131#7168 = (top(tuple))()::Tuple{}
       goto 5
       ####_var0#7131#7168 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       5: 
-      p0 = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.sub_float)(1.0,(top(getfield))(p1::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 49:
+      p0 = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.sub_float)(1.0,(top(getfield))(p1::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 74:
       $(Expr(:boundscheck, false))
       ####_var0#7137#7191 = (top(tuple))()::Tuple{}
       goto 12
@@ -612,7 +612,7 @@ Variables:
   u::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 53:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 78:
       GenSym(3) = (top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64
       GenSym(4) = (top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64
       #s8 = 1
@@ -623,8 +623,8 @@ Body:
       GenSym(7) = GenSym(4)
       GenSym(8) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       p = GenSym(7)
-      #s8 = GenSym(8) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 54:
-      u = (Base.box)(Base.Float64,(Base.mul_float)(p::Float64,(Base.box)(Base.Float64,(Base.sub_float)(1.0,p::Float64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 55:
+      #s8 = GenSym(8) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 79:
+      u = (Base.box)(Base.Float64,(Base.mul_float)(p::Float64,(Base.box)(Base.Float64,(Base.sub_float)(1.0,p::Float64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 80:
       return (Base.box)(Base.Float64,(Base.div_float)((Base.box)(Base.Float64,(Base.sub_float)(1.0,(Base.box)(Base.Float64,(Base.mul_float)(6.0,u::Float64)))),(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,n::Int64)),u::Float64))))
   end::Float64
 
@@ -638,7 +638,7 @@ Variables:
   u::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 53:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 78:
       GenSym(3) = (top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64
       GenSym(4) = (top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64
       #s8 = 1
@@ -649,8 +649,8 @@ Body:
       GenSym(7) = GenSym(4)
       GenSym(8) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       p = GenSym(7)
-      #s8 = GenSym(8) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 54:
-      u = (Base.box)(Base.Float64,(Base.mul_float)(p::Float64,(Base.box)(Base.Float64,(Base.sub_float)(1.0,p::Float64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 55:
+      #s8 = GenSym(8) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 79:
+      u = (Base.box)(Base.Float64,(Base.mul_float)(p::Float64,(Base.box)(Base.Float64,(Base.sub_float)(1.0,p::Float64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 80:
       return (Base.box)(Base.Float64,(Base.div_float)((Base.box)(Base.Float64,(Base.sub_float)(1.0,(Base.box)(Base.Float64,(Base.mul_float)(6.0,u::Float64)))),(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,n::Int64)),u::Float64))))
   end::Float64
 
@@ -696,7 +696,7 @@ Variables:
   ######types#7158#7166#7244::Tuple{Type{Float64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 53:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 78:
       GenSym(7) = (top(getfield))(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:n)::Int64
       GenSym(8) = (top(getfield))(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       #s8 = 1
@@ -707,7 +707,7 @@ Body:
       GenSym(11) = GenSym(8)
       GenSym(12) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       p = GenSym(11)
-      #s8 = GenSym(12) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 54:
+      #s8 = GenSym(12) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 79:
       $(Expr(:boundscheck, false))
       ####_var0#7131#7214 = (top(tuple))()::Tuple{}
       goto 5
@@ -722,7 +722,7 @@ Body:
       goto 7
       ####_var0#7096#7222 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       7: 
-      u = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a1#7216::Float64,##a2#7217::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 55:
+      u = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a1#7216::Float64,##a2#7217::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 80:
       $(Expr(:boundscheck, false))
       ######_var0#7207#7211#7229 = (top(tuple))()::Tuple{}
       goto 11
@@ -766,7 +766,7 @@ Variables:
   d::Distributions.Binomial{Float64}
 
 Body:
-  begin $(Expr(:line, 59, symbol("/Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl"), symbol("")))
+  begin $(Expr(:line, 84, symbol("/Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl"), symbol("")))
       return (Distributions.__entropy#0__)(false,d::Distributions.Binomial{Float64})::Float64
   end::Float64
 
@@ -776,7 +776,7 @@ Variables:
   d::Distributions.Binomial{Float64}
 
 Body:
-  begin $(Expr(:line, 59, symbol("/Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl"), symbol("")))
+  begin $(Expr(:line, 84, symbol("/Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl"), symbol("")))
       return (Distributions.__entropy#0__)(false,d::Distributions.Binomial{Float64})::Float64
   end::Float64
 
@@ -786,7 +786,7 @@ Variables:
   d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin $(Expr(:line, 59, symbol("/Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl"), symbol("")))
+  begin $(Expr(:line, 84, symbol("/Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl"), symbol("")))
       return (Distributions.__entropy#0__)(false,d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -803,7 +803,7 @@ Variables:
   d::Distributions.Binomial{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 81:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 106:
       GenSym(48) = (Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64))
       GenSym(50) = (top(ccall))((top(tuple))("rbinom",StatsFuns.Rmath.rmathlib)::Tuple{ASCIIString,ASCIIString},StatsFuns.Rmath.Float64,(top(svec))(StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble)::SimpleVector,GenSym(48),0,(top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64,0)::Float64
       return (Base.box)(Int64,(Base.checked_fptosi)(Int64,GenSym(50)))
@@ -815,7 +815,7 @@ Variables:
   d::Distributions.Binomial{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 81:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 106:
       GenSym(48) = (Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64))
       GenSym(50) = (top(ccall))((top(tuple))("rbinom",StatsFuns.Rmath.rmathlib)::Tuple{ASCIIString,ASCIIString},StatsFuns.Rmath.Float64,(top(svec))(StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble)::SimpleVector,GenSym(48),0,(top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64,0)::Float64
       return (Base.box)(Int64,(Base.checked_fptosi)(Int64,GenSym(50)))
@@ -827,7 +827,7 @@ Variables:
   d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 81:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 106:
       GenSym(0) = ((top(getfield))((top(getfield))(Distributions.StatsFuns,:Rmath)::ANY,:binomrand)::F)((top(getfield))(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:n)::Int64,(top(getfield))(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Float64
       return (Base.box)(Int64,(Base.checked_fptosi)(Int64,GenSym(0)))
   end::Int64
@@ -846,7 +846,7 @@ Variables:
   x::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 331:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 320:
       GenSym(0) = (Base.box)(Float64,(Base.sitofp)(Float64,x::Int64))
       GenSym(1) = (Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64))
       GenSym(3) = (Base.box)(Int32,(Base.checked_trunc_sint)(Int32,0))
@@ -860,7 +860,7 @@ Variables:
   x::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 331:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 320:
       GenSym(0) = (Base.box)(Float64,(Base.sitofp)(Float64,x::Int64))
       GenSym(1) = (Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64))
       GenSym(3) = (Base.box)(Int32,(Base.checked_trunc_sint)(Int32,0))
@@ -874,7 +874,7 @@ Variables:
   x::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 331:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 320:
       return (Distributions.binompdf)((top(getfield))(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:n)::Int64,(top(getfield))(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},x::Int64)::Float64
   end::Float64
 
@@ -895,7 +895,7 @@ Variables:
   #s25::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 122:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 147:
       GenSym(5) = (top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64
       GenSym(6) = (top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64
       #s25 = 1
@@ -906,7 +906,7 @@ Body:
       GenSym(9) = GenSym(6)
       GenSym(10) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       p = GenSym(9)
-      #s25 = GenSym(10) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 123:
+      #s25 = GenSym(10) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 148:
       GenSym(4) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)),0)::Float64
       return (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((Base.box)(Base.Float64,(Base.add_float)((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,1)),p::Float64)),(Base.box)(Base.Float64,(Base.mul_float)(p::Float64,GenSym(4))))),(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,n::Int64)))::ANY)::Float64
   end::Float64
@@ -921,7 +921,7 @@ Variables:
   #s25::Int64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 122:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 147:
       GenSym(5) = (top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64
       GenSym(6) = (top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64
       #s25 = 1
@@ -932,7 +932,7 @@ Body:
       GenSym(9) = GenSym(6)
       GenSym(10) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       p = GenSym(9)
-      #s25 = GenSym(10) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 123:
+      #s25 = GenSym(10) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 148:
       GenSym(4) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)),0)::Float64
       return (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((Base.box)(Base.Float64,(Base.add_float)((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,1)),p::Float64)),(Base.box)(Base.Float64,(Base.mul_float)(p::Float64,GenSym(4))))),(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,n::Int64)))::ANY)::Float64
   end::Float64
@@ -965,7 +965,7 @@ Variables:
   ########_var0#7143#7147#7366#7384::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 122:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 147:
       GenSym(5) = (top(getfield))(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:n)::Int64
       GenSym(6) = (top(getfield))(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       #s25 = 1
@@ -976,7 +976,7 @@ Body:
       GenSym(9) = GenSym(6)
       GenSym(10) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       p = GenSym(9)
-      #s25 = GenSym(10) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 123:
+      #s25 = GenSym(10) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 148:
       $(Expr(:boundscheck, false))
       ####_var0#7137#7373 = (top(tuple))()::Tuple{}
       goto 9
@@ -1023,7 +1023,7 @@ Variables:
   _var0::Complex{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 127:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 152:
       GenSym(12) = (top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64
       GenSym(13) = (top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64
       #s25 = 1
@@ -1034,7 +1034,7 @@ Body:
       GenSym(16) = GenSym(13)
       GenSym(17) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       p = GenSym(16)
-      #s25 = GenSym(17) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 128:
+      #s25 = GenSym(17) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 153:
       GenSym(6) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
       GenSym(8) = (top(ccall))((top(tuple))("cos",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(6),0)::Float64
       GenSym(3) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
@@ -1062,7 +1062,7 @@ Variables:
   _var0::Complex{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 127:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 152:
       GenSym(12) = (top(getfield))(d::Distributions.Binomial{Float64},:n)::Int64
       GenSym(13) = (top(getfield))(d::Distributions.Binomial{Float64},:p)::Float64
       #s25 = 1
@@ -1073,7 +1073,7 @@ Body:
       GenSym(16) = GenSym(13)
       GenSym(17) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       p = GenSym(16)
-      #s25 = GenSym(17) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 128:
+      #s25 = GenSym(17) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 153:
       GenSym(6) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
       GenSym(8) = (top(ccall))((top(tuple))("cos",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(6),0)::Float64
       GenSym(3) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
@@ -1103,7 +1103,7 @@ Variables:
   ####_var0#7137#7588::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 127:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 152:
       GenSym(11) = (top(getfield))(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:n)::Int64
       GenSym(12) = (top(getfield))(d::Distributions.Binomial{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       #s25 = 1
@@ -1114,7 +1114,7 @@ Body:
       GenSym(15) = GenSym(12)
       GenSym(16) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       p = GenSym(15)
-      #s25 = GenSym(16) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 128:
+      #s25 = GenSym(16) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/binomial.jl, line 153:
       $(Expr(:boundscheck, false))
       ####_var0#7137#7588 = (top(tuple))()::Tuple{}
       goto 7

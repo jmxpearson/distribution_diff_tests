@@ -11,12 +11,17 @@ tests = [
     "rayleigh",
     "erlang",
     "laplace",
-    #"logistic",
+    "logistic",
     "cosine",
     "arcsine",
     "betaprime",
     "cauchy",
-    "chi"
+    "chi",
+    "exponential",
+    "negativebinomial",
+    "skellam",
+    "categorical"
+    #"fdist"
     ]
 
 print_with_color(:blue, "Running tests:\n")
