@@ -1,0 +1,513 @@
+____________________________
+ntrials
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+succprob
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+failprob
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+params
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{Int64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 35:
+      return (top(tuple))((top(getfield))(d::Distributions.FisherNoncentralHypergeometric{Int64},:ns)::Int64,(top(getfield))(d::Distributions.FisherNoncentralHypergeometric{Int64},:nf)::Int64,(top(getfield))(d::Distributions.FisherNoncentralHypergeometric{Int64},:n)::Int64,(top(getfield))(d::Distributions.FisherNoncentralHypergeometric{Int64},:ω)::Int64)::Tuple{Int64,Int64,Int64,Int64}
+  end::Tuple{Int64,Int64,Int64,Int64}
+
+----float----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 35:
+      return (top(tuple))((top(getfield))(d::Distributions.FisherNoncentralHypergeometric{Float64},:ns)::Int64,(top(getfield))(d::Distributions.FisherNoncentralHypergeometric{Float64},:nf)::Int64,(top(getfield))(d::Distributions.FisherNoncentralHypergeometric{Float64},:n)::Int64,(top(getfield))(d::Distributions.FisherNoncentralHypergeometric{Float64},:ω)::Float64)::Tuple{Int64,Int64,Int64,Float64}
+  end::Tuple{Int64,Int64,Int64,Float64}
+
+----dual----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 35:
+      return (top(tuple))((top(getfield))(d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:ns)::Int64,(top(getfield))(d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:nf)::Int64,(top(getfield))(d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:n)::Int64,(top(getfield))(d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:ω)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Tuple{Int64,Int64,Int64,ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  end::Tuple{Int64,Int64,Int64,ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+
+
+
+____________________________
+mean
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{Int64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 83:
+      GenSym(1) = (Distributions._P)(d::Distributions.FisherNoncentralHypergeometric{Int64},1)::Float64
+      GenSym(0) = (Distributions._P)(d::Distributions.FisherNoncentralHypergeometric{Int64},0)::Float64
+      return (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.sub_float)(GenSym(1),GenSym(0))),0)::Float64
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 83:
+      GenSym(1) = (Distributions._P)(d::Distributions.FisherNoncentralHypergeometric{Float64},1)::Float64
+      GenSym(0) = (Distributions._P)(d::Distributions.FisherNoncentralHypergeometric{Float64},0)::Float64
+      return (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.sub_float)(GenSym(1),GenSym(0))),0)::Float64
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 83:
+      return (Distributions.exp)((Distributions._P)(d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},1)::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}} - (Distributions._P)(d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},0)::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}}::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}})::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}}
+  end::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}}
+
+
+
+
+____________________________
+var
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{Int64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 84:
+      GenSym(4) = (Distributions._P)(d::Distributions.FisherNoncentralHypergeometric{Int64},2)::Float64
+      GenSym(3) = (Distributions._P)(d::Distributions.FisherNoncentralHypergeometric{Int64},0)::Float64
+      GenSym(6) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.sub_float)(GenSym(4),GenSym(3))),0)::Float64
+      GenSym(1) = (Distributions._P)(d::Distributions.FisherNoncentralHypergeometric{Int64},1)::Float64
+      GenSym(0) = (Distributions._P)(d::Distributions.FisherNoncentralHypergeometric{Int64},0)::Float64
+      GenSym(7) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,2)),(Base.box)(Base.Float64,(Base.sub_float)(GenSym(1),GenSym(0))))),0)::Float64
+      return (Base.box)(Base.Float64,(Base.sub_float)(GenSym(6),GenSym(7)))
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 84:
+      GenSym(4) = (Distributions._P)(d::Distributions.FisherNoncentralHypergeometric{Float64},2)::Float64
+      GenSym(3) = (Distributions._P)(d::Distributions.FisherNoncentralHypergeometric{Float64},0)::Float64
+      GenSym(6) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.sub_float)(GenSym(4),GenSym(3))),0)::Float64
+      GenSym(1) = (Distributions._P)(d::Distributions.FisherNoncentralHypergeometric{Float64},1)::Float64
+      GenSym(0) = (Distributions._P)(d::Distributions.FisherNoncentralHypergeometric{Float64},0)::Float64
+      GenSym(7) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,2)),(Base.box)(Base.Float64,(Base.sub_float)(GenSym(1),GenSym(0))))),0)::Float64
+      return (Base.box)(Base.Float64,(Base.sub_float)(GenSym(6),GenSym(7)))
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 84:
+      return (Distributions.exp)((Distributions._P)(d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},2)::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}} - (Distributions._P)(d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},0)::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}}::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}})::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}} - (Distributions.exp)(2 * ((Distributions._P)(d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},1)::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}} - (Distributions._P)(d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},0)::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}})::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}}::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}})::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}}::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}}
+  end::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}}
+
+
+
+
+____________________________
+mode
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{Int64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 85:
+      GenSym(0) = (Distributions._mode)(d::Distributions.FisherNoncentralHypergeometric{Int64})::Float64
+      return (Base.trunc)(Int64,(Base.box)(Base.Float64,(Base.floor_llvm)(GenSym(0))))::Int64
+  end::Int64
+
+----float----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 85:
+      GenSym(0) = (Distributions._mode)(d::Distributions.FisherNoncentralHypergeometric{Float64})::Float64
+      return (Base.trunc)(Int64,(Base.box)(Base.Float64,(Base.floor_llvm)(GenSym(0))))::Int64
+  end::Int64
+
+----dual----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 85:
+      GenSym(0) = (Distributions._mode)(d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      return (Base.trunc)(Int64,(Base.box)(Base.Float64,(Base.floor_llvm)((top(getfield))(GenSym(0),:value)::Float64)))::Int64
+  end::Int64
+
+
+
+
+____________________________
+modes
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{Int64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 74:
+      GenSym(0) = (Distributions._mode)(d::Distributions.FisherNoncentralHypergeometric{Int64})::Float64
+      return (top(vect))((Base.trunc)(Int64,(Base.box)(Base.Float64,(Base.floor_llvm)(GenSym(0))))::Int64)::Array{Int64,1}
+  end::Array{Int64,1}
+
+----float----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 74:
+      GenSym(0) = (Distributions._mode)(d::Distributions.FisherNoncentralHypergeometric{Float64})::Float64
+      return (top(vect))((Base.trunc)(Int64,(Base.box)(Base.Float64,(Base.floor_llvm)(GenSym(0))))::Int64)::Array{Int64,1}
+  end::Array{Int64,1}
+
+----dual----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 74:
+      GenSym(0) = (Distributions._mode)(d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      return (top(vect))((Base.trunc)(Int64,(Base.box)(Base.Float64,(Base.floor_llvm)((top(getfield))(GenSym(0),:value)::Float64)))::Int64)::Array{Int64,1}
+  end::Array{Int64,1}
+
+
+
+
+____________________________
+median
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{Int64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
+      return (Distributions.quantile)(d::Distributions.FisherNoncentralHypergeometric{Int64},0.5)::UNION{FLOAT64,INT64}
+  end::UNION{FLOAT64,INT64}
+
+----float----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
+      return (Distributions.quantile)(d::Distributions.FisherNoncentralHypergeometric{Float64},0.5)::UNION{FLOAT64,INT64}
+  end::UNION{FLOAT64,INT64}
+
+----dual----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
+      return (Distributions.quantile)(d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},0.5)::UNION{FLOAT64,INT64}
+  end::UNION{FLOAT64,INT64}
+
+
+
+
+____________________________
+skewness
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+kurtosis
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+entropy
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+rand
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{Int64}
+  ####_var0#7324#7326::UNION{BOOL,INT64}
+  ########_var0#7322#7323#7325#7327::Float64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
+      unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
+      ####_var0#7324#7326 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      goto 2
+      1: 
+      ####_var0#7324#7326 = false
+      2: 
+      ####_var0#7324#7326::UNION{BOOL,INT64}
+      $(Expr(:boundscheck, false))
+      GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
+      GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
+      ########_var0#7322#7323#7325#7327 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      goto 3
+      ########_var0#7322#7323#7325#7327 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      return (Distributions.quantile)(d::Distributions.FisherNoncentralHypergeometric{Int64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7322#7323#7325#7327::Float64,1.0)))::UNION{FLOAT64,INT64}
+  end::UNION{FLOAT64,INT64}
+
+----float----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{Float64}
+  ####_var0#7324#7329::UNION{BOOL,INT64}
+  ########_var0#7322#7323#7325#7330::Float64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
+      unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
+      ####_var0#7324#7329 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      goto 2
+      1: 
+      ####_var0#7324#7329 = false
+      2: 
+      ####_var0#7324#7329::UNION{BOOL,INT64}
+      $(Expr(:boundscheck, false))
+      GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
+      GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
+      ########_var0#7322#7323#7325#7330 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      goto 3
+      ########_var0#7322#7323#7325#7330 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      return (Distributions.quantile)(d::Distributions.FisherNoncentralHypergeometric{Float64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7322#7323#7325#7330::Float64,1.0)))::UNION{FLOAT64,INT64}
+  end::UNION{FLOAT64,INT64}
+
+----dual----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ####_var0#7324#7331::UNION{BOOL,INT64}
+  ########_var0#7322#7323#7325#7332::Float64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
+      unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
+      ####_var0#7324#7331 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      goto 2
+      1: 
+      ####_var0#7324#7331 = false
+      2: 
+      ####_var0#7324#7331::UNION{BOOL,INT64}
+      $(Expr(:boundscheck, false))
+      GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
+      GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
+      ########_var0#7322#7323#7325#7332 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      goto 3
+      ########_var0#7322#7323#7325#7332 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      return (Distributions.quantile)(d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7322#7323#7325#7332::Float64,1.0)))::UNION{FLOAT64,INT64}
+  end::UNION{FLOAT64,INT64}
+
+
+
+
+____________________________
+pdf
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{Int64}
+  k::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 94:
+      GenSym(0) = (Distributions.logpdf)(d::Distributions.FisherNoncentralHypergeometric{Int64},k::Int64)::Float64
+      return (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(0),0)::Float64
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{Float64}
+  k::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 94:
+      GenSym(0) = (Distributions.logpdf)(d::Distributions.FisherNoncentralHypergeometric{Float64},k::Int64)::Float64
+      return (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(0),0)::Float64
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  k::Int64
+  ##exp_a#7316::Float64
+  ####G#7157#7317::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7097#7103#7158#7318::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7098#7100#7104#7159#7319::Tuple{}
+  ##########x#7099#7101#7105#7160#7320::Float64
+  ########_var0#7102#7106#7161#7321::Tuple{}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 94:
+      GenSym(0) = (Distributions.logpdf)(d::Distributions.FisherNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},k::Int64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      ##exp_a#7316 = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(top(getfield))(GenSym(0),:value)::Float64,0)::Float64
+      ####G#7157#7317 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7102#7106#7161#7321 = (top(tuple))()::Tuple{}
+      goto 1
+      ########_var0#7102#7106#7161#7321 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      1: 
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##exp_a#7316::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+
+
+
+
+____________________________
+mgf
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+cf
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+

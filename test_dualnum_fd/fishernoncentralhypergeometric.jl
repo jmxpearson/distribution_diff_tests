@@ -1,11 +1,11 @@
 function f1(p)
     d = FisherNoncentralHypergeometric(2, 2, 2, p[1])
-    shit(d)
+    Distributions.testfd(d)
 end
 
 function grad(p)
     p1 = p[1]
-    [3p1^2]
+    [3*p1^2]
 end
 
 agrad = ForwardDiff.gradient(f1)

@@ -1,5 +1,5 @@
-dist = 'logistic'
-dist_name = 'Logistic'
+dist = 'walleniusnoncentralhypergeometric'
+dist_name = 'WalleniusNoncentralHypergeometric'
 script_name = dist + '_types.jl'
 
 funcs = ['ntrials', 'succprob', 'failprob', 'params', 'mean', 'var', \
@@ -43,9 +43,9 @@ with open(script_name, 'w') as f:
     f.write('dualnum = ForwardDiff.GradientNumber(2.0)\n\n')
 
     if zero_one_allowed:
-        f.write(dist + '_integer = ' + dist_name + '(integer)\n')
-    f.write(dist + '_float = ' + dist_name + '(float)\n')
-    f.write(dist + '_dual = ' + dist_name + '(dualnum)\n\n')
+        f.write(dist + '_integer = ' + dist_name + '(2, 2, 2, integer)\n')
+    f.write(dist + '_float = ' + dist_name + '(2, 2, 2, float)\n')
+    f.write(dist + '_dual = ' + dist_name + '(2, 2, 2, dualnum)\n\n')
 
     for func in funcs:
         print_heading(f, func)

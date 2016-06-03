@@ -1,0 +1,580 @@
+____________________________
+ntrials
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+succprob
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+failprob
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+params
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{Int64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 35:
+      return (top(tuple))((top(getfield))(d::Distributions.WalleniusNoncentralHypergeometric{Int64},:ns)::Int64,(top(getfield))(d::Distributions.WalleniusNoncentralHypergeometric{Int64},:nf)::Int64,(top(getfield))(d::Distributions.WalleniusNoncentralHypergeometric{Int64},:n)::Int64,(top(getfield))(d::Distributions.WalleniusNoncentralHypergeometric{Int64},:ω)::Int64)::Tuple{Int64,Int64,Int64,Int64}
+  end::Tuple{Int64,Int64,Int64,Int64}
+
+----float----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 35:
+      return (top(tuple))((top(getfield))(d::Distributions.WalleniusNoncentralHypergeometric{Float64},:ns)::Int64,(top(getfield))(d::Distributions.WalleniusNoncentralHypergeometric{Float64},:nf)::Int64,(top(getfield))(d::Distributions.WalleniusNoncentralHypergeometric{Float64},:n)::Int64,(top(getfield))(d::Distributions.WalleniusNoncentralHypergeometric{Float64},:ω)::Float64)::Tuple{Int64,Int64,Int64,Float64}
+  end::Tuple{Int64,Int64,Int64,Float64}
+
+----dual----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 35:
+      return (top(tuple))((top(getfield))(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:ns)::Int64,(top(getfield))(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:nf)::Int64,(top(getfield))(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:n)::Int64,(top(getfield))(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:ω)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Tuple{Int64,Int64,Int64,ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  end::Tuple{Int64,Int64,Int64,ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+
+
+
+____________________________
+mean
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{Int64}
+  ####args#7178#7182::Tuple{Function,UnitRange{Int64},Array{Float64,1}}
+  ######As#7175#7179#7183::Tuple{UnitRange{Int64},Array{Float64,1}}
+  ########vs#7173#7176#7180#7184::Tuple{Array{Float64,1}}
+  ##########vs#7154#7174#7177#7181#7185::Tuple{}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 130:
+      GenSym(1) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{Int64})::UnitRange{Int64}
+      GenSym(0) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{Int64})::UnitRange{Int64}
+      GenSym(2) = (Distributions._pdf!)((top(ccall))(:jl_new_array,(top(apply_type))(Base.Array,Float64,1)::Type{Array{Float64,1}},(top(svec))(Base.Any,Base.Any)::SimpleVector,Array{Float64,1},0,(top(tuple))((Base.box)(Int64,(Base.checked_sadd)((Base.box)(Int64,(Base.checked_ssub)((top(getfield))(GenSym(0),:stop)::Int64,(top(getfield))(GenSym(0),:start)::Int64)),1)))::Tuple{Int64},0)::Array{Float64,1},d::Distributions.WalleniusNoncentralHypergeometric{Int64},GenSym(0))::Array{Float64,1}
+      GenSym(5) = (Base.Broadcast.broadcast_shape)(GenSym(1),GenSym(2))::Tuple{Int64}
+      GenSym(6) = (Base.Broadcast.broadcast!)(Base.SparseMatrix.*,(top(ccall))(:jl_new_array,(top(apply_type))(Base.Array,Float64,1)::Type{Array{Float64,1}},(top(svec))(Base.Any,Base.Any)::SimpleVector,Array{Float64,1},0,GenSym(5),0)::Array{Float64,1},GenSym(1),GenSym(2))::Array{Float64,1}
+      return (Base._mapreduce)($(Expr(:new, :((top(getfield))(Base,:IdFun)::Type{Base.IdFun}))),$(Expr(:new, :((top(getfield))(Base,:AddFun)::Type{Base.AddFun}))),$(Expr(:new, :((top(getfield))(Base,:LinearFast)::Type{Base.LinearFast}))),GenSym(6))::Float64
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{Float64}
+  ####args#7178#7204::Tuple{Function,UnitRange{Int64},Array{Float64,1}}
+  ######As#7175#7179#7205::Tuple{UnitRange{Int64},Array{Float64,1}}
+  ########vs#7173#7176#7180#7206::Tuple{Array{Float64,1}}
+  ##########vs#7154#7174#7177#7181#7207::Tuple{}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 130:
+      GenSym(1) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{Float64})::UnitRange{Int64}
+      GenSym(0) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{Float64})::UnitRange{Int64}
+      GenSym(2) = (Distributions._pdf!)((top(ccall))(:jl_new_array,(top(apply_type))(Base.Array,Float64,1)::Type{Array{Float64,1}},(top(svec))(Base.Any,Base.Any)::SimpleVector,Array{Float64,1},0,(top(tuple))((Base.box)(Int64,(Base.checked_sadd)((Base.box)(Int64,(Base.checked_ssub)((top(getfield))(GenSym(0),:stop)::Int64,(top(getfield))(GenSym(0),:start)::Int64)),1)))::Tuple{Int64},0)::Array{Float64,1},d::Distributions.WalleniusNoncentralHypergeometric{Float64},GenSym(0))::Array{Float64,1}
+      GenSym(5) = (Base.Broadcast.broadcast_shape)(GenSym(1),GenSym(2))::Tuple{Int64}
+      GenSym(6) = (Base.Broadcast.broadcast!)(Base.SparseMatrix.*,(top(ccall))(:jl_new_array,(top(apply_type))(Base.Array,Float64,1)::Type{Array{Float64,1}},(top(svec))(Base.Any,Base.Any)::SimpleVector,Array{Float64,1},0,GenSym(5),0)::Array{Float64,1},GenSym(1),GenSym(2))::Array{Float64,1}
+      return (Base._mapreduce)($(Expr(:new, :((top(getfield))(Base,:IdFun)::Type{Base.IdFun}))),$(Expr(:new, :((top(getfield))(Base,:AddFun)::Type{Base.AddFun}))),$(Expr(:new, :((top(getfield))(Base,:LinearFast)::Type{Base.LinearFast}))),GenSym(6))::Float64
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ####args#7178#7227::Tuple{Function,UnitRange{Int64},Array{Float64,1}}
+  ######As#7175#7179#7228::Tuple{UnitRange{Int64},Array{Float64,1}}
+  ########vs#7173#7176#7180#7229::Tuple{Array{Float64,1}}
+  ##########vs#7154#7174#7177#7181#7230::Tuple{}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 130:
+      GenSym(1) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::UnitRange{Int64}
+      GenSym(0) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::UnitRange{Int64}
+      GenSym(2) = (Distributions._pdf!)((top(ccall))(:jl_new_array,(top(apply_type))(Base.Array,Float64,1)::Type{Array{Float64,1}},(top(svec))(Base.Any,Base.Any)::SimpleVector,Array{Float64,1},0,(top(tuple))((Base.box)(Int64,(Base.checked_sadd)((Base.box)(Int64,(Base.checked_ssub)((top(getfield))(GenSym(0),:stop)::Int64,(top(getfield))(GenSym(0),:start)::Int64)),1)))::Tuple{Int64},0)::Array{Float64,1},d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},GenSym(0))::Array{Float64,1}
+      GenSym(5) = (Base.Broadcast.broadcast_shape)(GenSym(1),GenSym(2))::Tuple{Int64}
+      GenSym(6) = (Base.Broadcast.broadcast!)(Base.SparseMatrix.*,(top(ccall))(:jl_new_array,(top(apply_type))(Base.Array,Float64,1)::Type{Array{Float64,1}},(top(svec))(Base.Any,Base.Any)::SimpleVector,Array{Float64,1},0,GenSym(5),0)::Array{Float64,1},GenSym(1),GenSym(2))::Array{Float64,1}
+      return (Base._mapreduce)($(Expr(:new, :((top(getfield))(Base,:IdFun)::Type{Base.IdFun}))),$(Expr(:new, :((top(getfield))(Base,:AddFun)::Type{Base.AddFun}))),$(Expr(:new, :((top(getfield))(Base,:LinearFast)::Type{Base.LinearFast}))),GenSym(6))::Float64
+  end::Float64
+
+
+
+
+____________________________
+var
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{Int64}
+  ####args#7248#7252::Tuple{Function,Array{Float64,1},Array{Float64,1}}
+  ######As#7245#7249#7253::Tuple{Array{Float64,1},Array{Float64,1}}
+  ########vs#7243#7246#7250#7254::Tuple{Array{Float64,1}}
+  ##########vs#7231#7244#7247#7251#7255::Tuple{}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 131:
+      GenSym(2) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{Int64})::UnitRange{Int64}
+      GenSym(1) = (Distributions.mean)(d::Distributions.WalleniusNoncentralHypergeometric{Int64})::Float64
+      GenSym(3) = $(Expr(:new, FloatRange{Float64}, :((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(GenSym(2),:start)::Int64)),GenSym(1)))), :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :((Base.box)(Float64,(Base.sitofp)(Float64,(Base.box)(Int64,(Base.checked_sadd)((Base.box)(Int64,(Base.checked_ssub)((top(getfield))(GenSym(2),:stop)::Int64,(top(getfield))(GenSym(2),:start)::Int64)),1))))), :((Base.box)(Float64,(Base.sitofp)(Float64,1))))) .^ 2::Array{Float64,1}
+      GenSym(0) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{Int64})::UnitRange{Int64}
+      GenSym(4) = (Distributions._pdf!)((top(ccall))(:jl_new_array,(top(apply_type))(Base.Array,Float64,1)::Type{Array{Float64,1}},(top(svec))(Base.Any,Base.Any)::SimpleVector,Array{Float64,1},0,(top(tuple))((Base.box)(Int64,(Base.checked_sadd)((Base.box)(Int64,(Base.checked_ssub)((top(getfield))(GenSym(0),:stop)::Int64,(top(getfield))(GenSym(0),:start)::Int64)),1)))::Tuple{Int64},0)::Array{Float64,1},d::Distributions.WalleniusNoncentralHypergeometric{Int64},GenSym(0))::Array{Float64,1}
+      GenSym(7) = (Base.Broadcast.broadcast_shape)(GenSym(3),GenSym(4))::Tuple{Int64}
+      GenSym(8) = (Base.Broadcast.broadcast!)(Base.SparseMatrix.*,(top(ccall))(:jl_new_array,(top(apply_type))(Base.Array,Float64,1)::Type{Array{Float64,1}},(top(svec))(Base.Any,Base.Any)::SimpleVector,Array{Float64,1},0,GenSym(7),0)::Array{Float64,1},GenSym(3),GenSym(4))::Array{Float64,1}
+      return (Base._mapreduce)($(Expr(:new, :((top(getfield))(Base,:IdFun)::Type{Base.IdFun}))),$(Expr(:new, :((top(getfield))(Base,:AddFun)::Type{Base.AddFun}))),$(Expr(:new, :((top(getfield))(Base,:LinearFast)::Type{Base.LinearFast}))),GenSym(8))::Float64
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{Float64}
+  ####args#7248#7256::Tuple{Function,Array{Float64,1},Array{Float64,1}}
+  ######As#7245#7249#7257::Tuple{Array{Float64,1},Array{Float64,1}}
+  ########vs#7243#7246#7250#7258::Tuple{Array{Float64,1}}
+  ##########vs#7231#7244#7247#7251#7259::Tuple{}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 131:
+      GenSym(2) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{Float64})::UnitRange{Int64}
+      GenSym(1) = (Distributions.mean)(d::Distributions.WalleniusNoncentralHypergeometric{Float64})::Float64
+      GenSym(3) = $(Expr(:new, FloatRange{Float64}, :((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(GenSym(2),:start)::Int64)),GenSym(1)))), :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :((Base.box)(Float64,(Base.sitofp)(Float64,(Base.box)(Int64,(Base.checked_sadd)((Base.box)(Int64,(Base.checked_ssub)((top(getfield))(GenSym(2),:stop)::Int64,(top(getfield))(GenSym(2),:start)::Int64)),1))))), :((Base.box)(Float64,(Base.sitofp)(Float64,1))))) .^ 2::Array{Float64,1}
+      GenSym(0) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{Float64})::UnitRange{Int64}
+      GenSym(4) = (Distributions._pdf!)((top(ccall))(:jl_new_array,(top(apply_type))(Base.Array,Float64,1)::Type{Array{Float64,1}},(top(svec))(Base.Any,Base.Any)::SimpleVector,Array{Float64,1},0,(top(tuple))((Base.box)(Int64,(Base.checked_sadd)((Base.box)(Int64,(Base.checked_ssub)((top(getfield))(GenSym(0),:stop)::Int64,(top(getfield))(GenSym(0),:start)::Int64)),1)))::Tuple{Int64},0)::Array{Float64,1},d::Distributions.WalleniusNoncentralHypergeometric{Float64},GenSym(0))::Array{Float64,1}
+      GenSym(7) = (Base.Broadcast.broadcast_shape)(GenSym(3),GenSym(4))::Tuple{Int64}
+      GenSym(8) = (Base.Broadcast.broadcast!)(Base.SparseMatrix.*,(top(ccall))(:jl_new_array,(top(apply_type))(Base.Array,Float64,1)::Type{Array{Float64,1}},(top(svec))(Base.Any,Base.Any)::SimpleVector,Array{Float64,1},0,GenSym(7),0)::Array{Float64,1},GenSym(3),GenSym(4))::Array{Float64,1}
+      return (Base._mapreduce)($(Expr(:new, :((top(getfield))(Base,:IdFun)::Type{Base.IdFun}))),$(Expr(:new, :((top(getfield))(Base,:AddFun)::Type{Base.AddFun}))),$(Expr(:new, :((top(getfield))(Base,:LinearFast)::Type{Base.LinearFast}))),GenSym(8))::Float64
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ####args#7248#7260::Tuple{Function,Array{Float64,1},Array{Float64,1}}
+  ######As#7245#7249#7261::Tuple{Array{Float64,1},Array{Float64,1}}
+  ########vs#7243#7246#7250#7262::Tuple{Array{Float64,1}}
+  ##########vs#7231#7244#7247#7251#7263::Tuple{}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 131:
+      GenSym(2) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::UnitRange{Int64}
+      GenSym(1) = (Distributions.mean)(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::Float64
+      GenSym(3) = $(Expr(:new, FloatRange{Float64}, :((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(GenSym(2),:start)::Int64)),GenSym(1)))), :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :((Base.box)(Float64,(Base.sitofp)(Float64,(Base.box)(Int64,(Base.checked_sadd)((Base.box)(Int64,(Base.checked_ssub)((top(getfield))(GenSym(2),:stop)::Int64,(top(getfield))(GenSym(2),:start)::Int64)),1))))), :((Base.box)(Float64,(Base.sitofp)(Float64,1))))) .^ 2::Array{Float64,1}
+      GenSym(0) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::UnitRange{Int64}
+      GenSym(4) = (Distributions._pdf!)((top(ccall))(:jl_new_array,(top(apply_type))(Base.Array,Float64,1)::Type{Array{Float64,1}},(top(svec))(Base.Any,Base.Any)::SimpleVector,Array{Float64,1},0,(top(tuple))((Base.box)(Int64,(Base.checked_sadd)((Base.box)(Int64,(Base.checked_ssub)((top(getfield))(GenSym(0),:stop)::Int64,(top(getfield))(GenSym(0),:start)::Int64)),1)))::Tuple{Int64},0)::Array{Float64,1},d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},GenSym(0))::Array{Float64,1}
+      GenSym(7) = (Base.Broadcast.broadcast_shape)(GenSym(3),GenSym(4))::Tuple{Int64}
+      GenSym(8) = (Base.Broadcast.broadcast!)(Base.SparseMatrix.*,(top(ccall))(:jl_new_array,(top(apply_type))(Base.Array,Float64,1)::Type{Array{Float64,1}},(top(svec))(Base.Any,Base.Any)::SimpleVector,Array{Float64,1},0,GenSym(7),0)::Array{Float64,1},GenSym(3),GenSym(4))::Array{Float64,1}
+      return (Base._mapreduce)($(Expr(:new, :((top(getfield))(Base,:IdFun)::Type{Base.IdFun}))),$(Expr(:new, :((top(getfield))(Base,:AddFun)::Type{Base.AddFun}))),$(Expr(:new, :((top(getfield))(Base,:LinearFast)::Type{Base.LinearFast}))),GenSym(8))::Float64
+  end::Float64
+
+
+
+
+____________________________
+mode
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{Int64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 132:
+      GenSym(3) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{Int64})::UnitRange{Int64}
+      GenSym(0) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{Int64})::UnitRange{Int64}
+      GenSym(1) = (Distributions._pdf!)((top(ccall))(:jl_new_array,(top(apply_type))(Base.Array,Float64,1)::Type{Array{Float64,1}},(top(svec))(Base.Any,Base.Any)::SimpleVector,Array{Float64,1},0,(top(tuple))((Base.box)(Int64,(Base.checked_sadd)((Base.box)(Int64,(Base.checked_ssub)((top(getfield))(GenSym(0),:stop)::Int64,(top(getfield))(GenSym(0),:start)::Int64)),1)))::Tuple{Int64},0)::Array{Float64,1},d::Distributions.WalleniusNoncentralHypergeometric{Int64},GenSym(0))::Array{Float64,1}
+      GenSym(2) = (Base.findmax)(GenSym(1))::Tuple{Float64,Int64}
+      return (Distributions.getindex)(GenSym(3),(Base.getfield)(GenSym(2),2)::Int64)::Int64
+  end::Int64
+
+----float----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 132:
+      GenSym(3) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{Float64})::UnitRange{Int64}
+      GenSym(0) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{Float64})::UnitRange{Int64}
+      GenSym(1) = (Distributions._pdf!)((top(ccall))(:jl_new_array,(top(apply_type))(Base.Array,Float64,1)::Type{Array{Float64,1}},(top(svec))(Base.Any,Base.Any)::SimpleVector,Array{Float64,1},0,(top(tuple))((Base.box)(Int64,(Base.checked_sadd)((Base.box)(Int64,(Base.checked_ssub)((top(getfield))(GenSym(0),:stop)::Int64,(top(getfield))(GenSym(0),:start)::Int64)),1)))::Tuple{Int64},0)::Array{Float64,1},d::Distributions.WalleniusNoncentralHypergeometric{Float64},GenSym(0))::Array{Float64,1}
+      GenSym(2) = (Base.findmax)(GenSym(1))::Tuple{Float64,Int64}
+      return (Distributions.getindex)(GenSym(3),(Base.getfield)(GenSym(2),2)::Int64)::Int64
+  end::Int64
+
+----dual----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 132:
+      GenSym(3) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::UnitRange{Int64}
+      GenSym(0) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::UnitRange{Int64}
+      GenSym(1) = (Distributions._pdf!)((top(ccall))(:jl_new_array,(top(apply_type))(Base.Array,Float64,1)::Type{Array{Float64,1}},(top(svec))(Base.Any,Base.Any)::SimpleVector,Array{Float64,1},0,(top(tuple))((Base.box)(Int64,(Base.checked_sadd)((Base.box)(Int64,(Base.checked_ssub)((top(getfield))(GenSym(0),:stop)::Int64,(top(getfield))(GenSym(0),:start)::Int64)),1)))::Tuple{Int64},0)::Array{Float64,1},d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},GenSym(0))::Array{Float64,1}
+      GenSym(2) = (Base.findmax)(GenSym(1))::Tuple{Float64,Int64}
+      return (Distributions.getindex)(GenSym(3),(Base.getfield)(GenSym(2),2)::Int64)::Int64
+  end::Int64
+
+
+
+
+____________________________
+modes
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{Int64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 74:
+      GenSym(3) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{Int64})::UnitRange{Int64}
+      GenSym(0) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{Int64})::UnitRange{Int64}
+      GenSym(1) = (Distributions._pdf!)((top(ccall))(:jl_new_array,(top(apply_type))(Base.Array,Float64,1)::Type{Array{Float64,1}},(top(svec))(Base.Any,Base.Any)::SimpleVector,Array{Float64,1},0,(top(tuple))((Base.box)(Int64,(Base.checked_sadd)((Base.box)(Int64,(Base.checked_ssub)((top(getfield))(GenSym(0),:stop)::Int64,(top(getfield))(GenSym(0),:start)::Int64)),1)))::Tuple{Int64},0)::Array{Float64,1},d::Distributions.WalleniusNoncentralHypergeometric{Int64},GenSym(0))::Array{Float64,1}
+      GenSym(2) = (Base.findmax)(GenSym(1))::Tuple{Float64,Int64}
+      return (top(vect))((Distributions.getindex)(GenSym(3),(Base.getfield)(GenSym(2),2)::Int64)::Int64)::Array{Int64,1}
+  end::Array{Int64,1}
+
+----float----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 74:
+      GenSym(3) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{Float64})::UnitRange{Int64}
+      GenSym(0) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{Float64})::UnitRange{Int64}
+      GenSym(1) = (Distributions._pdf!)((top(ccall))(:jl_new_array,(top(apply_type))(Base.Array,Float64,1)::Type{Array{Float64,1}},(top(svec))(Base.Any,Base.Any)::SimpleVector,Array{Float64,1},0,(top(tuple))((Base.box)(Int64,(Base.checked_sadd)((Base.box)(Int64,(Base.checked_ssub)((top(getfield))(GenSym(0),:stop)::Int64,(top(getfield))(GenSym(0),:start)::Int64)),1)))::Tuple{Int64},0)::Array{Float64,1},d::Distributions.WalleniusNoncentralHypergeometric{Float64},GenSym(0))::Array{Float64,1}
+      GenSym(2) = (Base.findmax)(GenSym(1))::Tuple{Float64,Int64}
+      return (top(vect))((Distributions.getindex)(GenSym(3),(Base.getfield)(GenSym(2),2)::Int64)::Int64)::Array{Int64,1}
+  end::Array{Int64,1}
+
+----dual----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 74:
+      GenSym(3) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::UnitRange{Int64}
+      GenSym(0) = (Distributions.support)(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::UnitRange{Int64}
+      GenSym(1) = (Distributions._pdf!)((top(ccall))(:jl_new_array,(top(apply_type))(Base.Array,Float64,1)::Type{Array{Float64,1}},(top(svec))(Base.Any,Base.Any)::SimpleVector,Array{Float64,1},0,(top(tuple))((Base.box)(Int64,(Base.checked_sadd)((Base.box)(Int64,(Base.checked_ssub)((top(getfield))(GenSym(0),:stop)::Int64,(top(getfield))(GenSym(0),:start)::Int64)),1)))::Tuple{Int64},0)::Array{Float64,1},d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},GenSym(0))::Array{Float64,1}
+      GenSym(2) = (Base.findmax)(GenSym(1))::Tuple{Float64,Int64}
+      return (top(vect))((Distributions.getindex)(GenSym(3),(Base.getfield)(GenSym(2),2)::Int64)::Int64)::Array{Int64,1}
+  end::Array{Int64,1}
+
+
+
+
+____________________________
+median
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{Int64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
+      return (Distributions.quantile)(d::Distributions.WalleniusNoncentralHypergeometric{Int64},0.5)::UNION{FLOAT64,INT64}
+  end::UNION{FLOAT64,INT64}
+
+----float----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
+      return (Distributions.quantile)(d::Distributions.WalleniusNoncentralHypergeometric{Float64},0.5)::UNION{FLOAT64,INT64}
+  end::UNION{FLOAT64,INT64}
+
+----dual----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
+      return (Distributions.quantile)(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},0.5)::UNION{FLOAT64,INT64}
+  end::UNION{FLOAT64,INT64}
+
+
+
+
+____________________________
+skewness
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+kurtosis
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+entropy
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{Int64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 134:
+      return 1.0
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 134:
+      return 1.0
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 134:
+      return 1.0
+  end::Float64
+
+
+
+
+____________________________
+rand
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{Int64}
+  ####_var0#7277#7279::UNION{BOOL,INT64}
+  ########_var0#7275#7276#7278#7280::Float64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
+      unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
+      ####_var0#7277#7279 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      goto 2
+      1: 
+      ####_var0#7277#7279 = false
+      2: 
+      ####_var0#7277#7279::UNION{BOOL,INT64}
+      $(Expr(:boundscheck, false))
+      GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
+      GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
+      ########_var0#7275#7276#7278#7280 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      goto 3
+      ########_var0#7275#7276#7278#7280 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      return (Distributions.quantile)(d::Distributions.WalleniusNoncentralHypergeometric{Int64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7275#7276#7278#7280::Float64,1.0)))::UNION{FLOAT64,INT64}
+  end::UNION{FLOAT64,INT64}
+
+----float----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{Float64}
+  ####_var0#7277#7281::UNION{BOOL,INT64}
+  ########_var0#7275#7276#7278#7282::Float64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
+      unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
+      ####_var0#7277#7281 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      goto 2
+      1: 
+      ####_var0#7277#7281 = false
+      2: 
+      ####_var0#7277#7281::UNION{BOOL,INT64}
+      $(Expr(:boundscheck, false))
+      GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
+      GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
+      ########_var0#7275#7276#7278#7282 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      goto 3
+      ########_var0#7275#7276#7278#7282 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      return (Distributions.quantile)(d::Distributions.WalleniusNoncentralHypergeometric{Float64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7275#7276#7278#7282::Float64,1.0)))::UNION{FLOAT64,INT64}
+  end::UNION{FLOAT64,INT64}
+
+----dual----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ####_var0#7277#7283::UNION{BOOL,INT64}
+  ########_var0#7275#7276#7278#7284::Float64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
+      unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
+      ####_var0#7277#7283 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      goto 2
+      1: 
+      ####_var0#7277#7283 = false
+      2: 
+      ####_var0#7277#7283::UNION{BOOL,INT64}
+      $(Expr(:boundscheck, false))
+      GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
+      GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
+      ########_var0#7275#7276#7278#7284 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      goto 3
+      ########_var0#7275#7276#7278#7284 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      return (Distributions.quantile)(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7275#7276#7278#7284::Float64,1.0)))::UNION{FLOAT64,INT64}
+  end::UNION{FLOAT64,INT64}
+
+
+
+
+____________________________
+pdf
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{Int64}
+  k::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 146:
+      return (Distributions.exp)((Distributions.logpdf)(d::Distributions.WalleniusNoncentralHypergeometric{Int64},k::Int64)::ANY)::ANY
+  end::ANY
+
+----float----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{Float64}
+  k::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 146:
+      return (Distributions.exp)((Distributions.logpdf)(d::Distributions.WalleniusNoncentralHypergeometric{Float64},k::Int64)::ANY)::ANY
+  end::ANY
+
+----dual----
+
+Variables:
+  d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  k::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/noncentralhypergeometric.jl, line 146:
+      return (Distributions.exp)((Distributions.logpdf)(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},k::Int64)::ANY)::ANY
+  end::ANY
+
+
+
+
+____________________________
+mgf
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+cf
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+

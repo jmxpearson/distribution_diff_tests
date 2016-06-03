@@ -17,5 +17,7 @@ $julia exponential_types.jl > results/exponential_type_test_results.txt
 $julia logistic_types.jl > results/logistic_type_test_results.txt
 $julia negativebinomial_types.jl > results/negativebinomial_type_test_results.txt
 $julia skellam_types.jl > results/skellam_type_test_results.txt
-fi
 $julia categorical_types.jl > results/categorical_type_test_results.txt
+fi
+$julia fishernoncentralhypergeometric_types.jl > results/fishernoncentralhypergeometric_type_test_results.txt
+$julia walleniusnoncentralhypergeometric_types.jl > results/walleniusnoncentralhypergeometric_type_test_results.txt
