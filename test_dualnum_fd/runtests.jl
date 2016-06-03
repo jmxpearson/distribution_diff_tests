@@ -20,8 +20,11 @@ tests = [
     "exponential",
     "negativebinomial",
     "skellam",
-    "categorical"
-    #"fdist"
+    "categorical",
+    #"poissonbinomial",
+    #"fdist",
+    "fishernoncentralhypergeometric",
+    "walleniusnoncentralhypergeometric"
     ]
 
 print_with_color(:blue, "Running tests:\n")

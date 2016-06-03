@@ -1,5 +1,6 @@
 julia='/Applications/Julia-0.4.5.app/Contents/Resources/julia/bin/julia'
-if false then
+if false
+then
 $julia binomial_types.jl > results/binomial_type_test_results.txt
 $julia geometric_types.jl > results/geometric_type_test_results.txt
 $julia bernoulli_types.jl > results/bernoulli_type_test_results.txt
@@ -17,3 +18,4 @@ $julia logistic_types.jl > results/logistic_type_test_results.txt
 $julia negativebinomial_types.jl > results/negativebinomial_type_test_results.txt
 $julia skellam_types.jl > results/skellam_type_test_results.txt
 fi
+$julia categorical_types.jl > results/categorical_type_test_results.txt
