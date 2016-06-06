@@ -18,6 +18,13 @@ $julia logistic_types.jl > results/logistic_type_test_results.txt
 $julia negativebinomial_types.jl > results/negativebinomial_type_test_results.txt
 $julia skellam_types.jl > results/skellam_type_test_results.txt
 $julia categorical_types.jl > results/categorical_type_test_results.txt
-fi
 $julia fishernoncentralhypergeometric_types.jl > results/fishernoncentralhypergeometric_type_test_results.txt
 $julia walleniusnoncentralhypergeometric_types.jl > results/walleniusnoncentralhypergeometric_type_test_results.txt
+$julia epanechnikov_types.jl > results/epanechnikov_type_test_results.txt
+$julia fdist_types.jl > results/fdist_type_test_results.txt
+$julia frechet_types.jl > results/frechet_type_test_results.txt
+$julia gamma_types.jl > results/gamma_type_test_results.txt
+$julia poisson_types.jl > results/poisson_type_test_results.txt
+$julia generalizedextremevalue_types.jl > results/generalizedextremevalue_type_test_results.txt
+fi
+$julia generalizedpareto_types.jl > results/generalizedpareto_type_test_results.txt

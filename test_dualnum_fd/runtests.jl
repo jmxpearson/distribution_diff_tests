@@ -22,9 +22,15 @@ tests = [
     "skellam",
     "categorical",
     #"poissonbinomial",
-    #"fdist",
+    "fdist",
     "fishernoncentralhypergeometric",
-    "walleniusnoncentralhypergeometric"
+    "walleniusnoncentralhypergeometric",
+    "epanechnikov",
+    "frechet",
+    "gamma",
+    "poisson",
+    "generalizedextremevalue",
+    "generalizedpareto"
     ]
 
 print_with_color(:blue, "Running tests:\n")

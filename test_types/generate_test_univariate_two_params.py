@@ -1,5 +1,5 @@
-dist = 'skellam'
-dist_name = 'Skellam'
+dist = 'gamma'
+dist_name = 'Gamma'
 script_name = dist + '_types.jl'
 
 funcs = ['ntrials', 'succprob', 'failprob', 'params', 'mean', 'var', \

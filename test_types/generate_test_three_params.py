@@ -1,5 +1,5 @@
-dist = 'poisson'
-dist_name = 'Poisson'
+dist = 'generalizedpareto'
+dist_name = 'GeneralizedPareto'
 script_name = dist + '_types.jl'
 
 funcs = ['ntrials', 'succprob', 'failprob', 'params', 'mean', 'var', \
@@ -43,9 +43,9 @@ with open(script_name, 'w') as f:
     f.write('dualnum = ForwardDiff.GradientNumber(2.0)\n\n')
 
     if zero_one_allowed:
-        f.write(dist + '_integer = ' + dist_name + '(integer)\n')
-    f.write(dist + '_float = ' + dist_name + '(float)\n')
-    f.write(dist + '_dual = ' + dist_name + '(dualnum)\n\n')
+        f.write(dist + '_integer = ' + dist_name + '(integer, integer, integer)\n')
+    f.write(dist + '_float = ' + dist_name + '(float, float, float)\n')
+    f.write(dist + '_dual = ' + dist_name + '(dualnum, dualnum, dualnum)\n\n')
 
     for func in funcs:
         print_heading(f, func)
