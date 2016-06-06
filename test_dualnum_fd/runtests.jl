@@ -30,7 +30,8 @@ tests = [
     "gamma",
     "poisson",
     "generalizedextremevalue",
-    "generalizedpareto"
+    "generalizedpareto",
+    "gumbel"
     ]
 
 print_with_color(:blue, "Running tests:\n")
