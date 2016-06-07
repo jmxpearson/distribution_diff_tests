@@ -1,5 +1,5 @@
-dist = 'gamma'
-dist_name = 'Gamma'
+dist = 'normalcanon'
+dist_name = 'NormalCanon'
 script_name = dist + '_types.jl'
 
 funcs = ['ntrials', 'succprob', 'failprob', 'params', 'mean', 'var', \

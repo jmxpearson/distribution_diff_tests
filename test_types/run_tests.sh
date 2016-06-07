@@ -26,5 +26,13 @@ $julia frechet_types.jl > results/frechet_type_test_results.txt
 $julia gamma_types.jl > results/gamma_type_test_results.txt
 $julia poisson_types.jl > results/poisson_type_test_results.txt
 $julia generalizedextremevalue_types.jl > results/generalizedextremevalue_type_test_results.txt
-fi
 $julia generalizedpareto_types.jl > results/generalizedpareto_type_test_results.txt
+$julia gumbel_types.jl > results/gubmel_type_test_results.txt
+$julia inversegamma_types.jl > results/inversegamma_type_test_results.txt
+$julia inversegaussian_types.jl > results/inversegaussian_type_test_results.txt
+$julia lognormal_types.jl > results/lognormal_type_test_results.txt
+$julia noncentralchisq_types.jl > results/noncentralchisq_type_test_results.txt
+$julia noncentralf_types.jl > results/noncentralf_type_test_results.txt
+$julia normal_types.jl > results/normal_type_test_results.txt
+fi
+$julia normalcanon_types.jl > results/normalcanon_type_test_results.txt

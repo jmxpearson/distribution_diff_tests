@@ -31,7 +31,13 @@ tests = [
     "poisson",
     "generalizedextremevalue",
     "generalizedpareto",
-    "gumbel"
+    "gumbel",
+    "inversegamma",
+    "inversegaussian",
+    "lognormal",
+    "noncentralchisq",
+    "noncentralf",
+    "normalcanon"
     ]
 
 print_with_color(:blue, "Running tests:\n")

@@ -20,32 +20,12 @@
     <favorites_list name="test_types" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="generate_test_univariate.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generate_test_univariate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generate_test_three_params.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/generate_test_three_params.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generate_test_univariate_two_params.py" pinned="false" current-in-tab="false">
+    <leaf>
+      <file leaf-file-name="generate_test_univariate_two_params.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/generate_test_univariate_two_params.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            <state relative-caret-position="270">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -69,15 +49,15 @@
         <option value="$PROJECT_DIR$/run_tests.sh" />
         <option value="$PROJECT_DIR$/../../RTBox-Python/RTBox_python/RTBox_utils.py" />
         <option value="$PROJECT_DIR$/generate_test_categorical_type.py" />
-        <option value="$PROJECT_DIR$/generate_test_univariate_two_params.py" />
         <option value="$PROJECT_DIR$/generate_test_univariate.py" />
         <option value="$PROJECT_DIR$/generate_test_three_params.py" />
+        <option value="$PROJECT_DIR$/generate_test_univariate_two_params.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="233" />
-    <option name="y" value="63" />
+    <option name="y" value="57" />
     <option name="width" value="1121" />
     <option name="height" value="839" />
   </component>
@@ -135,7 +115,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../RTBox-Python" />
   </component>
-  <component name="RunManager" selected="Python.generate_test_three_params">
+  <component name="RunManager" selected="Python.generate_test_univariate_two_params">
     <configuration default="false" name="generate_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -364,9 +344,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.generate_test_three_params" />
-        <item index="1" class="java.lang.String" itemvalue="Python.generate_test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.generate_test_univariate_two_params" />
+        <item index="0" class="java.lang.String" itemvalue="Python.generate_test_univariate_two_params" />
+        <item index="1" class="java.lang.String" itemvalue="Python.generate_test_three_params" />
+        <item index="2" class="java.lang.String" itemvalue="Python.generate_test" />
         <item index="3" class="java.lang.String" itemvalue="Python.generate_test_categorical_type" />
         <item index="4" class="java.lang.String" itemvalue="Python.test_RTBox_read" />
       </list>
@@ -389,7 +369,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="233" y="63" width="1121" height="839" extended-state="0" />
+    <frame x="233" y="57" width="1121" height="839" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24977699" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -448,9 +428,31 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/generate_test_univariate.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate_test_three_params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate_test_univariate_two_params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate_test_univariate.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -466,7 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -598,26 +599,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generate_test_univariate_two_params.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generate_test_univariate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/generate_test_three_params.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        <state relative-caret-position="-60">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate_test_univariate_two_params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
           <folding />
         </state>
       </provider>

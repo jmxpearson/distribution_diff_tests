@@ -1,5 +1,5 @@
-dist = 'generalizedpareto'
-dist_name = 'GeneralizedPareto'
+dist = 'noncentralf'
+dist_name = 'NoncentralF'
 script_name = dist + '_types.jl'
 
 funcs = ['ntrials', 'succprob', 'failprob', 'params', 'mean', 'var', \
