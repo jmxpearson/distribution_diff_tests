@@ -34,5 +34,11 @@ $julia lognormal_types.jl > results/lognormal_type_test_results.txt
 $julia noncentralchisq_types.jl > results/noncentralchisq_type_test_results.txt
 $julia noncentralf_types.jl > results/noncentralf_type_test_results.txt
 $julia normal_types.jl > results/normal_type_test_results.txt
-fi
 $julia normalcanon_types.jl > results/normalcanon_type_test_results.txt
+$julia pareto_types.jl > results/pareto_type_test_results.txt
+$julia symtriangular_types.jl > results/symtriangular_type_test_results.txt
+$julia tdist_types.jl > results/tdist_type_test_results.txt
+$julia triangular_types.jl > results/triangular_type_test_results.txt
+$julia triweight_types.jl > results/triweight_type_test_results.txt
+fi
+$julia uniform_types.jl > results/uniform_type_test_results.txt

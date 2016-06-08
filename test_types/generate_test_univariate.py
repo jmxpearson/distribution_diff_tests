@@ -1,5 +1,5 @@
-dist = 'poisson'
-dist_name = 'Poisson'
+dist = 'tdist'
+dist_name = 'TDist'
 script_name = dist + '_types.jl'
 
 funcs = ['ntrials', 'succprob', 'failprob', 'params', 'mean', 'var', \

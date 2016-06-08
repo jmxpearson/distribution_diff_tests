@@ -37,7 +37,14 @@ tests = [
     "lognormal",
     "noncentralchisq",
     "noncentralf",
-    "normalcanon"
+    "normalcanon",
+    #"normalinversegaussian"
+    "pareto",
+    "symtriangular",
+    "tdist",
+    "triangular",
+    "triweight",
+    "uniform"
     ]
 
 print_with_color(:blue, "Running tests:\n")
