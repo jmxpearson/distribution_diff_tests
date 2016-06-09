@@ -1,5 +1,5 @@
-dist = 'uniform'
-dist_name = 'Uniform'
+dist = 'levy'
+dist_name = 'Levy'
 script_name = dist + '_types.jl'
 
 funcs = ['ntrials', 'succprob', 'failprob', 'params', 'mean', 'var', \
@@ -45,13 +45,7 @@ with open(script_name, 'w') as f:
     f.write('float = 0.5\n')
     f.write('dual = ForwardDiff.GradientNumber(0.5)\n\n')
 
-    if zero_one_allowed:
-        f.write('integer2 = 1\n')
-    f.write('float2 = 1.0\n')
-    f.write('dual2 = ForwardDiff.GradientNumber(1.0)\n\n')
-
     types = ['integer', 'float', 'dual']
-    types2 = ['integer2', 'float2', 'dual2']
 
     i = 1
     if zero_one_allowed:
@@ -62,7 +56,7 @@ with open(script_name, 'w') as f:
             j = 0
         while j < 3:
             f.write(get_full_dist(types[i], types[j]) + ' = ' + dist_name + \
-                    '(' + types[i] + ', ' + types2[j] + ')\n')
+                    '(' + types[i] + ', ' + types[j] + ')\n')
             j += 1
         i += 1
     f.write('\n')

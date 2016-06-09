@@ -40,5 +40,6 @@ $julia symtriangular_types.jl > results/symtriangular_type_test_results.txt
 $julia tdist_types.jl > results/tdist_type_test_results.txt
 $julia triangular_types.jl > results/triangular_type_test_results.txt
 $julia triweight_types.jl > results/triweight_type_test_results.txt
-fi
 $julia uniform_types.jl > results/uniform_type_test_results.txt
+fi
+$julia levy_types.jl > results/levy_type_test_results.txt

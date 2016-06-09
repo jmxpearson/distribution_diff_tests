@@ -1,13 +1,13 @@
 function f1(μ)
     σ = 2
-    ξ = 0
+    ξ = 0.1
     d = GeneralizedExtremeValue(μ[1], σ, ξ)
     mean(d)
 end
 
 function f2(σ)
     μ = 0
-    ξ = 0
+    ξ = 0.1
     d = GeneralizedExtremeValue(μ, σ[1], ξ)
     mean(d)
 end
@@ -16,7 +16,7 @@ function f3(ξ)
     μ = 0
     σ = 2
     d = GeneralizedExtremeValue(μ, σ, ξ[1])
-    Distributions.testfd(d)
+    mean(d)
 end
 
 function f4(x)
@@ -24,22 +24,30 @@ function f4(x)
     mean(d)
 end
 
-function grad1(μ)
+h(ξ) = 1/ξ
+j(ξ) = gamma(1-ξ) - 1
+h_der(ξ) = -1/ξ^2
+j_der(ξ) = -gamma(1-ξ)*digamma(1-ξ)
+
+function grad1(p)
     [1]
 end
 
-function grad2(σ)
-    const γ = 0.57721566490153286060
-    [γ]
+function grad2(p)
+    ξ = 0.1
+    [h(ξ)*j(ξ)]
 end
 
-function grad3(ξ)
-    [3ξ[1]^2]
+function grad3(p)
+    σ = 2
+    ξ = p[1]
+    [σ*(h_der(ξ)*j(ξ) + h(ξ)*j_der(ξ))]
 end
 
 function grad4(x)
-    const γ = 0.57721566490153286060
-    [1, γ, 0]
+    σ = x[2]
+    ξ = x[3]
+    [1, h(ξ)*j(ξ), σ*(h_der(ξ)*j(ξ) + h(ξ)*j_der(ξ))]
 end
 
 agrad1 = ForwardDiff.gradient(f1)
@@ -48,19 +56,19 @@ agrad3 = ForwardDiff.gradient(f3)
 agrad4 = ForwardDiff.gradient(f4)
 
 pts = Vector{Float64}[
-    [2.1],
-    [2.15],
-    [2.5],
-    [2.588],
-    [2.708]
+    [0.1],
+    [0.15],
+    [0.5],
+    [0.588],
+    [0.708]
 ]
 
 vec_pts = Vector{Float64}[
-    [2.1, 2.708, 0],
-    [2.15, 2.588, 0],
-    [2.5, 2.15, 0],
-    [2.588, 2.5, 0],
-    [2.708, 2.1, 0]
+    [2.1, 2.708, 0.1],
+    [2.15, 2.588, 0.1],
+    [2.5, 2.15, 0.1],
+    [2.588, 2.5, 0.1],
+    [2.708, 2.1, 0.1]
 ]
 
 for p in pts

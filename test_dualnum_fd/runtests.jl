@@ -44,7 +44,10 @@ tests = [
     "tdist",
     "triangular",
     "triweight",
-    "uniform"
+    "uniform",
+    "levy",
+    "weibull",
+    "noncentralt"
     ]
 
 print_with_color(:blue, "Running tests:\n")
