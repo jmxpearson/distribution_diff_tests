@@ -19,15 +19,13 @@ h(ν) = sqrt(ν/2)
 j(ν) = gamma((ν - 1)/2)
 k(ν) = gamma(ν/2)
 l(ν) = j(ν)/k(ν)
-h_der(ν) = 1/(2*sqrt(2ν))
-j_der(ν) = 2*j(ν)*digamma((ν - 1)/2)
-k_der(ν) = 2*k(ν)*digamma(ν/2)
-l_der(ν) = (j_der(ν)*k(ν) - j(ν)*k_der(ν))/k(ν)^2
+
+grad1_func(ν, λ) = λ/sqrt(2)*(1/(2*sqrt(ν)) + (1/2)*(digamma((ν-1)/2) - digamma(ν/2))) * j(ν)/k(ν)
 
 function grad1(p)
     ν = p[1]
     λ = 3.0
-    [λ*(h_der(ν)*l(ν) + h(ν)*l_der(ν))]
+    [grad1_func(ν, λ)]
 end
 
 function grad2(p)
@@ -38,7 +36,7 @@ end
 function grad3(x)
     λ = x[1]
     ν = x[2]
-    [λ*(h_der(ν)*l(ν) + h(ν)*l_der(ν)), sqrt(ν/2)*j(ν)/k(ν)]
+    [grad1_func(ν, λ), sqrt(ν/2)*j(ν)/k(ν)]
 end
 
 agrad1 = ForwardDiff.gradient(f1)
