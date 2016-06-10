@@ -1,5 +1,5 @@
-dist = 'levy'
-dist_name = 'Levy'
+dist = 'biweight'
+dist_name = 'Biweight'
 script_name = dist + '_types.jl'
 
 funcs = ['ntrials', 'succprob', 'failprob', 'params', 'mean', 'var', \

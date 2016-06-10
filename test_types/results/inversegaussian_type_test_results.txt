@@ -1450,8 +1450,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
-      return (Distributions.quantile_newton)(d::Distributions.InverseGaussian{Float64},0.5,(Distributions.mode)(d::Distributions.InverseGaussian{Float64})::Float64,1.0e-12)::Float64
-  end::Float64
+      return (Distributions.quantile_newton)(d::Distributions.InverseGaussian{Float64},0.5,(Distributions.mode)(d::Distributions.InverseGaussian{Float64})::Float64,1.0e-12)::ANY
+  end::ANY
 
 ---- integer, float ----
 
@@ -1460,8 +1460,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
-      return (Distributions.quantile_newton)(d::Distributions.InverseGaussian{Float64},0.5,(Distributions.mode)(d::Distributions.InverseGaussian{Float64})::Float64,1.0e-12)::Float64
-  end::Float64
+      return (Distributions.quantile_newton)(d::Distributions.InverseGaussian{Float64},0.5,(Distributions.mode)(d::Distributions.InverseGaussian{Float64})::Float64,1.0e-12)::ANY
+  end::ANY
 
 ---- integer, dual ----
 
@@ -1470,8 +1470,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
-      return (Distributions.quantile_newton)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},0.5,(Distributions.mode)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}},1.0e-12)::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}}
-  end::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}}
+      return (Distributions.quantile_newton)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},0.5,(Distributions.mode)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}},1.0e-12)::ANY
+  end::ANY
 
 ---- float, integer ----
 
@@ -1480,8 +1480,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
-      return (Distributions.quantile_newton)(d::Distributions.InverseGaussian{Float64},0.5,(Distributions.mode)(d::Distributions.InverseGaussian{Float64})::Float64,1.0e-12)::Float64
-  end::Float64
+      return (Distributions.quantile_newton)(d::Distributions.InverseGaussian{Float64},0.5,(Distributions.mode)(d::Distributions.InverseGaussian{Float64})::Float64,1.0e-12)::ANY
+  end::ANY
 
 ---- float, float ----
 
@@ -1490,8 +1490,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
-      return (Distributions.quantile_newton)(d::Distributions.InverseGaussian{Float64},0.5,(Distributions.mode)(d::Distributions.InverseGaussian{Float64})::Float64,1.0e-12)::Float64
-  end::Float64
+      return (Distributions.quantile_newton)(d::Distributions.InverseGaussian{Float64},0.5,(Distributions.mode)(d::Distributions.InverseGaussian{Float64})::Float64,1.0e-12)::ANY
+  end::ANY
 
 ---- float, dual ----
 
@@ -1500,8 +1500,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
-      return (Distributions.quantile_newton)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},0.5,(Distributions.mode)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}},1.0e-12)::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}}
-  end::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}}
+      return (Distributions.quantile_newton)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},0.5,(Distributions.mode)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}},1.0e-12)::ANY
+  end::ANY
 
 ---- dual, integer ----
 
@@ -1510,8 +1510,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
-      return (Distributions.quantile_newton)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},0.5,(Distributions.mode)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}},1.0e-12)::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}}
-  end::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}}
+      return (Distributions.quantile_newton)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},0.5,(Distributions.mode)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}},1.0e-12)::ANY
+  end::ANY
 
 ---- dual, float ----
 
@@ -1520,8 +1520,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
-      return (Distributions.quantile_newton)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},0.5,(Distributions.mode)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}},1.0e-12)::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}}
-  end::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}}
+      return (Distributions.quantile_newton)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},0.5,(Distributions.mode)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}},1.0e-12)::ANY
+  end::ANY
 
 ---- dual, dual ----
 
@@ -1530,8 +1530,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
-      return (Distributions.quantile_newton)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},0.5,(Distributions.mode)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}},1.0e-12)::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}}
-  end::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}}
+      return (Distributions.quantile_newton)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},0.5,(Distributions.mode)(d::Distributions.InverseGaussian{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}},1.0e-12)::ANY
+  end::ANY
 
 
 

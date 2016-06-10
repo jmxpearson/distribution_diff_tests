@@ -1,5 +1,5 @@
-dist = 'tdist'
-dist_name = 'TDist'
+dist = 'chisq'
+dist_name = 'Chisq'
 script_name = dist + '_types.jl'
 
 funcs = ['ntrials', 'succprob', 'failprob', 'params', 'mean', 'var', \

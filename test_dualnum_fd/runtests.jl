@@ -46,6 +46,7 @@ tests = [
     "triweight",
     "uniform",
     "levy",
+    "biweight",
     "weibull",
     "noncentralt"
     ]
