@@ -110,7 +110,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 32:
       return (top(tuple))((top(getfield))(d::Distributions.NormalCanon{Float64},:η)::Float64,(top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64)::Tuple{Float64,Float64}
   end::Tuple{Float64,Float64}
 
@@ -120,7 +120,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 32:
       return (top(tuple))((top(getfield))(d::Distributions.NormalCanon{Float64},:η)::Float64,(top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64)::Tuple{Float64,Float64}
   end::Tuple{Float64,Float64}
 
@@ -130,7 +130,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 32:
       return (top(tuple))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:η)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},(top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   end::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
@@ -140,7 +140,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 32:
       return (top(tuple))((top(getfield))(d::Distributions.NormalCanon{Float64},:η)::Float64,(top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64)::Tuple{Float64,Float64}
   end::Tuple{Float64,Float64}
 
@@ -150,7 +150,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 32:
       return (top(tuple))((top(getfield))(d::Distributions.NormalCanon{Float64},:η)::Float64,(top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64)::Tuple{Float64,Float64}
   end::Tuple{Float64,Float64}
 
@@ -160,7 +160,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 32:
       return (top(tuple))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:η)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},(top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   end::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
@@ -170,7 +170,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 32:
       return (top(tuple))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:η)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},(top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   end::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
@@ -180,7 +180,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 32:
       return (top(tuple))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:η)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},(top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   end::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
@@ -190,7 +190,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 31:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 32:
       return (top(tuple))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:η)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},(top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   end::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
@@ -207,7 +207,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 37:
       return (top(getfield))(d::Distributions.NormalCanon{Float64},:μ)::Float64
   end::Float64
 
@@ -217,7 +217,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 37:
       return (top(getfield))(d::Distributions.NormalCanon{Float64},:μ)::Float64
   end::Float64
 
@@ -227,7 +227,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 37:
       return (top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -237,7 +237,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 37:
       return (top(getfield))(d::Distributions.NormalCanon{Float64},:μ)::Float64
   end::Float64
 
@@ -247,7 +247,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 37:
       return (top(getfield))(d::Distributions.NormalCanon{Float64},:μ)::Float64
   end::Float64
 
@@ -257,7 +257,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 37:
       return (top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -267,7 +267,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 37:
       return (top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -277,7 +277,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 37:
       return (top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -287,7 +287,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 36:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 37:
       return (top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -304,7 +304,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 43:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 44:
       return (Base.box)(Base.Float64,(Base.div_float)(1.0,(top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64))
   end::Float64
 
@@ -314,7 +314,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 43:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 44:
       return (Base.box)(Base.Float64,(Base.div_float)(1.0,(top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64))
   end::Float64
 
@@ -332,7 +332,7 @@ Variables:
   ########_var0#7110#7114#7119#7127::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 43:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 44:
       ##a#7120 = (top(getfield))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
       ##div_a#7121 = (Base.box)(Base.Float64,(Base.div_float)(1.0,##a#7120::Float64))
       ##deriv#7122 = (Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Base.Float64,(Base.div_float)(##div_a#7121::Float64,##a#7120::Float64))))
@@ -351,7 +351,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 43:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 44:
       return (Base.box)(Base.Float64,(Base.div_float)(1.0,(top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64))
   end::Float64
 
@@ -361,7 +361,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 43:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 44:
       return (Base.box)(Base.Float64,(Base.div_float)(1.0,(top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64))
   end::Float64
 
@@ -379,7 +379,7 @@ Variables:
   ########_var0#7110#7114#7119#7127::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 43:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 44:
       ##a#7120 = (top(getfield))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
       ##div_a#7121 = (Base.box)(Base.Float64,(Base.div_float)(1.0,##a#7120::Float64))
       ##deriv#7122 = (Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Base.Float64,(Base.div_float)(##div_a#7121::Float64,##a#7120::Float64))))
@@ -406,7 +406,7 @@ Variables:
   ########_var0#7110#7114#7119#7127::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 43:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 44:
       ##a#7120 = (top(getfield))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
       ##div_a#7121 = (Base.box)(Base.Float64,(Base.div_float)(1.0,##a#7120::Float64))
       ##deriv#7122 = (Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Base.Float64,(Base.div_float)(##div_a#7121::Float64,##a#7120::Float64))))
@@ -433,7 +433,7 @@ Variables:
   ########_var0#7110#7114#7119#7127::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 43:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 44:
       ##a#7120 = (top(getfield))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
       ##div_a#7121 = (Base.box)(Base.Float64,(Base.div_float)(1.0,##a#7120::Float64))
       ##deriv#7122 = (Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Base.Float64,(Base.div_float)(##div_a#7121::Float64,##a#7120::Float64))))
@@ -460,7 +460,7 @@ Variables:
   ########_var0#7110#7114#7119#7127::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 43:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 44:
       ##a#7120 = (top(getfield))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
       ##div_a#7121 = (Base.box)(Base.Float64,(Base.div_float)(1.0,##a#7120::Float64))
       ##deriv#7122 = (Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Base.Float64,(Base.div_float)(##div_a#7121::Float64,##a#7120::Float64))))
@@ -486,7 +486,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 39:
       return (top(getfield))(d::Distributions.NormalCanon{Float64},:μ)::Float64
   end::Float64
 
@@ -496,7 +496,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 39:
       return (top(getfield))(d::Distributions.NormalCanon{Float64},:μ)::Float64
   end::Float64
 
@@ -506,7 +506,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 39:
       return (top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -516,7 +516,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 39:
       return (top(getfield))(d::Distributions.NormalCanon{Float64},:μ)::Float64
   end::Float64
 
@@ -526,7 +526,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 39:
       return (top(getfield))(d::Distributions.NormalCanon{Float64},:μ)::Float64
   end::Float64
 
@@ -536,7 +536,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 39:
       return (top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -546,7 +546,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 39:
       return (top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -556,7 +556,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 39:
       return (top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -566,7 +566,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 38:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 39:
       return (top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -680,7 +680,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 38:
       return (top(getfield))(d::Distributions.NormalCanon{Float64},:μ)::Float64
   end::Float64
 
@@ -690,7 +690,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 38:
       return (top(getfield))(d::Distributions.NormalCanon{Float64},:μ)::Float64
   end::Float64
 
@@ -700,7 +700,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 38:
       return (top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -710,7 +710,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 38:
       return (top(getfield))(d::Distributions.NormalCanon{Float64},:μ)::Float64
   end::Float64
 
@@ -720,7 +720,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 38:
       return (top(getfield))(d::Distributions.NormalCanon{Float64},:μ)::Float64
   end::Float64
 
@@ -730,7 +730,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 38:
       return (top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -740,7 +740,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 38:
       return (top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -750,7 +750,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 38:
       return (top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -760,7 +760,7 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 37:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 38:
       return (top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -777,8 +777,8 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 40:
-      return 0.0
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 41:
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
   end::Float64
 
 ---- integer, float ----
@@ -787,8 +787,8 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 40:
-      return 0.0
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 41:
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
   end::Float64
 
 ---- integer, dual ----
@@ -797,9 +797,9 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 40:
-      return 0.0
-  end::Float64
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 41:
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- float, integer ----
 
@@ -807,8 +807,8 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 40:
-      return 0.0
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 41:
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
   end::Float64
 
 ---- float, float ----
@@ -817,8 +817,8 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 40:
-      return 0.0
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 41:
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
   end::Float64
 
 ---- float, dual ----
@@ -827,9 +827,9 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 40:
-      return 0.0
-  end::Float64
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 41:
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- dual, integer ----
 
@@ -837,9 +837,9 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 40:
-      return 0.0
-  end::Float64
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 41:
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- dual, float ----
 
@@ -847,9 +847,9 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 40:
-      return 0.0
-  end::Float64
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 41:
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- dual, dual ----
 
@@ -857,9 +857,9 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 40:
-      return 0.0
-  end::Float64
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 41:
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 
 
@@ -874,8 +874,8 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 41:
-      return 0.0
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 42:
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
   end::Float64
 
 ---- integer, float ----
@@ -884,8 +884,8 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 41:
-      return 0.0
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 42:
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
   end::Float64
 
 ---- integer, dual ----
@@ -894,9 +894,9 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 41:
-      return 0.0
-  end::Float64
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 42:
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- float, integer ----
 
@@ -904,8 +904,8 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 41:
-      return 0.0
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 42:
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
   end::Float64
 
 ---- float, float ----
@@ -914,8 +914,8 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 41:
-      return 0.0
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 42:
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
   end::Float64
 
 ---- float, dual ----
@@ -924,9 +924,9 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 41:
-      return 0.0
-  end::Float64
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 42:
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- dual, integer ----
 
@@ -934,9 +934,9 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 41:
-      return 0.0
-  end::Float64
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 42:
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- dual, float ----
 
@@ -944,9 +944,9 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 41:
-      return 0.0
-  end::Float64
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 42:
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- dual, dual ----
 
@@ -954,9 +954,9 @@ Variables:
   d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 41:
-      return 0.0
-  end::Float64
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 42:
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 
 
@@ -971,7 +971,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 46:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 47:
       GenSym(0) = (top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64
       GenSym(2) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(0),0)::Float64
       return (Base.box)(Base.Float64,(Base.mul_float)(0.5,(Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Base.Float64,(Base.add_float)(1.8378770664093456,1.0)),(Base.Math.nan_dom_err)(GenSym(2),GenSym(0))::Float64))))
@@ -983,7 +983,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 46:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 47:
       GenSym(0) = (top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64
       GenSym(2) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(0),0)::Float64
       return (Base.box)(Base.Float64,(Base.mul_float)(0.5,(Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Base.Float64,(Base.add_float)(1.8378770664093456,1.0)),(Base.Math.nan_dom_err)(GenSym(2),GenSym(0))::Float64))))
@@ -1008,7 +1008,7 @@ Variables:
   ########types#7147#7154#7158#7171::Tuple{Type{Float64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 46:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 47:
       ##a#7159 = (top(getfield))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
       GenSym(1) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,##a#7159::Float64,0)::Float64
       ####G#7141#7160 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
@@ -1037,7 +1037,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 46:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 47:
       GenSym(0) = (top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64
       GenSym(2) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(0),0)::Float64
       return (Base.box)(Base.Float64,(Base.mul_float)(0.5,(Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Base.Float64,(Base.add_float)(1.8378770664093456,1.0)),(Base.Math.nan_dom_err)(GenSym(2),GenSym(0))::Float64))))
@@ -1049,7 +1049,7 @@ Variables:
   d::Distributions.NormalCanon{Float64}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 46:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 47:
       GenSym(0) = (top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64
       GenSym(2) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(0),0)::Float64
       return (Base.box)(Base.Float64,(Base.mul_float)(0.5,(Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Base.Float64,(Base.add_float)(1.8378770664093456,1.0)),(Base.Math.nan_dom_err)(GenSym(2),GenSym(0))::Float64))))
@@ -1074,7 +1074,7 @@ Variables:
   ########types#7147#7154#7158#7171::Tuple{Type{Float64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 46:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 47:
       ##a#7159 = (top(getfield))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
       GenSym(1) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,##a#7159::Float64,0)::Float64
       ####G#7141#7160 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
@@ -1116,7 +1116,7 @@ Variables:
   ########types#7147#7154#7158#7171::Tuple{Type{Float64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 46:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 47:
       ##a#7159 = (top(getfield))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
       GenSym(1) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,##a#7159::Float64,0)::Float64
       ####G#7141#7160 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
@@ -1158,7 +1158,7 @@ Variables:
   ########types#7147#7154#7158#7171::Tuple{Type{Float64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 46:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 47:
       ##a#7159 = (top(getfield))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
       GenSym(1) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,##a#7159::Float64,0)::Float64
       ####G#7141#7160 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
@@ -1200,7 +1200,7 @@ Variables:
   ########types#7147#7154#7158#7171::Tuple{Type{Float64}}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 46:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 47:
       ##a#7159 = (top(getfield))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
       GenSym(1) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,##a#7159::Float64,0)::Float64
       ####G#7141#7160 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
@@ -1243,7 +1243,7 @@ Variables:
   ##_var0#7194::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 70:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 71:
       $(Expr(:boundscheck, false))
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 2
       ########_var0#7174#7180#7186#7192 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
@@ -1287,7 +1287,7 @@ Variables:
   ##_var0#7194::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 70:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 71:
       $(Expr(:boundscheck, false))
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 2
       ########_var0#7174#7180#7186#7192 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
@@ -1349,7 +1349,7 @@ Variables:
   ####_var0#7209#7234::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 70:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 71:
       $(Expr(:boundscheck, false))
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 3
       ########_var0#7174#7180#7186#7221 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
@@ -1418,7 +1418,7 @@ Variables:
   ##_var0#7194::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 70:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 71:
       $(Expr(:boundscheck, false))
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 2
       ########_var0#7174#7180#7186#7192 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
@@ -1462,7 +1462,7 @@ Variables:
   ##_var0#7194::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 70:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 71:
       $(Expr(:boundscheck, false))
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 2
       ########_var0#7174#7180#7186#7192 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
@@ -1524,7 +1524,7 @@ Variables:
   ####_var0#7209#7234::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 70:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 71:
       $(Expr(:boundscheck, false))
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 3
       ########_var0#7174#7180#7186#7221 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
@@ -1611,7 +1611,7 @@ Variables:
   ####_var0#7209#7234::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 70:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 71:
       $(Expr(:boundscheck, false))
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 3
       ########_var0#7174#7180#7186#7221 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
@@ -1698,7 +1698,7 @@ Variables:
   ####_var0#7209#7234::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 70:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 71:
       $(Expr(:boundscheck, false))
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 3
       ########_var0#7174#7180#7186#7221 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
@@ -1785,7 +1785,7 @@ Variables:
   ####_var0#7209#7234::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 70:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 71:
       $(Expr(:boundscheck, false))
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 3
       ########_var0#7174#7180#7186#7221 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
@@ -1856,7 +1856,7 @@ Variables:
   ##xs#7235::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 51:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 52:
       GenSym(0) = (Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)),(top(getfield))(d::Distributions.NormalCanon{Float64},:μ)::Float64))
       GenSym(2) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)(-0.5,(top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64)),(Base.box)(Base.Float64,(Base.mul_float)(GenSym(0),GenSym(0))))),0)::Float64
       return (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.div_float)((Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64))::Float64,2.5066282746310007)),GenSym(2)))
@@ -1870,7 +1870,7 @@ Variables:
   ##xs#7235::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 51:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 52:
       GenSym(0) = (Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)),(top(getfield))(d::Distributions.NormalCanon{Float64},:μ)::Float64))
       GenSym(2) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)(-0.5,(top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64)),(Base.box)(Base.Float64,(Base.mul_float)(GenSym(0),GenSym(0))))),0)::Float64
       return (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.div_float)((Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64))::Float64,2.5066282746310007)),GenSym(2)))
@@ -1929,7 +1929,7 @@ Variables:
   ####_var0#7255#7317::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 51:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 52:
       ##sqrt_a#7299 = (Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((top(getfield))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64)::ANY)::Float64
       ##deriv#7300 = (Base.box)(Base.Float64,(Base.div_float)(0.5,##sqrt_a#7299::Float64))
       ####G#7200#7301 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
@@ -2002,7 +2002,7 @@ Variables:
   ##xs#7235::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 51:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 52:
       GenSym(0) = (Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)),(top(getfield))(d::Distributions.NormalCanon{Float64},:μ)::Float64))
       GenSym(2) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)(-0.5,(top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64)),(Base.box)(Base.Float64,(Base.mul_float)(GenSym(0),GenSym(0))))),0)::Float64
       return (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.div_float)((Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64))::Float64,2.5066282746310007)),GenSym(2)))
@@ -2016,7 +2016,7 @@ Variables:
   ##xs#7235::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 51:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 52:
       GenSym(0) = (Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)),(top(getfield))(d::Distributions.NormalCanon{Float64},:μ)::Float64))
       GenSym(2) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)(-0.5,(top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64)),(Base.box)(Base.Float64,(Base.mul_float)(GenSym(0),GenSym(0))))),0)::Float64
       return (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.div_float)((Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((top(getfield))(d::Distributions.NormalCanon{Float64},:λ)::Float64))::Float64,2.5066282746310007)),GenSym(2)))
@@ -2075,7 +2075,7 @@ Variables:
   ####_var0#7255#7317::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 51:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 52:
       ##sqrt_a#7299 = (Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((top(getfield))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64)::ANY)::Float64
       ##deriv#7300 = (Base.box)(Base.Float64,(Base.div_float)(0.5,##sqrt_a#7299::Float64))
       ####G#7200#7301 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
@@ -2193,7 +2193,7 @@ Variables:
   ####_var0#7255#7317::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 51:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 52:
       ##sqrt_a#7299 = (Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((top(getfield))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64)::ANY)::Float64
       ##deriv#7300 = (Base.box)(Base.Float64,(Base.div_float)(0.5,##sqrt_a#7299::Float64))
       ####G#7200#7301 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
@@ -2311,7 +2311,7 @@ Variables:
   ####_var0#7255#7317::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 51:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 52:
       ##sqrt_a#7299 = (Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((top(getfield))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64)::ANY)::Float64
       ##deriv#7300 = (Base.box)(Base.Float64,(Base.div_float)(0.5,##sqrt_a#7299::Float64))
       ####G#7200#7301 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
@@ -2429,7 +2429,7 @@ Variables:
   ####_var0#7255#7317::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 51:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normalcanon.jl, line 52:
       ##sqrt_a#7299 = (Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((top(getfield))((top(getfield))(d::Distributions.NormalCanon{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64)::ANY)::Float64
       ##deriv#7300 = (Base.box)(Base.Float64,(Base.div_float)(0.5,##sqrt_a#7299::Float64))
       ####G#7200#7301 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}

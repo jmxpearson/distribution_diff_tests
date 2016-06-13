@@ -762,8 +762,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normal.jl, line 59:
-      return 0.0
-  end::Float64
+      return 0
+  end::Int64
 
 ---- integer, float ----
 
@@ -772,7 +772,7 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normal.jl, line 59:
-      return 0.0
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
   end::Float64
 
 ---- integer, dual ----
@@ -782,8 +782,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normal.jl, line 59:
-      return 0.0
-  end::Float64
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- float, integer ----
 
@@ -792,7 +792,7 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normal.jl, line 59:
-      return 0.0
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
   end::Float64
 
 ---- float, float ----
@@ -802,7 +802,7 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normal.jl, line 59:
-      return 0.0
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
   end::Float64
 
 ---- float, dual ----
@@ -812,8 +812,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normal.jl, line 59:
-      return 0.0
-  end::Float64
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- dual, integer ----
 
@@ -822,8 +822,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normal.jl, line 59:
-      return 0.0
-  end::Float64
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- dual, float ----
 
@@ -832,8 +832,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normal.jl, line 59:
-      return 0.0
-  end::Float64
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- dual, dual ----
 
@@ -842,8 +842,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normal.jl, line 59:
-      return 0.0
-  end::Float64
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 
 
@@ -859,8 +859,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normal.jl, line 60:
-      return 0.0
-  end::Float64
+      return 0
+  end::Int64
 
 ---- integer, float ----
 
@@ -869,7 +869,7 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normal.jl, line 60:
-      return 0.0
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
   end::Float64
 
 ---- integer, dual ----
@@ -879,8 +879,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normal.jl, line 60:
-      return 0.0
-  end::Float64
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- float, integer ----
 
@@ -889,7 +889,7 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normal.jl, line 60:
-      return 0.0
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
   end::Float64
 
 ---- float, float ----
@@ -899,7 +899,7 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normal.jl, line 60:
-      return 0.0
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
   end::Float64
 
 ---- float, dual ----
@@ -909,8 +909,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normal.jl, line 60:
-      return 0.0
-  end::Float64
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- dual, integer ----
 
@@ -919,8 +919,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normal.jl, line 60:
-      return 0.0
-  end::Float64
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- dual, float ----
 
@@ -929,8 +929,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normal.jl, line 60:
-      return 0.0
-  end::Float64
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 ---- dual, dual ----
 
@@ -939,8 +939,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/normal.jl, line 60:
-      return 0.0
-  end::Float64
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 
 

@@ -38,7 +38,7 @@ tests = [
     "noncentralchisq",
     "noncentralf",
     "normalcanon",
-    #"normalinversegaussian"
+    "normalinversegaussian",
     "pareto",
     "symtriangular",
     "tdist",

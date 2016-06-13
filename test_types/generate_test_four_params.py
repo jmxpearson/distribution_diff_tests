@@ -1,5 +1,5 @@
-dist = 'noncentralbeta'
-dist_name = 'NoncentralBeta'
+dist = 'normalinversegaussian'
+dist_name = 'NormalInverseGaussian'
 script_name = dist + '_types.jl'
 
 funcs = ['ntrials', 'succprob', 'failprob', 'params', 'mean', 'var', \
@@ -43,9 +43,14 @@ with open(script_name, 'w') as f:
     f.write('dualnum = ForwardDiff.GradientNumber(2.0)\n\n')
 
     if zero_one_allowed:
-        f.write(dist + '_integer = ' + dist_name + '(integer, integer, integer)\n')
-    f.write(dist + '_float = ' + dist_name + '(float, float, float)\n')
-    f.write(dist + '_dual = ' + dist_name + '(dualnum, dualnum, dualnum)\n\n')
+        f.write('integer2 = 3\n')
+    f.write('float2 = 3.0\n')
+    f.write('dualnum2 = ForwardDiff.GradientNumber(3.0)\n\n')
+
+    if zero_one_allowed:
+        f.write(dist + '_integer = ' + dist_name + '(integer, integer2, integer, integer)\n')
+    f.write(dist + '_float = ' + dist_name + '(float, float2, float, float)\n')
+    f.write(dist + '_dual = ' + dist_name + '(dualnum, dualnum2, dualnum, dualnum)\n\n')
 
     for func in funcs:
         print_heading(f, func)

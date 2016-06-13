@@ -326,8 +326,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
-      return (Distributions.quantile)(d::Distributions.WalleniusNoncentralHypergeometric{Int64},0.5)::UNION{FLOAT64,INT64}
-  end::UNION{FLOAT64,INT64}
+      return (Distributions.quantile)(d::Distributions.WalleniusNoncentralHypergeometric{Int64},0.5)::Int64
+  end::Int64
 
 ----float----
 
@@ -346,8 +346,8 @@ Variables:
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
-      return (Distributions.quantile)(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},0.5)::UNION{FLOAT64,INT64}
-  end::UNION{FLOAT64,INT64}
+      return (Distributions.quantile)(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},0.5)::UNION{FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}},INT64}
+  end::UNION{FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}},INT64}
 
 
 
@@ -448,8 +448,8 @@ Body:
       goto 3
       ########_var0#7275#7276#7278#7280 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
-      return (Distributions.quantile)(d::Distributions.WalleniusNoncentralHypergeometric{Int64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7275#7276#7278#7280::Float64,1.0)))::UNION{FLOAT64,INT64}
-  end::UNION{FLOAT64,INT64}
+      return (Distributions.quantile)(d::Distributions.WalleniusNoncentralHypergeometric{Int64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7275#7276#7278#7280::Float64,1.0)))::Int64
+  end::Int64
 
 ----float----
 
@@ -500,8 +500,8 @@ Body:
       goto 3
       ########_var0#7275#7276#7278#7284 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
-      return (Distributions.quantile)(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7275#7276#7278#7284::Float64,1.0)))::UNION{FLOAT64,INT64}
-  end::UNION{FLOAT64,INT64}
+      return (Distributions.quantile)(d::Distributions.WalleniusNoncentralHypergeometric{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7275#7276#7278#7284::Float64,1.0)))::UNION{FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}},INT64}
+  end::UNION{FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}},INT64}
 
 
 

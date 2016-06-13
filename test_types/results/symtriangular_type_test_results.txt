@@ -1265,7 +1265,7 @@ Variables:
   ########_var0#7142#7143#7145#7149::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 134:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 136:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 5
       ####_var0#7144#7148 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 6
@@ -1308,7 +1308,7 @@ Variables:
   ########_var0#7142#7143#7145#7149::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 134:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 136:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 5
       ####_var0#7144#7148 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 6
@@ -1351,7 +1351,7 @@ Variables:
   ########_var0#7142#7143#7145#7165::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 134:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 136:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 5
       ####_var0#7144#7164 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 6
@@ -1394,7 +1394,7 @@ Variables:
   ########_var0#7142#7143#7145#7149::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 134:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 136:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 5
       ####_var0#7144#7148 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 6
@@ -1437,7 +1437,7 @@ Variables:
   ########_var0#7142#7143#7145#7149::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 134:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 136:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 5
       ####_var0#7144#7148 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 6
@@ -1480,7 +1480,7 @@ Variables:
   ########_var0#7142#7143#7145#7165::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 134:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 136:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 5
       ####_var0#7144#7164 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 6
@@ -1523,7 +1523,7 @@ Variables:
   ########_var0#7142#7143#7145#7165::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 134:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 136:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 5
       ####_var0#7144#7164 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 6
@@ -1566,7 +1566,7 @@ Variables:
   ########_var0#7142#7143#7145#7165::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 134:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 136:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 5
       ####_var0#7144#7164 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 6
@@ -1609,7 +1609,7 @@ Variables:
   ########_var0#7142#7143#7145#7165::Float64
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 134:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 136:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 5
       ####_var0#7144#7164 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 6
@@ -2029,7 +2029,7 @@ Variables:
   ##xs#7243::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 118:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 120:
       GenSym(7) = (top(getfield))(d::Distributions.SymTriangularDist{Float64},:μ)::Float64
       GenSym(8) = (top(getfield))(d::Distributions.SymTriangularDist{Float64},:σ)::Float64
       #s25 = 1
@@ -2040,11 +2040,11 @@ Body:
       GenSym(11) = GenSym(8)
       GenSym(12) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       σ = GenSym(11)
-      #s25 = GenSym(12) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 119:
-      a = (Base.box)(Base.Float64,(Base.mul_float)(σ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 120:
+      #s25 = GenSym(12) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 121:
+      a = (Base.box)(Base.Float64,(Base.mul_float)(σ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 122:
       unless (Base.eq_float)(a::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Bool goto 0
       return (Base.box)(Float64,(Base.sitofp)(Float64,1))
-      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 121:
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 123:
       GenSym(6) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.mul_float)(μ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))),0)::Float64
       GenSym(4) = (top(ccall))((top(tuple))("sinh",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.mul_float)(0.5,a::Float64)),0)::Float64
       return (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)(4.0,GenSym(6))),(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((Base.box)(Base.Float64,(Base.div_float)(GenSym(4),a::Float64)),(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2))))::Float64))
@@ -2062,7 +2062,7 @@ Variables:
   ##xs#7243::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 118:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 120:
       GenSym(7) = (top(getfield))(d::Distributions.SymTriangularDist{Float64},:μ)::Float64
       GenSym(8) = (top(getfield))(d::Distributions.SymTriangularDist{Float64},:σ)::Float64
       #s25 = 1
@@ -2073,11 +2073,11 @@ Body:
       GenSym(11) = GenSym(8)
       GenSym(12) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       σ = GenSym(11)
-      #s25 = GenSym(12) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 119:
-      a = (Base.box)(Base.Float64,(Base.mul_float)(σ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 120:
+      #s25 = GenSym(12) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 121:
+      a = (Base.box)(Base.Float64,(Base.mul_float)(σ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 122:
       unless (Base.eq_float)(a::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Bool goto 0
       return (Base.box)(Float64,(Base.sitofp)(Float64,1))
-      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 121:
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 123:
       GenSym(6) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.mul_float)(μ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))),0)::Float64
       GenSym(4) = (top(ccall))((top(tuple))("sinh",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.mul_float)(0.5,a::Float64)),0)::Float64
       return (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)(4.0,GenSym(6))),(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((Base.box)(Base.Float64,(Base.div_float)(GenSym(4),a::Float64)),(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2))))::Float64))
@@ -2150,7 +2150,7 @@ Variables:
   ######_var0#7264#7275#7330::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 118:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 120:
       GenSym(15) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       GenSym(16) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       #s25 = 1
@@ -2161,13 +2161,13 @@ Body:
       GenSym(19) = GenSym(16)
       GenSym(20) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       σ = GenSym(19)
-      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 119:
+      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 121:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7278 = (top(tuple))()::Tuple{}
       goto 6
       ####_var0#7248#7278 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       6: 
-      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 120:
+      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 122:
       GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       unless (Base.eq_float)((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(top(getfield))(GenSym(3),:value)::Float64)::Bool goto 9
       _var0 = (top(getfield))((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{} == (top(getfield))((top(getfield))(GenSym(3),:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{}::Bool
@@ -2177,7 +2177,7 @@ Body:
       10: 
       unless _var0::Bool goto 0
       return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
-      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 121:
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 123:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7311 = (top(tuple))()::Tuple{}
       goto 20
@@ -2257,7 +2257,7 @@ Variables:
   ##xs#7243::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 118:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 120:
       GenSym(7) = (top(getfield))(d::Distributions.SymTriangularDist{Float64},:μ)::Float64
       GenSym(8) = (top(getfield))(d::Distributions.SymTriangularDist{Float64},:σ)::Float64
       #s25 = 1
@@ -2268,11 +2268,11 @@ Body:
       GenSym(11) = GenSym(8)
       GenSym(12) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       σ = GenSym(11)
-      #s25 = GenSym(12) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 119:
-      a = (Base.box)(Base.Float64,(Base.mul_float)(σ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 120:
+      #s25 = GenSym(12) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 121:
+      a = (Base.box)(Base.Float64,(Base.mul_float)(σ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 122:
       unless (Base.eq_float)(a::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Bool goto 0
       return (Base.box)(Float64,(Base.sitofp)(Float64,1))
-      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 121:
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 123:
       GenSym(6) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.mul_float)(μ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))),0)::Float64
       GenSym(4) = (top(ccall))((top(tuple))("sinh",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.mul_float)(0.5,a::Float64)),0)::Float64
       return (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)(4.0,GenSym(6))),(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((Base.box)(Base.Float64,(Base.div_float)(GenSym(4),a::Float64)),(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2))))::Float64))
@@ -2290,7 +2290,7 @@ Variables:
   ##xs#7243::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 118:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 120:
       GenSym(7) = (top(getfield))(d::Distributions.SymTriangularDist{Float64},:μ)::Float64
       GenSym(8) = (top(getfield))(d::Distributions.SymTriangularDist{Float64},:σ)::Float64
       #s25 = 1
@@ -2301,11 +2301,11 @@ Body:
       GenSym(11) = GenSym(8)
       GenSym(12) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       σ = GenSym(11)
-      #s25 = GenSym(12) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 119:
-      a = (Base.box)(Base.Float64,(Base.mul_float)(σ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 120:
+      #s25 = GenSym(12) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 121:
+      a = (Base.box)(Base.Float64,(Base.mul_float)(σ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 122:
       unless (Base.eq_float)(a::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Bool goto 0
       return (Base.box)(Float64,(Base.sitofp)(Float64,1))
-      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 121:
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 123:
       GenSym(6) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.mul_float)(μ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))),0)::Float64
       GenSym(4) = (top(ccall))((top(tuple))("sinh",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.mul_float)(0.5,a::Float64)),0)::Float64
       return (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)(4.0,GenSym(6))),(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((Base.box)(Base.Float64,(Base.div_float)(GenSym(4),a::Float64)),(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2))))::Float64))
@@ -2378,7 +2378,7 @@ Variables:
   ######_var0#7264#7275#7330::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 118:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 120:
       GenSym(15) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       GenSym(16) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       #s25 = 1
@@ -2389,13 +2389,13 @@ Body:
       GenSym(19) = GenSym(16)
       GenSym(20) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       σ = GenSym(19)
-      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 119:
+      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 121:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7278 = (top(tuple))()::Tuple{}
       goto 6
       ####_var0#7248#7278 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       6: 
-      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 120:
+      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 122:
       GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       unless (Base.eq_float)((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(top(getfield))(GenSym(3),:value)::Float64)::Bool goto 9
       _var0 = (top(getfield))((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{} == (top(getfield))((top(getfield))(GenSym(3),:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{}::Bool
@@ -2405,7 +2405,7 @@ Body:
       10: 
       unless _var0::Bool goto 0
       return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
-      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 121:
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 123:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7311 = (top(tuple))()::Tuple{}
       goto 20
@@ -2540,7 +2540,7 @@ Variables:
   ######_var0#7264#7275#7330::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 118:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 120:
       GenSym(15) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       GenSym(16) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       #s25 = 1
@@ -2551,13 +2551,13 @@ Body:
       GenSym(19) = GenSym(16)
       GenSym(20) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       σ = GenSym(19)
-      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 119:
+      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 121:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7278 = (top(tuple))()::Tuple{}
       goto 6
       ####_var0#7248#7278 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       6: 
-      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 120:
+      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 122:
       GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       unless (Base.eq_float)((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(top(getfield))(GenSym(3),:value)::Float64)::Bool goto 9
       _var0 = (top(getfield))((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{} == (top(getfield))((top(getfield))(GenSym(3),:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{}::Bool
@@ -2567,7 +2567,7 @@ Body:
       10: 
       unless _var0::Bool goto 0
       return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
-      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 121:
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 123:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7311 = (top(tuple))()::Tuple{}
       goto 20
@@ -2702,7 +2702,7 @@ Variables:
   ######_var0#7264#7275#7330::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 118:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 120:
       GenSym(15) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       GenSym(16) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       #s25 = 1
@@ -2713,13 +2713,13 @@ Body:
       GenSym(19) = GenSym(16)
       GenSym(20) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       σ = GenSym(19)
-      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 119:
+      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 121:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7278 = (top(tuple))()::Tuple{}
       goto 6
       ####_var0#7248#7278 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       6: 
-      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 120:
+      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 122:
       GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       unless (Base.eq_float)((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(top(getfield))(GenSym(3),:value)::Float64)::Bool goto 9
       _var0 = (top(getfield))((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{} == (top(getfield))((top(getfield))(GenSym(3),:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{}::Bool
@@ -2729,7 +2729,7 @@ Body:
       10: 
       unless _var0::Bool goto 0
       return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
-      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 121:
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 123:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7311 = (top(tuple))()::Tuple{}
       goto 20
@@ -2864,7 +2864,7 @@ Variables:
   ######_var0#7264#7275#7330::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 118:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 120:
       GenSym(15) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       GenSym(16) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       #s25 = 1
@@ -2875,13 +2875,13 @@ Body:
       GenSym(19) = GenSym(16)
       GenSym(20) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       σ = GenSym(19)
-      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 119:
+      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 121:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7278 = (top(tuple))()::Tuple{}
       goto 6
       ####_var0#7248#7278 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       6: 
-      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 120:
+      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 122:
       GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       unless (Base.eq_float)((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(top(getfield))(GenSym(3),:value)::Float64)::Bool goto 9
       _var0 = (top(getfield))((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{} == (top(getfield))((top(getfield))(GenSym(3),:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{}::Bool
@@ -2891,7 +2891,7 @@ Body:
       10: 
       unless _var0::Bool goto 0
       return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
-      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 121:
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 123:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7311 = (top(tuple))()::Tuple{}
       goto 20
@@ -2978,7 +2978,7 @@ Variables:
   ##xs#7331::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 125:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 127:
       GenSym(14) = (top(getfield))(d::Distributions.SymTriangularDist{Float64},:μ)::Float64
       GenSym(15) = (top(getfield))(d::Distributions.SymTriangularDist{Float64},:σ)::Float64
       #s25 = 1
@@ -2989,11 +2989,11 @@ Body:
       GenSym(18) = GenSym(15)
       GenSym(19) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       σ = GenSym(18)
-      #s25 = GenSym(19) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 126:
-      a = (Base.box)(Base.Float64,(Base.mul_float)(σ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 127:
+      #s25 = GenSym(19) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 128:
+      a = (Base.box)(Base.Float64,(Base.mul_float)(σ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 129:
       unless (Base.eq_float)(a::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Bool goto 0
       return $(Expr(:new, Complex{Float64}, :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :((Base.box)(Float64,(Base.sitofp)(Float64,0)))))
-      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 128:
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 130:
       GenSym(6) = (Base.box)(Base.Float64,(Base.mul_float)(μ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))
       GenSym(10) = (top(ccall))((top(tuple))("cos",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(6),0)::Float64
       GenSym(8) = (top(ccall))((top(tuple))("sin",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(6),0)::Float64
@@ -3017,7 +3017,7 @@ Variables:
   ##xs#7331::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 125:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 127:
       GenSym(14) = (top(getfield))(d::Distributions.SymTriangularDist{Float64},:μ)::Float64
       GenSym(15) = (top(getfield))(d::Distributions.SymTriangularDist{Float64},:σ)::Float64
       #s25 = 1
@@ -3028,11 +3028,11 @@ Body:
       GenSym(18) = GenSym(15)
       GenSym(19) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       σ = GenSym(18)
-      #s25 = GenSym(19) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 126:
-      a = (Base.box)(Base.Float64,(Base.mul_float)(σ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 127:
+      #s25 = GenSym(19) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 128:
+      a = (Base.box)(Base.Float64,(Base.mul_float)(σ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 129:
       unless (Base.eq_float)(a::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Bool goto 0
       return $(Expr(:new, Complex{Float64}, :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :((Base.box)(Float64,(Base.sitofp)(Float64,0)))))
-      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 128:
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 130:
       GenSym(6) = (Base.box)(Base.Float64,(Base.mul_float)(μ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))
       GenSym(10) = (top(ccall))((top(tuple))("cos",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(6),0)::Float64
       GenSym(8) = (top(ccall))((top(tuple))("sin",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(6),0)::Float64
@@ -3094,7 +3094,7 @@ Variables:
   ##xs#7413::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 125:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 127:
       GenSym(15) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       GenSym(16) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       #s25 = 1
@@ -3105,13 +3105,13 @@ Body:
       GenSym(19) = GenSym(16)
       GenSym(20) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       σ = GenSym(19)
-      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 126:
+      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 128:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7378 = (top(tuple))()::Tuple{}
       goto 6
       ####_var0#7248#7378 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       6: 
-      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 127:
+      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 129:
       GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       unless (Base.eq_float)((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(top(getfield))(GenSym(3),:value)::Float64)::Bool goto 9
       _var0 = (top(getfield))((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{} == (top(getfield))((top(getfield))(GenSym(3),:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{}::Bool
@@ -3121,7 +3121,7 @@ Body:
       10: 
       unless _var0::Bool goto 0
       return $(Expr(:new, Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}, :($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))), :($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))))))
-      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 128:
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 130:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7411 = (top(tuple))()::Tuple{}
       goto 21
@@ -3182,7 +3182,7 @@ Variables:
   ##xs#7331::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 125:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 127:
       GenSym(14) = (top(getfield))(d::Distributions.SymTriangularDist{Float64},:μ)::Float64
       GenSym(15) = (top(getfield))(d::Distributions.SymTriangularDist{Float64},:σ)::Float64
       #s25 = 1
@@ -3193,11 +3193,11 @@ Body:
       GenSym(18) = GenSym(15)
       GenSym(19) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       σ = GenSym(18)
-      #s25 = GenSym(19) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 126:
-      a = (Base.box)(Base.Float64,(Base.mul_float)(σ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 127:
+      #s25 = GenSym(19) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 128:
+      a = (Base.box)(Base.Float64,(Base.mul_float)(σ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 129:
       unless (Base.eq_float)(a::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Bool goto 0
       return $(Expr(:new, Complex{Float64}, :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :((Base.box)(Float64,(Base.sitofp)(Float64,0)))))
-      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 128:
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 130:
       GenSym(6) = (Base.box)(Base.Float64,(Base.mul_float)(μ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))
       GenSym(10) = (top(ccall))((top(tuple))("cos",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(6),0)::Float64
       GenSym(8) = (top(ccall))((top(tuple))("sin",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(6),0)::Float64
@@ -3221,7 +3221,7 @@ Variables:
   ##xs#7331::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 125:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 127:
       GenSym(14) = (top(getfield))(d::Distributions.SymTriangularDist{Float64},:μ)::Float64
       GenSym(15) = (top(getfield))(d::Distributions.SymTriangularDist{Float64},:σ)::Float64
       #s25 = 1
@@ -3232,11 +3232,11 @@ Body:
       GenSym(18) = GenSym(15)
       GenSym(19) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       σ = GenSym(18)
-      #s25 = GenSym(19) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 126:
-      a = (Base.box)(Base.Float64,(Base.mul_float)(σ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 127:
+      #s25 = GenSym(19) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 128:
+      a = (Base.box)(Base.Float64,(Base.mul_float)(σ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 129:
       unless (Base.eq_float)(a::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Bool goto 0
       return $(Expr(:new, Complex{Float64}, :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :((Base.box)(Float64,(Base.sitofp)(Float64,0)))))
-      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 128:
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 130:
       GenSym(6) = (Base.box)(Base.Float64,(Base.mul_float)(μ::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))
       GenSym(10) = (top(ccall))((top(tuple))("cos",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(6),0)::Float64
       GenSym(8) = (top(ccall))((top(tuple))("sin",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(6),0)::Float64
@@ -3298,7 +3298,7 @@ Variables:
   ##xs#7413::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 125:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 127:
       GenSym(15) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       GenSym(16) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       #s25 = 1
@@ -3309,13 +3309,13 @@ Body:
       GenSym(19) = GenSym(16)
       GenSym(20) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       σ = GenSym(19)
-      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 126:
+      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 128:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7378 = (top(tuple))()::Tuple{}
       goto 6
       ####_var0#7248#7378 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       6: 
-      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 127:
+      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 129:
       GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       unless (Base.eq_float)((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(top(getfield))(GenSym(3),:value)::Float64)::Bool goto 9
       _var0 = (top(getfield))((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{} == (top(getfield))((top(getfield))(GenSym(3),:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{}::Bool
@@ -3325,7 +3325,7 @@ Body:
       10: 
       unless _var0::Bool goto 0
       return $(Expr(:new, Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}, :($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))), :($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))))))
-      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 128:
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 130:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7411 = (top(tuple))()::Tuple{}
       goto 21
@@ -3424,7 +3424,7 @@ Variables:
   ##xs#7413::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 125:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 127:
       GenSym(15) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       GenSym(16) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       #s25 = 1
@@ -3435,13 +3435,13 @@ Body:
       GenSym(19) = GenSym(16)
       GenSym(20) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       σ = GenSym(19)
-      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 126:
+      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 128:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7378 = (top(tuple))()::Tuple{}
       goto 6
       ####_var0#7248#7378 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       6: 
-      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 127:
+      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 129:
       GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       unless (Base.eq_float)((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(top(getfield))(GenSym(3),:value)::Float64)::Bool goto 9
       _var0 = (top(getfield))((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{} == (top(getfield))((top(getfield))(GenSym(3),:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{}::Bool
@@ -3451,7 +3451,7 @@ Body:
       10: 
       unless _var0::Bool goto 0
       return $(Expr(:new, Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}, :($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))), :($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))))))
-      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 128:
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 130:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7411 = (top(tuple))()::Tuple{}
       goto 21
@@ -3550,7 +3550,7 @@ Variables:
   ##xs#7413::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 125:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 127:
       GenSym(15) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       GenSym(16) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       #s25 = 1
@@ -3561,13 +3561,13 @@ Body:
       GenSym(19) = GenSym(16)
       GenSym(20) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       σ = GenSym(19)
-      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 126:
+      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 128:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7378 = (top(tuple))()::Tuple{}
       goto 6
       ####_var0#7248#7378 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       6: 
-      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 127:
+      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 129:
       GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       unless (Base.eq_float)((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(top(getfield))(GenSym(3),:value)::Float64)::Bool goto 9
       _var0 = (top(getfield))((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{} == (top(getfield))((top(getfield))(GenSym(3),:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{}::Bool
@@ -3577,7 +3577,7 @@ Body:
       10: 
       unless _var0::Bool goto 0
       return $(Expr(:new, Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}, :($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))), :($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))))))
-      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 128:
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 130:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7411 = (top(tuple))()::Tuple{}
       goto 21
@@ -3676,7 +3676,7 @@ Variables:
   ##xs#7413::Tuple{}
 
 Body:
-  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 125:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 127:
       GenSym(15) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:μ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       GenSym(16) = (top(getfield))(d::Distributions.SymTriangularDist{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:σ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       #s25 = 1
@@ -3687,13 +3687,13 @@ Body:
       GenSym(19) = GenSym(16)
       GenSym(20) = (Base.box)(Base.Int,(Base.add_int)(2,1))
       σ = GenSym(19)
-      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 126:
+      #s25 = GenSym(20) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 128:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7378 = (top(tuple))()::Tuple{}
       goto 6
       ####_var0#7248#7378 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       6: 
-      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 127:
+      a = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(σ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 129:
       GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       unless (Base.eq_float)((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(top(getfield))(GenSym(3),:value)::Float64)::Bool goto 9
       _var0 = (top(getfield))((top(getfield))(a::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{} == (top(getfield))((top(getfield))(GenSym(3),:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{}::Bool
@@ -3703,7 +3703,7 @@ Body:
       10: 
       unless _var0::Bool goto 0
       return $(Expr(:new, Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}, :($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))), :($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))))))
-      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 128:
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/symtriangular.jl, line 130:
       $(Expr(:boundscheck, false))
       ####_var0#7248#7411 = (top(tuple))()::Tuple{}
       goto 21

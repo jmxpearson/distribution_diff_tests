@@ -20,7 +20,7 @@ h(α) = 1 + 1/α
 function grad1(p)
     α = p[1]
     θ = 3.0
-    [-θ*α^2*gamma(h(α))*digamma(h(α))]
+    [-θ/α^2*gamma(h(α))*digamma(h(α))]
 end
 
 function grad2(p)
@@ -29,9 +29,9 @@ function grad2(p)
 end
 
 function grad3(x)
-    θ = x[1]
-    α = x[2]
-    [-θ*α^2*gamma(h(α))*digamma(h(α)), gamma(h(α))]
+    α = x[1]
+    θ = x[2]
+    [-θ/α^2*gamma(h(α))*digamma(h(α)), gamma(h(α))]
 end
 
 agrad1 = ForwardDiff.gradient(f1)
