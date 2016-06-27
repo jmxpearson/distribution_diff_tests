@@ -206,25 +206,25 @@ Variables:
   s::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   #s25::Int64
   i::Int64
-  ######tup#7020#7137#7164::Tuple{}
-  ####_var0#7138#7165::Tuple{}
-  ######types#7027#7139#7166::Tuple{Type{Int64}}
-  ##a#7167::Float64
-  ####G#7150#7168::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ########types#7140#7146#7151#7169::Tuple{Type{Float64},Type{Float64}}
-  ##########tup#7141#7143#7147#7152#7170::Tuple{}
-  ##########x#7142#7144#7148#7153#7171::Float64
-  ########_var0#7145#7149#7154#7172::Tuple{}
-  ##a1#7173::Float64
-  ##a2#7174::Float64
-  ######a#7155#7159#7175::Tuple{}
-  ######b#7156#7160#7176::Tuple{}
-  ######afactor#7157#7161#7177::Float64
-  ######bfactor#7158#7162#7178::Float64
-  ####_var0#7163#7179::Tuple{}
-  ######a#6997#6999#7180::Tuple{}
-  ######b#6998#7000#7181::Tuple{}
-  ####_var0#7001#7182::Tuple{}
+  ######tup#7057#7174#7201::Tuple{}
+  ####_var0#7175#7202::Tuple{}
+  ######types#7064#7176#7203::Tuple{Type{Int64}}
+  ##a#7204::Float64
+  ####G#7187#7205::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7177#7183#7188#7206::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7178#7180#7184#7189#7207::Tuple{}
+  ##########x#7179#7181#7185#7190#7208::Float64
+  ########_var0#7182#7186#7191#7209::Tuple{}
+  ##a1#7210::Float64
+  ##a2#7211::Float64
+  ######a#7192#7196#7212::Tuple{}
+  ######b#7193#7197#7213::Tuple{}
+  ######afactor#7194#7198#7214::Float64
+  ######bfactor#7195#7199#7215::Float64
+  ####_var0#7200#7216::Tuple{}
+  ######a#7034#7036#7217::Tuple{}
+  ######b#7035#7037#7218::Tuple{}
+  ####_var0#7038#7219::Tuple{}
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 84:
@@ -242,33 +242,33 @@ Body:
       #s25 = GenSym(8) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 89:
       $(Expr(:boundscheck, false))
       $(Expr(:boundscheck, false))
-      ####_var0#7138#7165 = (top(tuple))()::Tuple{}
+      ####_var0#7175#7202 = (top(tuple))()::Tuple{}
       goto 14
-      ####_var0#7138#7165 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ####_var0#7175#7202 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       14: 
-      ##a#7167 = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,i::Int64)),(top(getfield))(m::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64
-      ####G#7150#7168 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      ##a#7204 = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,i::Int64)),(top(getfield))(m::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64
+      ####G#7187#7205 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       $(Expr(:boundscheck, false))
-      ########_var0#7145#7149#7154#7172 = (top(tuple))()::Tuple{}
+      ########_var0#7182#7186#7191#7209 = (top(tuple))()::Tuple{}
       goto 16
-      ########_var0#7145#7149#7154#7172 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7182#7186#7191#7209 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       16: 
-      GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a#7167::Float64,##a#7167::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a#7204::Float64,##a#7204::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       GenSym(2) = (Base.arrayref)(p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1},i::Int64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       GenSym(4) = (top(getfield))(GenSym(3),:value)::Float64
       GenSym(5) = (top(getfield))(GenSym(2),:value)::Float64
-      ##a1#7173 = GenSym(4)
-      ##a2#7174 = GenSym(5)
+      ##a1#7210 = GenSym(4)
+      ##a2#7211 = GenSym(5)
       $(Expr(:boundscheck, false))
-      ####_var0#7163#7179 = (top(tuple))()::Tuple{}
+      ####_var0#7200#7216 = (top(tuple))()::Tuple{}
       goto 18
-      ####_var0#7163#7179 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ####_var0#7200#7216 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       18: 
-      GenSym(6) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a1#7173::Float64,##a2#7174::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      GenSym(6) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a1#7210::Float64,##a2#7211::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       $(Expr(:boundscheck, false))
-      ####_var0#7001#7182 = (top(tuple))()::Tuple{}
+      ####_var0#7038#7219 = (top(tuple))()::Tuple{}
       goto 20
-      ####_var0#7001#7182 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ####_var0#7038#7219 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       20: 
       s = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(s::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(top(getfield))(GenSym(6),:value)::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
@@ -666,38 +666,38 @@ Variables:
   v::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   #s25::Int64
   i::Int64
-  ######tup#7020#7137#7222::Tuple{}
-  ####_var0#7138#7223::Tuple{}
-  ######types#7027#7139#7224::Tuple{Type{Int64}}
-  ##a#7225::Float64
-  ##exp_a#7226::Float64
-  ##deriv#7227::Float64
-  ####G#7193#7228::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ########types#7140#7146#7194#7229::Tuple{Type{Float64},Type{Float64}}
-  ##########tup#7141#7143#7147#7195#7230::Tuple{}
-  ##########x#7142#7144#7148#7196#7231::Float64
-  ########_var0#7145#7149#7197#7232::Tuple{}
-  ##a1#7233::Float64
-  ##a2#7234::Float64
-  ######a#7155#7159#7235::Tuple{}
-  ######b#7156#7160#7236::Tuple{}
-  ######afactor#7157#7161#7237::Float64
-  ######bfactor#7158#7162#7238::Float64
-  ####_var0#7163#7239::Tuple{}
-  ##sqrt_a#7240::Float64
-  ##deriv#7241::Float64
-  ####G#7198#7242::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ########types#7140#7146#7199#7243::Tuple{Type{Float64},Type{Float64}}
-  ##########tup#7141#7143#7147#7200#7244::Tuple{}
-  ##########x#7142#7144#7148#7201#7245::Float64
-  ########_var0#7145#7149#7202#7246::Tuple{}
-  ##a1#7247::Float64
-  ##a2#7248::Float64
-  ######a#7155#7159#7249::Tuple{}
-  ######b#7156#7160#7250::Tuple{}
-  ######afactor#7157#7161#7251::Float64
-  ######bfactor#7158#7162#7252::Float64
-  ####_var0#7163#7253::Tuple{}
+  ######tup#7057#7174#7259::Tuple{}
+  ####_var0#7175#7260::Tuple{}
+  ######types#7064#7176#7261::Tuple{Type{Int64}}
+  ##a#7262::Float64
+  ##exp_a#7263::Float64
+  ##deriv#7264::Float64
+  ####G#7230#7265::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7177#7183#7231#7266::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7178#7180#7184#7232#7267::Tuple{}
+  ##########x#7179#7181#7185#7233#7268::Float64
+  ########_var0#7182#7186#7234#7269::Tuple{}
+  ##a1#7270::Float64
+  ##a2#7271::Float64
+  ######a#7192#7196#7272::Tuple{}
+  ######b#7193#7197#7273::Tuple{}
+  ######afactor#7194#7198#7274::Float64
+  ######bfactor#7195#7199#7275::Float64
+  ####_var0#7200#7276::Tuple{}
+  ##sqrt_a#7277::Float64
+  ##deriv#7278::Float64
+  ####G#7235#7279::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7177#7183#7236#7280::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7178#7180#7184#7237#7281::Tuple{}
+  ##########x#7179#7181#7185#7238#7282::Float64
+  ########_var0#7182#7186#7239#7283::Tuple{}
+  ##a1#7284::Float64
+  ##a2#7285::Float64
+  ######a#7192#7196#7286::Tuple{}
+  ######b#7193#7197#7287::Tuple{}
+  ######afactor#7194#7198#7288::Float64
+  ######bfactor#7195#7199#7289::Float64
+  ####_var0#7200#7290::Tuple{}
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 95:
@@ -716,56 +716,56 @@ Body:
       #s25 = GenSym(10) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 100:
       $(Expr(:boundscheck, false))
       $(Expr(:boundscheck, false))
-      ####_var0#7138#7223 = (top(tuple))()::Tuple{}
+      ####_var0#7175#7260 = (top(tuple))()::Tuple{}
       goto 13
-      ####_var0#7138#7223 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ####_var0#7175#7260 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       13: 
-      ##a#7225 = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,i::Int64)),(top(getfield))(m::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64
-      ##exp_a#7226 = (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7225::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,3)))::ANY)::Float64
-      ##deriv#7227 = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,3)),(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7225::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,(Base.box)(Int64,(Base.sub_int)(3,1))))))::Float64))
-      ####G#7193#7228 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      ##a#7262 = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,i::Int64)),(top(getfield))(m::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64
+      ##exp_a#7263 = (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7262::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,3)))::ANY)::Float64
+      ##deriv#7264 = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,3)),(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7262::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,(Base.box)(Int64,(Base.sub_int)(3,1))))))::Float64))
+      ####G#7230#7265 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       $(Expr(:boundscheck, false))
-      ########_var0#7145#7149#7197#7232 = (top(tuple))()::Tuple{}
+      ########_var0#7182#7186#7234#7269 = (top(tuple))()::Tuple{}
       goto 15
-      ########_var0#7145#7149#7197#7232 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7182#7186#7234#7269 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       15: 
-      GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##exp_a#7226::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##exp_a#7263::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       GenSym(2) = (Base.arrayref)(p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1},i::Int64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       GenSym(4) = (top(getfield))(GenSym(3),:value)::Float64
       GenSym(5) = (top(getfield))(GenSym(2),:value)::Float64
-      ##a1#7233 = GenSym(4)
-      ##a2#7234 = GenSym(5)
+      ##a1#7270 = GenSym(4)
+      ##a2#7271 = GenSym(5)
       $(Expr(:boundscheck, false))
-      ####_var0#7163#7239 = (top(tuple))()::Tuple{}
+      ####_var0#7200#7276 = (top(tuple))()::Tuple{}
       goto 17
-      ####_var0#7163#7239 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ####_var0#7200#7276 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       17: 
-      s = s::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}} + $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a1#7233::Float64,##a2#7234::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      s = s::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}} + $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a1#7270::Float64,##a2#7271::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
       unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
       1: 
       0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 102:
       v = (Distributions.var)(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 103:
-      ##sqrt_a#7240 = (Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((top(getfield))(v::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64)::ANY)::Float64
-      ##deriv#7241 = (Base.box)(Base.Float64,(Base.div_float)(0.5,##sqrt_a#7240::Float64))
-      ####G#7198#7242 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      ##sqrt_a#7277 = (Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((top(getfield))(v::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64)::ANY)::Float64
+      ##deriv#7278 = (Base.box)(Base.Float64,(Base.div_float)(0.5,##sqrt_a#7277::Float64))
+      ####G#7235#7279 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       $(Expr(:boundscheck, false))
-      ########_var0#7145#7149#7202#7246 = (top(tuple))()::Tuple{}
+      ########_var0#7182#7186#7239#7283 = (top(tuple))()::Tuple{}
       goto 22
-      ########_var0#7145#7149#7202#7246 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7182#7186#7239#7283 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       22: 
-      GenSym(6) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##sqrt_a#7240::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      GenSym(6) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##sqrt_a#7277::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       GenSym(7) = (top(getfield))(v::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
       GenSym(8) = (top(getfield))(GenSym(6),:value)::Float64
-      ##a1#7247 = GenSym(7)
-      ##a2#7248 = GenSym(8)
+      ##a1#7284 = GenSym(7)
+      ##a2#7285 = GenSym(8)
       $(Expr(:boundscheck, false))
-      ####_var0#7163#7253 = (top(tuple))()::Tuple{}
+      ####_var0#7200#7290 = (top(tuple))()::Tuple{}
       goto 24
-      ####_var0#7163#7253 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ####_var0#7200#7290 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       24: 
-      return s::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}} / $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a1#7247::Float64,##a2#7248::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      return s::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}} / $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a1#7284::Float64,##a2#7285::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
 
@@ -857,31 +857,31 @@ Variables:
   s::ANY
   #s25::Int64
   i::Int64
-  ######tup#7020#7137#7257::Tuple{}
-  ####_var0#7138#7258::Tuple{}
-  ######types#7027#7139#7259::Tuple{Type{Int64}}
-  ##a#7260::Float64
-  ##exp_a#7261::Float64
-  ##deriv#7262::Float64
-  ####G#7193#7263::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ########types#7140#7146#7194#7264::Tuple{Type{Float64},Type{Float64}}
-  ##########tup#7141#7143#7147#7195#7265::Tuple{}
-  ##########x#7142#7144#7148#7196#7266::Float64
-  ########_var0#7145#7149#7197#7267::Tuple{}
-  ##a1#7268::Float64
-  ##a2#7269::Float64
-  ######a#7155#7159#7270::Tuple{}
-  ######b#7156#7160#7271::Tuple{}
-  ######afactor#7157#7161#7272::Float64
-  ######bfactor#7158#7162#7273::Float64
-  ####_var0#7163#7274::Tuple{}
-  ##a#7275::Float64
-  ####G#7150#7276::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ########types#7140#7146#7151#7277::Tuple{Type{Float64},Type{Float64}}
-  ##########tup#7141#7143#7147#7152#7278::Tuple{}
-  ##########x#7142#7144#7148#7153#7279::Float64
-  ########_var0#7145#7149#7154#7280::Tuple{}
-  ######types#7187#7256#7281::Tuple{Type{Float64}}
+  ######tup#7057#7174#7294::Tuple{}
+  ####_var0#7175#7295::Tuple{}
+  ######types#7064#7176#7296::Tuple{Type{Int64}}
+  ##a#7297::Float64
+  ##exp_a#7298::Float64
+  ##deriv#7299::Float64
+  ####G#7230#7300::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7177#7183#7231#7301::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7178#7180#7184#7232#7302::Tuple{}
+  ##########x#7179#7181#7185#7233#7303::Float64
+  ########_var0#7182#7186#7234#7304::Tuple{}
+  ##a1#7305::Float64
+  ##a2#7306::Float64
+  ######a#7192#7196#7307::Tuple{}
+  ######b#7193#7197#7308::Tuple{}
+  ######afactor#7194#7198#7309::Float64
+  ######bfactor#7195#7199#7310::Float64
+  ####_var0#7200#7311::Tuple{}
+  ##a#7312::Float64
+  ####G#7187#7313::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7177#7183#7188#7314::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7178#7180#7184#7189#7315::Tuple{}
+  ##########x#7179#7181#7185#7190#7316::Float64
+  ########_var0#7182#7186#7191#7317::Tuple{}
+  ######types#7224#7293#7318::Tuple{Type{Float64}}
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 107:
@@ -899,45 +899,45 @@ Body:
       #s25 = GenSym(9) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 112:
       $(Expr(:boundscheck, false))
       $(Expr(:boundscheck, false))
-      ####_var0#7138#7258 = (top(tuple))()::Tuple{}
+      ####_var0#7175#7295 = (top(tuple))()::Tuple{}
       goto 13
-      ####_var0#7138#7258 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ####_var0#7175#7295 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       13: 
-      ##a#7260 = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,i::Int64)),(top(getfield))(m::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64
-      ##exp_a#7261 = (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7260::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,4)))::ANY)::Float64
-      ##deriv#7262 = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,4)),(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7260::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,(Base.box)(Int64,(Base.sub_int)(4,1))))))::Float64))
-      ####G#7193#7263 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      ##a#7297 = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,i::Int64)),(top(getfield))(m::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64
+      ##exp_a#7298 = (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7297::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,4)))::ANY)::Float64
+      ##deriv#7299 = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,4)),(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7297::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,(Base.box)(Int64,(Base.sub_int)(4,1))))))::Float64))
+      ####G#7230#7300 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       $(Expr(:boundscheck, false))
-      ########_var0#7145#7149#7197#7267 = (top(tuple))()::Tuple{}
+      ########_var0#7182#7186#7234#7304 = (top(tuple))()::Tuple{}
       goto 15
-      ########_var0#7145#7149#7197#7267 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7182#7186#7234#7304 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       15: 
-      GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##exp_a#7261::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##exp_a#7298::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       GenSym(2) = (Base.arrayref)(p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1},i::Int64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       GenSym(4) = (top(getfield))(GenSym(3),:value)::Float64
       GenSym(5) = (top(getfield))(GenSym(2),:value)::Float64
-      ##a1#7268 = GenSym(4)
-      ##a2#7269 = GenSym(5)
+      ##a1#7305 = GenSym(4)
+      ##a2#7306 = GenSym(5)
       $(Expr(:boundscheck, false))
-      ####_var0#7163#7274 = (top(tuple))()::Tuple{}
+      ####_var0#7200#7311 = (top(tuple))()::Tuple{}
       goto 17
-      ####_var0#7163#7274 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ####_var0#7200#7311 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       17: 
-      s = s::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}} + $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a1#7268::Float64,##a2#7269::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      s = s::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}} + $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a1#7305::Float64,##a2#7306::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
       unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
       1: 
       0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 114:
       GenSym(6) = (Distributions.var)(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
-      ##a#7275 = (top(getfield))(GenSym(6),:value)::Float64
-      ####G#7150#7276 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      ##a#7312 = (top(getfield))(GenSym(6),:value)::Float64
+      ####G#7187#7313 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       $(Expr(:boundscheck, false))
-      ########_var0#7145#7149#7154#7280 = (top(tuple))()::Tuple{}
+      ########_var0#7182#7186#7191#7317 = (top(tuple))()::Tuple{}
       goto 22
-      ########_var0#7145#7149#7154#7280 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7182#7186#7191#7317 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       22: 
-      GenSym(7) = s::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}} / $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a#7275::Float64,##a#7275::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      GenSym(7) = s::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}} / $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a#7312::Float64,##a#7312::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.sub_float)((top(getfield))(GenSym(7),:value)::Float64,3.0))), :((top(getfield))(GenSym(7),:partials)::ForwardDiff.Partials{Float64,Tuple{}})))
   end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
 
@@ -989,78 +989,78 @@ ____________________________
 
 Variables:
   d::Distributions.Categorical{Float64}
-  ####_var0#7307#7309::UNION{BOOL,INT64}
-  ########_var0#7305#7306#7308#7310::Float64
+  ####_var0#7344#7346::UNION{BOOL,INT64}
+  ########_var0#7342#7343#7345#7347::Float64
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
-      ####_var0#7307#7309 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      ####_var0#7344#7346 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 2
       1: 
-      ####_var0#7307#7309 = false
+      ####_var0#7344#7346 = false
       2: 
-      ####_var0#7307#7309::UNION{BOOL,INT64}
+      ####_var0#7344#7346::UNION{BOOL,INT64}
       $(Expr(:boundscheck, false))
       GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
       GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
-      ########_var0#7305#7306#7308#7310 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      ########_var0#7342#7343#7345#7347 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
       goto 3
-      ########_var0#7305#7306#7308#7310 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7342#7343#7345#7347 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
-      return (Distributions.quantile)(d::Distributions.Categorical{Float64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7305#7306#7308#7310::Float64,1.0)))::Int64
+      return (Distributions.quantile)(d::Distributions.Categorical{Float64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7342#7343#7345#7347::Float64,1.0)))::Int64
   end::Int64
 
 ----float----
 
 Variables:
   d::Distributions.Categorical{Float64}
-  ####_var0#7307#7309::UNION{BOOL,INT64}
-  ########_var0#7305#7306#7308#7310::Float64
+  ####_var0#7344#7346::UNION{BOOL,INT64}
+  ########_var0#7342#7343#7345#7347::Float64
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
-      ####_var0#7307#7309 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      ####_var0#7344#7346 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 2
       1: 
-      ####_var0#7307#7309 = false
+      ####_var0#7344#7346 = false
       2: 
-      ####_var0#7307#7309::UNION{BOOL,INT64}
+      ####_var0#7344#7346::UNION{BOOL,INT64}
       $(Expr(:boundscheck, false))
       GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
       GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
-      ########_var0#7305#7306#7308#7310 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      ########_var0#7342#7343#7345#7347 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
       goto 3
-      ########_var0#7305#7306#7308#7310 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7342#7343#7345#7347 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
-      return (Distributions.quantile)(d::Distributions.Categorical{Float64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7305#7306#7308#7310::Float64,1.0)))::Int64
+      return (Distributions.quantile)(d::Distributions.Categorical{Float64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7342#7343#7345#7347::Float64,1.0)))::Int64
   end::Int64
 
 ----dual----
 
 Variables:
   d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
-  ####_var0#7307#7314::UNION{BOOL,INT64}
-  ########_var0#7305#7306#7308#7315::Float64
+  ####_var0#7344#7351::UNION{BOOL,INT64}
+  ########_var0#7342#7343#7345#7352::Float64
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
       unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
-      ####_var0#7307#7314 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      ####_var0#7344#7351 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
       goto 2
       1: 
-      ####_var0#7307#7314 = false
+      ####_var0#7344#7351 = false
       2: 
-      ####_var0#7307#7314::UNION{BOOL,INT64}
+      ####_var0#7344#7351::UNION{BOOL,INT64}
       $(Expr(:boundscheck, false))
       GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
       GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
-      ########_var0#7305#7306#7308#7315 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      ########_var0#7342#7343#7345#7352 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
       goto 3
-      ########_var0#7305#7306#7308#7315 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ########_var0#7342#7343#7345#7352 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
-      return (Distributions.quantile)(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7305#7306#7308#7315::Float64,1.0)))::Int64
+      return (Distributions.quantile)(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7342#7343#7345#7352::Float64,1.0)))::Int64
   end::Int64
 
 
@@ -1201,13 +1201,13 @@ Variables:
   s::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
   #s25::Int64
   i::Int64
-  ######tup#7141#7318#7322::Tuple{}
-  ######x#7142#7319#7323::Float64
-  ####_var0#7320#7324::Tuple{}
-  ######types#7187#7321#7325::Tuple{Type{Float64}}
-  ######a#6997#6999#7326::Tuple{}
-  ######b#6998#7000#7327::Tuple{}
-  ####_var0#7001#7328::Tuple{}
+  ######tup#7178#7355#7359::Tuple{}
+  ######x#7179#7356#7360::Float64
+  ####_var0#7357#7361::Tuple{}
+  ######types#7224#7358#7362::Tuple{Type{Float64}}
+  ######a#7034#7036#7363::Tuple{}
+  ######b#7035#7037#7364::Tuple{}
+  ####_var0#7038#7365::Tuple{}
 
 Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 120:
@@ -1226,14 +1226,14 @@ Body:
       GenSym(4) = (Base.arrayref)(p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1},i::Int64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
       GenSym(3) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)),0)::Float64
       $(Expr(:boundscheck, false))
-      ####_var0#7320#7324 = (top(tuple))()::Tuple{}
+      ####_var0#7357#7361 = (top(tuple))()::Tuple{}
       goto 15
-      ####_var0#7320#7324 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ####_var0#7357#7361 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       15: 
       $(Expr(:boundscheck, false))
-      ####_var0#7001#7328 = (top(tuple))()::Tuple{}
+      ####_var0#7038#7365 = (top(tuple))()::Tuple{}
       goto 17
-      ####_var0#7001#7328 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      ####_var0#7038#7365 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       17: 
       s = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(s::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(GenSym(4),:value)::Float64,GenSym(3)))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
       $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
@@ -1258,7 +1258,7 @@ Variables:
   t::Int64
   k::Int64
   p::Array{Float64,1}
-  s::ANY
+  s::Complex{Float64}
   #s25::Int64
   i::Int64
 
@@ -1266,30 +1266,33 @@ Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 130:
       k = (top(getfield))(d::Distributions.Categorical{Float64},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 131:
       p = (top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 132:
-      s = (Distributions.zero)(Distributions.T)::ANY + (Distributions.zero)(Distributions.T)::ANY * Distributions.im::ANY::ANY # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 133:
+      GenSym(2) = (Base.box)(Float64,(Base.sitofp)(Float64,0))
+      GenSym(3) = $(Expr(:new, Complex{Float64}, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:re)::Bool,GenSym(2),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)((Base.box)(Int64,GenSym(2)),0)::Bool,(Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)))),(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Float64)::Float64), :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:im)::Bool,GenSym(2),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)((Base.box)(Int64,GenSym(2)),0)::Bool,(Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)))),(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Float64)::Float64)))
+      s = $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.add_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)),(top(getfield))(GenSym(3),:re)::Float64))), :((top(getfield))(GenSym(3),:im)::Float64))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 133:
       GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,k::Int64)::Bool,k::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
       #s25 = (top(getfield))(GenSym(0),:start)::Int64
       unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
       2: 
-      GenSym(10) = #s25::Int64
-      GenSym(11) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
-      i = GenSym(10)
-      #s25 = GenSym(11) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 134:
+      GenSym(13) = #s25::Int64
+      GenSym(14) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      i = GenSym(13)
+      #s25 = GenSym(14) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 134:
       $(Expr(:boundscheck, false))
-      GenSym(8) = (Base.arrayref)(p::Array{Float64,1},i::Int64)::Float64
-      GenSym(5) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
-      GenSym(7) = (top(ccall))((top(tuple))("cos",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(5),0)::Float64
-      GenSym(2) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
-      GenSym(4) = (top(ccall))((top(tuple))("sin",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(2),0)::Float64
-      GenSym(9) = $(Expr(:new, Complex{Float64}, :((Base.Math.nan_dom_err)(GenSym(7),GenSym(5))::Float64), :((Base.Math.nan_dom_err)(GenSym(4),GenSym(2))::Float64)))
-      s = s + $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.mul_float)(GenSym(8),(top(getfield))(GenSym(9),:re)::Float64))), :((Base.box)(Base.Float64,(Base.mul_float)(GenSym(8),(top(getfield))(GenSym(9),:im)::Float64)))))::ANY
+      GenSym(10) = (Base.arrayref)(p::Array{Float64,1},i::Int64)::Float64
+      GenSym(7) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
+      GenSym(9) = (top(ccall))((top(tuple))("cos",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(7),0)::Float64
+      GenSym(4) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
+      GenSym(6) = (top(ccall))((top(tuple))("sin",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(4),0)::Float64
+      GenSym(11) = $(Expr(:new, Complex{Float64}, :((Base.Math.nan_dom_err)(GenSym(9),GenSym(7))::Float64), :((Base.Math.nan_dom_err)(GenSym(6),GenSym(4))::Float64)))
+      GenSym(12) = $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.mul_float)(GenSym(10),(top(getfield))(GenSym(11),:re)::Float64))), :((Base.box)(Base.Float64,(Base.mul_float)(GenSym(10),(top(getfield))(GenSym(11),:im)::Float64)))))
+      s = $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(s::Complex{Float64},:re)::Float64,(top(getfield))(GenSym(12),:re)::Float64))), :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(s::Complex{Float64},:im)::Float64,(top(getfield))(GenSym(12),:im)::Float64)))))
       $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
       unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
       1: 
       0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 136:
-      return s
-  end::ANY
+      return s::Complex{Float64}
+  end::Complex{Float64}
 
 ----float----
 
@@ -1298,7 +1301,7 @@ Variables:
   t::Int64
   k::Int64
   p::Array{Float64,1}
-  s::ANY
+  s::Complex{Float64}
   #s25::Int64
   i::Int64
 
@@ -1306,30 +1309,33 @@ Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 130:
       k = (top(getfield))(d::Distributions.Categorical{Float64},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 131:
       p = (top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 132:
-      s = (Distributions.zero)(Distributions.T)::ANY + (Distributions.zero)(Distributions.T)::ANY * Distributions.im::ANY::ANY # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 133:
+      GenSym(2) = (Base.box)(Float64,(Base.sitofp)(Float64,0))
+      GenSym(3) = $(Expr(:new, Complex{Float64}, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:re)::Bool,GenSym(2),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)((Base.box)(Int64,GenSym(2)),0)::Bool,(Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)))),(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Float64)::Float64), :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:im)::Bool,GenSym(2),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)((Base.box)(Int64,GenSym(2)),0)::Bool,(Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)))),(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Float64)::Float64)))
+      s = $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.add_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)),(top(getfield))(GenSym(3),:re)::Float64))), :((top(getfield))(GenSym(3),:im)::Float64))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 133:
       GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,k::Int64)::Bool,k::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
       #s25 = (top(getfield))(GenSym(0),:start)::Int64
       unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
       2: 
-      GenSym(10) = #s25::Int64
-      GenSym(11) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
-      i = GenSym(10)
-      #s25 = GenSym(11) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 134:
+      GenSym(13) = #s25::Int64
+      GenSym(14) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      i = GenSym(13)
+      #s25 = GenSym(14) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 134:
       $(Expr(:boundscheck, false))
-      GenSym(8) = (Base.arrayref)(p::Array{Float64,1},i::Int64)::Float64
-      GenSym(5) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
-      GenSym(7) = (top(ccall))((top(tuple))("cos",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(5),0)::Float64
-      GenSym(2) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
-      GenSym(4) = (top(ccall))((top(tuple))("sin",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(2),0)::Float64
-      GenSym(9) = $(Expr(:new, Complex{Float64}, :((Base.Math.nan_dom_err)(GenSym(7),GenSym(5))::Float64), :((Base.Math.nan_dom_err)(GenSym(4),GenSym(2))::Float64)))
-      s = s + $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.mul_float)(GenSym(8),(top(getfield))(GenSym(9),:re)::Float64))), :((Base.box)(Base.Float64,(Base.mul_float)(GenSym(8),(top(getfield))(GenSym(9),:im)::Float64)))))::ANY
+      GenSym(10) = (Base.arrayref)(p::Array{Float64,1},i::Int64)::Float64
+      GenSym(7) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
+      GenSym(9) = (top(ccall))((top(tuple))("cos",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(7),0)::Float64
+      GenSym(4) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
+      GenSym(6) = (top(ccall))((top(tuple))("sin",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(4),0)::Float64
+      GenSym(11) = $(Expr(:new, Complex{Float64}, :((Base.Math.nan_dom_err)(GenSym(9),GenSym(7))::Float64), :((Base.Math.nan_dom_err)(GenSym(6),GenSym(4))::Float64)))
+      GenSym(12) = $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.mul_float)(GenSym(10),(top(getfield))(GenSym(11),:re)::Float64))), :((Base.box)(Base.Float64,(Base.mul_float)(GenSym(10),(top(getfield))(GenSym(11),:im)::Float64)))))
+      s = $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(s::Complex{Float64},:re)::Float64,(top(getfield))(GenSym(12),:re)::Float64))), :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(s::Complex{Float64},:im)::Float64,(top(getfield))(GenSym(12),:im)::Float64)))))
       $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
       unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
       1: 
       0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 136:
-      return s
-  end::ANY
+      return s::Complex{Float64}
+  end::Complex{Float64}
 
 ----dual----
 
@@ -1338,7 +1344,7 @@ Variables:
   t::Int64
   k::Int64
   p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1}
-  s::ANY
+  s::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
   #s25::Int64
   i::Int64
 
@@ -1346,7 +1352,7 @@ Body:
   begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 130:
       k = (top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 131:
       p = (top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 132:
-      s = (Distributions.zero)(Distributions.T)::ANY + (Distributions.zero)(Distributions.T)::ANY * Distributions.im::ANY::ANY # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 133:
+      s = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) + $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) * Distributions.im::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 133:
       GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,k::Int64)::Bool,k::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
       #s25 = (top(getfield))(GenSym(0),:start)::Int64
       unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
@@ -1361,14 +1367,14 @@ Body:
       GenSym(7) = (top(ccall))((top(tuple))("cos",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(5),0)::Float64
       GenSym(2) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
       GenSym(4) = (top(ccall))((top(tuple))("sin",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(2),0)::Float64
-      s = s + GenSym(8) * $(Expr(:new, Complex{Float64}, :((Base.Math.nan_dom_err)(GenSym(7),GenSym(5))::Float64), :((Base.Math.nan_dom_err)(GenSym(4),GenSym(2))::Float64)))::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}::ANY
+      s = s::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}} + GenSym(8) * $(Expr(:new, Complex{Float64}, :((Base.Math.nan_dom_err)(GenSym(7),GenSym(5))::Float64), :((Base.Math.nan_dom_err)(GenSym(4),GenSym(2))::Float64)))::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
       $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
       3: 
       unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
       1: 
       0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 136:
-      return s
-  end::ANY
+      return s::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  end::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
 
 
 

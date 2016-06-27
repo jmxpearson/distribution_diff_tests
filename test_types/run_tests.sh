@@ -1,14 +1,18 @@
 julia='/Applications/Julia-0.4.5.app/Contents/Resources/julia/bin/julia'
+
 if false
 then
+
 # continuous functions
 $julia arcsine_types.jl > results/arcsine_type_test_results.txt
 $julia beta_types.jl > results/beta_type_test_results.txt
 $julia betaprime_types.jl > results/betaprime_type_test_results.txt
+$julia biweight_types.jl > results/biweight_type_test_results.txt
 $julia cauchy_types.jl > results/cauchy_type_test_results.txt
 $julia chi_types.jl > results/chi_type_test_results.txt
 $julia chisq_types.jl > results/chisq_type_test_results.txt
 $julia cosine_types.jl > results/cosine_type_test_results.txt
+$julia epanechnikov_types.jl > results/epanechnikov_type_test_results.txt
 $julia erlang_types.jl > results/erlang_type_test_results.txt
 $julia exponential_types.jl > results/exponential_type_test_results.txt
 $julia fdist_types.jl > results/fdist_type_test_results.txt
@@ -24,11 +28,14 @@ $julia levy_types.jl > results/levy_type_test_results.txt
 $julia logistic_types.jl > results/logistic_type_test_results.txt
 $julia lognormal_types.jl > results/lognormal_type_test_results.txt
 $julia noncentralbeta_types.jl > results/noncentralbeta_type_test_results.txt
+$julia noncentralchisq_types.jl > results/noncentralchisq_type_test_results.txt
 $julia noncentralf_types.jl > results/noncentralf_type_test_results.txt
 $julia noncentralt_types.jl > results/noncentralt_type_test_results.txt
 $julia normal_types.jl > results/normal_type_test_results.txt
 $julia normalcanon_types.jl > results/normalcanon_type_test_results.txt
+$julia normalinversegaussian_types.jl > results/normalinversegaussian_type_test_results.txt
 $julia pareto_types.jl > results/pareto_type_test_results.txt
+$julia rayleigh_types.jl > results/rayleigh_type_test_results.txt
 $julia symtriangular_types.jl > results/symtriangular_type_test_results.txt
 $julia tdist_types.jl > results/tdist_type_test_results.txt
 $julia triangular_types.jl > results/triangular_type_test_results.txt
@@ -49,16 +56,6 @@ $julia walleniusnoncentralhypergeometric_types.jl > results/walleniusnoncentralh
 $julia poisson_types.jl > results/poisson_type_test_results.txt
 $julia skellam_types.jl > results/skellam_type_test_results.txt
 
-$julia biweight_types.jl > results/biweight_type_test_results.txt
-
-
-$julia rayleigh_types.jl > results/rayleigh_type_test_results.txt
-
-$julia noncentralchisq_types.jl > results/noncentralchisq_type_test_results.txt
-
-
-
-
-$julia epanechnikov_types.jl > results/epanechnikov_type_test_results.txt
 fi
-$julia normalinversegaussian_types.jl > results/normalinversegaussian_type_test_results.txt
+
+$julia categorical_types.jl > results/categorical_type_test_results.txt
