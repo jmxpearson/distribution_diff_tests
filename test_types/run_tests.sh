@@ -58,4 +58,4 @@ $julia skellam_types.jl > results/skellam_type_test_results.txt
 
 fi
 
-$julia categorical_types.jl > results/categorical_type_test_results.txt
+$julia triangular_types.jl > results/triangular_type_test_results.txt

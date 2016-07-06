@@ -21,7 +21,7 @@ tests = [
     "negativebinomial",
     "skellam",
     "categorical",
-    #"poissonbinomial",
+    "poissonbinomial",
     "fdist",
     "fishernoncentralhypergeometric",
     "walleniusnoncentralhypergeometric",
