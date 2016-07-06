@@ -1,0 +1,596 @@
+____________________________
+ntrials
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+succprob
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+failprob
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+params
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.NoncentralBeta{Int64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/noncentralbeta.jl, line 21:
+      return (top(tuple))((top(getfield))(d::Distributions.NoncentralBeta{Int64},:α)::Int64,(top(getfield))(d::Distributions.NoncentralBeta{Int64},:β)::Int64,(top(getfield))(d::Distributions.NoncentralBeta{Int64},:λ)::Int64)::Tuple{Int64,Int64,Int64}
+  end::Tuple{Int64,Int64,Int64}
+
+----float----
+
+Variables:
+  d::Distributions.NoncentralBeta{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/noncentralbeta.jl, line 21:
+      return (top(tuple))((top(getfield))(d::Distributions.NoncentralBeta{Float64},:α)::Float64,(top(getfield))(d::Distributions.NoncentralBeta{Float64},:β)::Float64,(top(getfield))(d::Distributions.NoncentralBeta{Float64},:λ)::Float64)::Tuple{Float64,Float64,Float64}
+  end::Tuple{Float64,Float64,Float64}
+
+----dual----
+
+Variables:
+  d::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/noncentralbeta.jl, line 21:
+      return (top(tuple))((top(getfield))(d::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:α)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},(top(getfield))(d::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:β)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},(top(getfield))(d::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  end::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}},ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+
+
+
+____________________________
+mean
+____________________________
+
+----integer----
+
+Variables:
+  iterable::Distributions.NoncentralBeta{Int64}
+  count::Int64
+  total::ANY
+  state::ANY
+  #s335::ANY
+  value::ANY
+  #s334::ANY
+  ##s#7067::Base.AbstractIOBuffer{Array{UInt8,1}}
+
+Body:
+  begin  # statistics.jl, line 6:
+      NewvarNode(:count)
+      NewvarNode(:total)
+      NewvarNode(symbol("#s335"))
+      state = (Base.start)(iterable::Distributions.NoncentralBeta{Int64})::ANY # statistics.jl, line 7:
+      unless (Base.done)(iterable::Distributions.NoncentralBeta{Int64},state)::ANY goto 0 # statistics.jl, line 8:
+      GenSym(6) = (Base.getindex)(Base.UInt8)::Array{UInt8,1}
+      GenSym(7) = (Base.arraylen)(GenSym(6))::Int64
+      ##s#7067 = $(Expr(:new, Base.AbstractIOBuffer{Array{UInt8,1}}, GenSym(6), true, true, true, false, GenSym(7), 9223372036854775807, 1, -1))
+      (Base.showall)(##s#7067::Base.AbstractIOBuffer{Array{UInt8,1}},iterable::Distributions.NoncentralBeta{Int64})::ANY
+      (Base.throw)(call(Base.ArgumentError,(top(string))("mean of empty collection undefined: ",(Base.takebuf_string)(##s#7067::Base.AbstractIOBuffer{Array{UInt8,1}})::UNION{ASCIISTRING,UTF8STRING})::UNION{ASCIISTRING,UTF8STRING})::ArgumentError)::UNION{}
+      0:  # statistics.jl, line 10:
+      count = 1 # statistics.jl, line 11:
+      GenSym(0) = (Base.next)(iterable::Distributions.NoncentralBeta{Int64},state)::ANY
+      #s335 = (top(start))(GenSym(0))::ANY
+      GenSym(1) = (top(indexed_next))(GenSym(0),1,#s335)::ANY
+      total = (top(getfield))(GenSym(1),1)::ANY
+      #s335 = (top(getfield))(GenSym(1),2)::ANY
+      GenSym(2) = (top(indexed_next))(GenSym(0),2,#s335)::ANY
+      state = (top(getfield))(GenSym(2),1)::ANY
+      #s335 = (top(getfield))(GenSym(2),2)::ANY # statistics.jl, line 12:
+      NewvarNode(:value)
+      NewvarNode(symbol("#s334"))
+      unless !((Base.done)(iterable::Distributions.NoncentralBeta{Int64},state)::ANY)::ANY goto 2
+      3:  # statistics.jl, line 13:
+      GenSym(3) = (Base.next)(iterable::Distributions.NoncentralBeta{Int64},state)::ANY
+      #s334 = (top(start))(GenSym(3))::ANY
+      GenSym(4) = (top(indexed_next))(GenSym(3),1,#s334)::ANY
+      value = (top(getfield))(GenSym(4),1)::ANY
+      #s334 = (top(getfield))(GenSym(4),2)::ANY
+      GenSym(5) = (top(indexed_next))(GenSym(3),2,#s334)::ANY
+      state = (top(getfield))(GenSym(5),1)::ANY
+      #s334 = (top(getfield))(GenSym(5),2)::ANY # statistics.jl, line 14:
+      total = total + value::ANY # statistics.jl, line 15:
+      count = (Base.box)(Base.Int,(Base.add_int)(count::Int64,1))
+      4: 
+      unless (top(!))(!((Base.done)(iterable::Distributions.NoncentralBeta{Int64},state)::ANY)::ANY)::ANY goto 3
+      2: 
+      1:  # statistics.jl, line 17:
+      return total / count::Int64::ANY
+  end::ANY
+
+----float----
+
+Variables:
+  iterable::Distributions.NoncentralBeta{Float64}
+  count::Int64
+  total::ANY
+  state::ANY
+  #s335::ANY
+  value::ANY
+  #s334::ANY
+  ##s#7097::Base.AbstractIOBuffer{Array{UInt8,1}}
+
+Body:
+  begin  # statistics.jl, line 6:
+      NewvarNode(:count)
+      NewvarNode(:total)
+      NewvarNode(symbol("#s335"))
+      state = (Base.start)(iterable::Distributions.NoncentralBeta{Float64})::ANY # statistics.jl, line 7:
+      unless (Base.done)(iterable::Distributions.NoncentralBeta{Float64},state)::ANY goto 0 # statistics.jl, line 8:
+      GenSym(6) = (Base.getindex)(Base.UInt8)::Array{UInt8,1}
+      GenSym(7) = (Base.arraylen)(GenSym(6))::Int64
+      ##s#7097 = $(Expr(:new, Base.AbstractIOBuffer{Array{UInt8,1}}, GenSym(6), true, true, true, false, GenSym(7), 9223372036854775807, 1, -1))
+      (Base.showall)(##s#7097::Base.AbstractIOBuffer{Array{UInt8,1}},iterable::Distributions.NoncentralBeta{Float64})::ANY
+      (Base.throw)(call(Base.ArgumentError,(top(string))("mean of empty collection undefined: ",(Base.takebuf_string)(##s#7097::Base.AbstractIOBuffer{Array{UInt8,1}})::UNION{ASCIISTRING,UTF8STRING})::UNION{ASCIISTRING,UTF8STRING})::ArgumentError)::UNION{}
+      0:  # statistics.jl, line 10:
+      count = 1 # statistics.jl, line 11:
+      GenSym(0) = (Base.next)(iterable::Distributions.NoncentralBeta{Float64},state)::ANY
+      #s335 = (top(start))(GenSym(0))::ANY
+      GenSym(1) = (top(indexed_next))(GenSym(0),1,#s335)::ANY
+      total = (top(getfield))(GenSym(1),1)::ANY
+      #s335 = (top(getfield))(GenSym(1),2)::ANY
+      GenSym(2) = (top(indexed_next))(GenSym(0),2,#s335)::ANY
+      state = (top(getfield))(GenSym(2),1)::ANY
+      #s335 = (top(getfield))(GenSym(2),2)::ANY # statistics.jl, line 12:
+      NewvarNode(:value)
+      NewvarNode(symbol("#s334"))
+      unless !((Base.done)(iterable::Distributions.NoncentralBeta{Float64},state)::ANY)::ANY goto 2
+      3:  # statistics.jl, line 13:
+      GenSym(3) = (Base.next)(iterable::Distributions.NoncentralBeta{Float64},state)::ANY
+      #s334 = (top(start))(GenSym(3))::ANY
+      GenSym(4) = (top(indexed_next))(GenSym(3),1,#s334)::ANY
+      value = (top(getfield))(GenSym(4),1)::ANY
+      #s334 = (top(getfield))(GenSym(4),2)::ANY
+      GenSym(5) = (top(indexed_next))(GenSym(3),2,#s334)::ANY
+      state = (top(getfield))(GenSym(5),1)::ANY
+      #s334 = (top(getfield))(GenSym(5),2)::ANY # statistics.jl, line 14:
+      total = total + value::ANY # statistics.jl, line 15:
+      count = (Base.box)(Base.Int,(Base.add_int)(count::Int64,1))
+      4: 
+      unless (top(!))(!((Base.done)(iterable::Distributions.NoncentralBeta{Float64},state)::ANY)::ANY)::ANY goto 3
+      2: 
+      1:  # statistics.jl, line 17:
+      return total / count::Int64::ANY
+  end::ANY
+
+----dual----
+
+Variables:
+  iterable::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  count::Int64
+  total::ANY
+  state::ANY
+  #s335::ANY
+  value::ANY
+  #s334::ANY
+  ##s#7108::Base.AbstractIOBuffer{Array{UInt8,1}}
+
+Body:
+  begin  # statistics.jl, line 6:
+      NewvarNode(:count)
+      NewvarNode(:total)
+      NewvarNode(symbol("#s335"))
+      state = (Base.start)(iterable::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ANY # statistics.jl, line 7:
+      unless (Base.done)(iterable::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},state)::ANY goto 0 # statistics.jl, line 8:
+      GenSym(6) = (Base.getindex)(Base.UInt8)::Array{UInt8,1}
+      GenSym(7) = (Base.arraylen)(GenSym(6))::Int64
+      ##s#7108 = $(Expr(:new, Base.AbstractIOBuffer{Array{UInt8,1}}, GenSym(6), true, true, true, false, GenSym(7), 9223372036854775807, 1, -1))
+      (Base.showall)(##s#7108::Base.AbstractIOBuffer{Array{UInt8,1}},iterable::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ANY
+      (Base.throw)(call(Base.ArgumentError,(top(string))("mean of empty collection undefined: ",(Base.takebuf_string)(##s#7108::Base.AbstractIOBuffer{Array{UInt8,1}})::UNION{ASCIISTRING,UTF8STRING})::UNION{ASCIISTRING,UTF8STRING})::ArgumentError)::UNION{}
+      0:  # statistics.jl, line 10:
+      count = 1 # statistics.jl, line 11:
+      GenSym(0) = (Base.next)(iterable::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},state)::ANY
+      #s335 = (top(start))(GenSym(0))::ANY
+      GenSym(1) = (top(indexed_next))(GenSym(0),1,#s335)::ANY
+      total = (top(getfield))(GenSym(1),1)::ANY
+      #s335 = (top(getfield))(GenSym(1),2)::ANY
+      GenSym(2) = (top(indexed_next))(GenSym(0),2,#s335)::ANY
+      state = (top(getfield))(GenSym(2),1)::ANY
+      #s335 = (top(getfield))(GenSym(2),2)::ANY # statistics.jl, line 12:
+      NewvarNode(:value)
+      NewvarNode(symbol("#s334"))
+      unless !((Base.done)(iterable::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},state)::ANY)::ANY goto 2
+      3:  # statistics.jl, line 13:
+      GenSym(3) = (Base.next)(iterable::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},state)::ANY
+      #s334 = (top(start))(GenSym(3))::ANY
+      GenSym(4) = (top(indexed_next))(GenSym(3),1,#s334)::ANY
+      value = (top(getfield))(GenSym(4),1)::ANY
+      #s334 = (top(getfield))(GenSym(4),2)::ANY
+      GenSym(5) = (top(indexed_next))(GenSym(3),2,#s334)::ANY
+      state = (top(getfield))(GenSym(5),1)::ANY
+      #s334 = (top(getfield))(GenSym(5),2)::ANY # statistics.jl, line 14:
+      total = total + value::ANY # statistics.jl, line 15:
+      count = (Base.box)(Base.Int,(Base.add_int)(count::Int64,1))
+      4: 
+      unless (top(!))(!((Base.done)(iterable::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},state)::ANY)::ANY)::ANY goto 3
+      2: 
+      1:  # statistics.jl, line 17:
+      return total / count::Int64::ANY
+  end::ANY
+
+
+
+
+____________________________
+var
+____________________________
+
+----integer----
+
+Variables:
+  iterable::Distributions.NoncentralBeta{Int64}
+
+Body:
+  begin $(Expr(:line, 42, symbol("statistics.jl"), symbol("")))
+      return (Base.__var#236__)(true,Base.nothing,iterable::Distributions.NoncentralBeta{Int64})::ANY
+  end::ANY
+
+----float----
+
+Variables:
+  iterable::Distributions.NoncentralBeta{Float64}
+
+Body:
+  begin $(Expr(:line, 42, symbol("statistics.jl"), symbol("")))
+      return (Base.__var#236__)(true,Base.nothing,iterable::Distributions.NoncentralBeta{Float64})::ANY
+  end::ANY
+
+----dual----
+
+Variables:
+  iterable::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin $(Expr(:line, 42, symbol("statistics.jl"), symbol("")))
+      return (Base.__var#236__)(true,Base.nothing,iterable::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ANY
+  end::ANY
+
+
+
+
+____________________________
+mode
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+modes
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.NoncentralBeta{Int64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 74:
+      return (top(vect))((Distributions.mode)(d::Distributions.NoncentralBeta{Int64})::ANY)::ANY
+  end::ANY
+
+----float----
+
+Variables:
+  d::Distributions.NoncentralBeta{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 74:
+      return (top(vect))((Distributions.mode)(d::Distributions.NoncentralBeta{Float64})::ANY)::ANY
+  end::ANY
+
+----dual----
+
+Variables:
+  d::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 74:
+      return (top(vect))((Distributions.mode)(d::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ANY)::ANY
+  end::ANY
+
+
+
+
+____________________________
+median
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.NoncentralBeta{Int64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
+      GenSym(0) = (Distributions.nbetainvcdf)((top(getfield))(d::Distributions.NoncentralBeta{Int64},:α)::Int64,(top(getfield))(d::Distributions.NoncentralBeta{Int64},:β)::Int64,(top(getfield))(d::Distributions.NoncentralBeta{Int64},:λ)::Int64,0.5)::Float64
+      return GenSym(0)
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.NoncentralBeta{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
+      GenSym(38) = (Base.box)(Int32,(Base.checked_trunc_sint)(Int32,1))
+      GenSym(39) = (Base.box)(Int32,(Base.checked_trunc_sint)(Int32,0))
+      GenSym(40) = (top(ccall))((top(tuple))("qnbeta",StatsFuns.Rmath.rmathlib)::Tuple{ASCIIString,ASCIIString},StatsFuns.Rmath.Float64,(top(svec))(StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cint,StatsFuns.Rmath.Cint)::SimpleVector,0.5,0,(top(getfield))(d::Distributions.NoncentralBeta{Float64},:α)::Float64,0,(top(getfield))(d::Distributions.NoncentralBeta{Float64},:β)::Float64,0,(top(getfield))(d::Distributions.NoncentralBeta{Float64},:λ)::Float64,0,GenSym(38),0,GenSym(39),0)::Float64
+      return GenSym(40)
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 73:
+      GenSym(0) = (Distributions.nbetainvcdf)((top(getfield))(d::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:α)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},(top(getfield))(d::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:β)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},(top(getfield))(d::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},0.5)::Float64
+      return GenSym(0)
+  end::Float64
+
+
+
+
+____________________________
+skewness
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+kurtosis
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+entropy
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+rand
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.NoncentralBeta{Int64}
+  a::Float64
+  b::Float64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/noncentralbeta.jl, line 31:
+      GenSym(0) = (Distributions.NoncentralChisq)((Base.box)(Base.Float64,(Base.mul_float)(2.0,(Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.NoncentralBeta{Int64},:α)::Int64)))),(Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.NoncentralBeta{Int64},:β)::Int64)))::Distributions.NoncentralChisq{Float64}
+      a = (top(ccall))((top(tuple))("rnchisq",StatsFuns.Rmath.rmathlib)::Tuple{ASCIIString,ASCIIString},StatsFuns.Rmath.Float64,(top(svec))(StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble)::SimpleVector,(top(getfield))(GenSym(0),:ν)::Float64,0,(top(getfield))(GenSym(0),:λ)::Float64,0)::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/noncentralbeta.jl, line 32:
+      GenSym(51) = (Base.box)(Base.Float64,(Base.mul_float)(2.0,(Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(d::Distributions.NoncentralBeta{Int64},:β)::Int64))))
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.lt_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)),GenSym(51))::Bool)) goto 5
+      GenSym(52) = (Distributions.string)("Chisq",": the condition ","ν > zero(ν)"," is not satisfied.")::UTF8String
+      (Distributions.throw)($(Expr(:new, :((top(getfield))(Base,:ArgumentError)::Type{ArgumentError}), GenSym(52))))::UNION{}
+      5: 
+      b = (top(ccall))((top(tuple))("rchisq",StatsFuns.Rmath.rmathlib)::Tuple{ASCIIString,ASCIIString},StatsFuns.Rmath.Float64,(top(svec))(StatsFuns.Rmath.Cdouble)::SimpleVector,(top(getfield))($(Expr(:new, Distributions.Chisq{Float64}, GenSym(51))),:ν)::Float64,0)::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/noncentralbeta.jl, line 33:
+      return (Base.box)(Base.Float64,(Base.div_float)(a::Float64,(Base.box)(Base.Float64,(Base.add_float)(a::Float64,b::Float64))))
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.NoncentralBeta{Float64}
+  a::Float64
+  b::Float64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/noncentralbeta.jl, line 31:
+      GenSym(0) = call(Distributions.NoncentralChisq{Float64},(Base.box)(Base.Float64,(Base.mul_float)(2.0,(top(getfield))(d::Distributions.NoncentralBeta{Float64},:α)::Float64)),(top(getfield))(d::Distributions.NoncentralBeta{Float64},:β)::Float64)::Distributions.NoncentralChisq{Float64}
+      a = (top(ccall))((top(tuple))("rnchisq",StatsFuns.Rmath.rmathlib)::Tuple{ASCIIString,ASCIIString},StatsFuns.Rmath.Float64,(top(svec))(StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble)::SimpleVector,(top(getfield))(GenSym(0),:ν)::Float64,0,(top(getfield))(GenSym(0),:λ)::Float64,0)::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/noncentralbeta.jl, line 32:
+      GenSym(51) = (Base.box)(Base.Float64,(Base.mul_float)(2.0,(top(getfield))(d::Distributions.NoncentralBeta{Float64},:β)::Float64))
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.lt_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)),GenSym(51))::Bool)) goto 5
+      GenSym(52) = (Distributions.string)("Chisq",": the condition ","ν > zero(ν)"," is not satisfied.")::UTF8String
+      (Distributions.throw)($(Expr(:new, :((top(getfield))(Base,:ArgumentError)::Type{ArgumentError}), GenSym(52))))::UNION{}
+      5: 
+      b = (top(ccall))((top(tuple))("rchisq",StatsFuns.Rmath.rmathlib)::Tuple{ASCIIString,ASCIIString},StatsFuns.Rmath.Float64,(top(svec))(StatsFuns.Rmath.Cdouble)::SimpleVector,(top(getfield))($(Expr(:new, Distributions.Chisq{Float64}, GenSym(51))),:ν)::Float64,0)::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/noncentralbeta.jl, line 33:
+      return (Base.box)(Base.Float64,(Base.div_float)(a::Float64,(Base.box)(Base.Float64,(Base.add_float)(a::Float64,b::Float64))))
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  a::Float64
+  b::ANY
+  ########tup#7124#7127#7131#7137::Tuple{}
+  ########x#7125#7128#7132#7138::Float64
+  ######_var0#7129#7133#7139::Tuple{}
+  ########types#7126#7130#7134#7140::Tuple{Type{Float64}}
+  ########tup#7124#7127#7131#7141::Tuple{}
+  ########x#7125#7128#7132#7142::Float64
+  ######_var0#7129#7133#7143::Tuple{}
+  ########types#7126#7130#7134#7144::Tuple{Type{Float64}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/noncentralbeta.jl, line 31:
+      $(Expr(:boundscheck, false))
+      ######_var0#7129#7133#7139 = (top(tuple))()::Tuple{}
+      goto 1
+      ######_var0#7129#7133#7139 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      1: 
+      GenSym(0) = call(Distributions.NoncentralChisq{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},$(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:α)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,2.0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),(top(getfield))(d::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:β)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Distributions.NoncentralChisq{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+      a = ((top(getfield))((top(getfield))(Distributions.StatsFuns,:Rmath)::ANY,:nchisqrand)::F)((top(getfield))(GenSym(0),:ν)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},(top(getfield))(GenSym(0),:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/noncentralbeta.jl, line 32:
+      $(Expr(:boundscheck, false))
+      ######_var0#7129#7133#7143 = (top(tuple))()::Tuple{}
+      goto 5
+      ######_var0#7129#7133#7143 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      5: 
+      GenSym(1) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:β)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,2.0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.lt_float)((top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64,(top(getfield))(GenSym(1),:value)::Float64)::Bool)) goto 7
+      GenSym(2) = (Distributions.string)("Chisq",": the condition ","ν > zero(ν)"," is not satisfied.")::UTF8String
+      (Distributions.throw)($(Expr(:new, :((top(getfield))(Base,:ArgumentError)::Type{ArgumentError}), GenSym(2))))::UNION{}
+      7: 
+      b = (Distributions._chisq_rand)((top(getfield))($(Expr(:new, Distributions.Chisq{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}, GenSym(1))),:ν)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::ANY # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/noncentralbeta.jl, line 33:
+      return a::Float64 / (a::Float64 + b)::ANY::ANY
+  end::ANY
+
+
+
+
+____________________________
+pdf
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.NoncentralBeta{Int64}
+  x::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 320:
+      return (Distributions.nbetapdf)((top(getfield))(d::Distributions.NoncentralBeta{Int64},:α)::Int64,(top(getfield))(d::Distributions.NoncentralBeta{Int64},:β)::Int64,(top(getfield))(d::Distributions.NoncentralBeta{Int64},:λ)::Int64,x::Int64)::Float64
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.NoncentralBeta{Float64}
+  x::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 320:
+      GenSym(0) = (Base.box)(Float64,(Base.sitofp)(Float64,x::Int64))
+      GenSym(4) = (Base.box)(Int32,(Base.checked_trunc_sint)(Int32,0))
+      return (top(ccall))((top(tuple))("dnbeta",StatsFuns.Rmath.rmathlib)::Tuple{ASCIIString,ASCIIString},StatsFuns.Rmath.Float64,(top(svec))(StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cdouble,StatsFuns.Rmath.Cint)::SimpleVector,GenSym(0),0,(top(getfield))(d::Distributions.NoncentralBeta{Float64},:α)::Float64,0,(top(getfield))(d::Distributions.NoncentralBeta{Float64},:β)::Float64,0,(top(getfield))(d::Distributions.NoncentralBeta{Float64},:λ)::Float64,0,GenSym(4),0)::Float64
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  x::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 320:
+      return (Distributions.nbetapdf)((top(getfield))(d::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:α)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},(top(getfield))(d::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:β)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},(top(getfield))(d::Distributions.NoncentralBeta{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:λ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},x::Int64)::Float64
+  end::Float64
+
+
+
+
+____________________________
+mgf
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+cf
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+

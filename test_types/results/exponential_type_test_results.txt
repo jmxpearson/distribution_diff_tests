@@ -1,0 +1,820 @@
+____________________________
+ntrials
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+succprob
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+failprob
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+params
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 44:
+      return (top(tuple))((top(getfield))(d::Distributions.Exponential{Float64},:θ)::Float64)::Tuple{Float64}
+  end::Tuple{Float64}
+
+----float----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 44:
+      return (top(tuple))((top(getfield))(d::Distributions.Exponential{Float64},:θ)::Float64)::Tuple{Float64}
+  end::Tuple{Float64}
+
+----dual----
+
+Variables:
+  d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 44:
+      return (top(tuple))((top(getfield))(d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:θ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  end::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+
+
+
+____________________________
+mean
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 49:
+      return (top(getfield))(d::Distributions.Exponential{Float64},:θ)::Float64
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 49:
+      return (top(getfield))(d::Distributions.Exponential{Float64},:θ)::Float64
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 49:
+      return (top(getfield))(d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:θ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+
+
+
+
+____________________________
+var
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 53:
+      return (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((top(getfield))(d::Distributions.Exponential{Float64},:θ)::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2)))::ANY)::Float64
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 53:
+      return (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((top(getfield))(d::Distributions.Exponential{Float64},:θ)::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2)))::ANY)::Float64
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ##a#7082::Float64
+  ##exp_a#7083::Float64
+  ##deriv#7084::Float64
+  ####G#7077#7085::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7067#7073#7078#7086::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7068#7070#7074#7079#7087::Tuple{}
+  ##########x#7069#7071#7075#7080#7088::Float64
+  ########_var0#7072#7076#7081#7089::Tuple{}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 53:
+      ##a#7082 = (top(getfield))((top(getfield))(d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:θ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
+      ##exp_a#7083 = (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7082::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,2)))::ANY)::Float64
+      ##deriv#7084 = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,2)),(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7082::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,(Base.box)(Int64,(Base.sub_int)(2,1))))))::Float64))
+      ####G#7077#7085 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7072#7076#7081#7089 = (top(tuple))()::Tuple{}
+      goto 1
+      ########_var0#7072#7076#7081#7089 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      1: 
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##exp_a#7083::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+
+
+
+
+____________________________
+mode
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 51:
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 51:
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 51:
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+
+
+
+
+____________________________
+modes
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 74:
+      return (top(vect))((Base.box)(Float64,(Base.sitofp)(Float64,0)))::Array{Float64,1}
+  end::Array{Float64,1}
+
+----float----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 74:
+      return (top(vect))((Base.box)(Float64,(Base.sitofp)(Float64,0)))::Array{Float64,1}
+  end::Array{Float64,1}
+
+----dual----
+
+Variables:
+  d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 74:
+      return (top(vect))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))))::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1}
+  end::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1}
+
+
+
+
+____________________________
+median
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 50:
+      return (Base.box)(Base.Float64,(Base.mul_float)(0.6931471805599453,(top(getfield))(d::Distributions.Exponential{Float64},:θ)::Float64))
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 50:
+      return (Base.box)(Base.Float64,(Base.mul_float)(0.6931471805599453,(top(getfield))(d::Distributions.Exponential{Float64},:θ)::Float64))
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########tup#7094#7097#7101#7105::Tuple{}
+  ########x#7095#7098#7102#7106::Irrational{:logtwo}
+  ######_var0#7099#7103#7107::Tuple{}
+  ########types#7096#7100#7104#7108::Tuple{Type{Irrational{:logtwo}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 50:
+      $(Expr(:boundscheck, false))
+      ######_var0#7099#7103#7107 = (top(tuple))()::Tuple{}
+      goto 1
+      ######_var0#7099#7103#7107 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      1: 
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:θ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,0.6931471805599453))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+
+
+
+
+____________________________
+skewness
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 54:
+      return (Base.box)(Base.Float64,(Base.mul_float)(2.0,(Base.box)(Float64,(Base.sitofp)(Float64,1))))
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 54:
+      return (Base.box)(Base.Float64,(Base.mul_float)(2.0,(Base.box)(Float64,(Base.sitofp)(Float64,1))))
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########tup#7068#7110#7114#7118::Tuple{}
+  ########x#7069#7111#7115#7119::Float64
+  ######_var0#7112#7116#7120::Tuple{}
+  ########types#7109#7113#7117#7121::Tuple{Type{Float64}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 54:
+      $(Expr(:boundscheck, false))
+      ######_var0#7112#7116#7120 = (top(tuple))()::Tuple{}
+      goto 2
+      ######_var0#7112#7116#7120 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      2: 
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64,2.0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+
+
+
+
+____________________________
+kurtosis
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 55:
+      return (Base.box)(Base.Float64,(Base.mul_float)(6.0,(Base.box)(Float64,(Base.sitofp)(Float64,1))))
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 55:
+      return (Base.box)(Base.Float64,(Base.mul_float)(6.0,(Base.box)(Float64,(Base.sitofp)(Float64,1))))
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########tup#7068#7110#7114#7122::Tuple{}
+  ########x#7069#7111#7115#7123::Float64
+  ######_var0#7112#7116#7124::Tuple{}
+  ########types#7109#7113#7117#7125::Tuple{Type{Float64}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 55:
+      $(Expr(:boundscheck, false))
+      ######_var0#7112#7116#7124 = (top(tuple))()::Tuple{}
+      goto 2
+      ######_var0#7112#7116#7124 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      2: 
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,1))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64,6.0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+
+
+
+
+____________________________
+entropy
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 57:
+      GenSym(0) = (top(getfield))(d::Distributions.Exponential{Float64},:θ)::Float64
+      GenSym(2) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(0),0)::Float64
+      return (Base.box)(Base.Float64,(Base.add_float)(1.0,(Base.Math.nan_dom_err)(GenSym(2),GenSym(0))::Float64))
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 57:
+      GenSym(0) = (top(getfield))(d::Distributions.Exponential{Float64},:θ)::Float64
+      GenSym(2) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(0),0)::Float64
+      return (Base.box)(Base.Float64,(Base.add_float)(1.0,(Base.Math.nan_dom_err)(GenSym(2),GenSym(0))::Float64))
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ##a#7139::Float64
+  ####G#7132#7140::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7067#7073#7133#7141::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7068#7070#7074#7134#7142::Tuple{}
+  ##########x#7069#7071#7075#7135#7143::Float64
+  ########_var0#7072#7076#7136#7144::Tuple{}
+  ########types#7109#7137#7138#7145::Tuple{Type{Float64}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 57:
+      ##a#7139 = (top(getfield))((top(getfield))(d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:θ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
+      GenSym(1) = (top(ccall))((top(tuple))("log",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,##a#7139::Float64,0)::Float64
+      ####G#7132#7140 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7072#7076#7136#7144 = (top(tuple))()::Tuple{}
+      goto 1
+      ########_var0#7072#7076#7136#7144 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      1: 
+      GenSym(2) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.Math.nan_dom_err)(GenSym(1),##a#7139::Float64)::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(GenSym(2),:value)::Float64,1.0))), :((top(getfield))(GenSym(2),:partials)::ForwardDiff.Partials{Float64,Tuple{}})))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+
+
+
+
+____________________________
+rand
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+  ####ri#7156#7161::UInt64
+  ####idx#7157#7162::UInt64
+  ####x#7158#7163::Float64
+  ########_var0#7148#7154#7159#7164::UNION{BOOL,INT64}
+  ############_var0#7146#7147#7149#7155#7160#7165::Float64
+  ##_var0#7166::Float64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 88:
+      $(Expr(:boundscheck, false))
+      unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
+      ########_var0#7148#7154#7159#7164 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      goto 2
+      1: 
+      ########_var0#7148#7154#7159#7164 = false
+      2: 
+      ########_var0#7148#7154#7159#7164::UNION{BOOL,INT64}
+      $(Expr(:boundscheck, false))
+      GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
+      GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
+      ############_var0#7146#7147#7149#7155#7160#7165 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      goto 3
+      ############_var0#7146#7147#7149#7155#7160#7165 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      ####ri#7156#7161 = (Base.box)(UInt64,(Base.and_int)((Base.box)(UInt64,############_var0#7146#7147#7149#7155#7160#7165::Float64),0x000fffffffffffff))
+      ####idx#7157#7162 = (Base.box)(UInt64,(Base.and_int)(####ri#7156#7161::UInt64,(Base.box)(UInt64,(Base.zext_int)(UInt64,0xff))))
+      ####x#7158#7163 = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.uitofp)(Float64,####ri#7156#7161::UInt64)),(Base.arrayref)(Base.Random.we,(Base.box)(Int64,(Base.check_top_bit)((Base.box)(UInt64,(Base.add_int)(####idx#7157#7162::UInt64,(Base.box)(UInt64,(Base.check_top_bit)(1)))))))::Float64))
+      unless (Base.ult_int)(####ri#7156#7161::UInt64,(Base.arrayref)(Base.Random.ke,(Base.box)(Int64,(Base.check_top_bit)((Base.box)(UInt64,(Base.add_int)(####idx#7157#7162::UInt64,(Base.box)(UInt64,(Base.check_top_bit)(1)))))))::UInt64)::Bool goto 4
+      ##_var0#7166 = ####x#7158#7163::Float64
+      goto 5
+      4: 
+      ##_var0#7166 = (Base.Random.randexp_unlikely)(Base.Random.GLOBAL_RNG,####idx#7157#7162::UInt64,####x#7158#7163::Float64)::Float64
+      goto 5
+      ##_var0#7166 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      5: 
+      return (Base.box)(Base.Float64,(Base.mul_float)(##_var0#7166::Float64,(top(getfield))(d::Distributions.Exponential{Float64},:θ)::Float64))
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+  ####ri#7156#7161::UInt64
+  ####idx#7157#7162::UInt64
+  ####x#7158#7163::Float64
+  ########_var0#7148#7154#7159#7164::UNION{BOOL,INT64}
+  ############_var0#7146#7147#7149#7155#7160#7165::Float64
+  ##_var0#7166::Float64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 88:
+      $(Expr(:boundscheck, false))
+      unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
+      ########_var0#7148#7154#7159#7164 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      goto 2
+      1: 
+      ########_var0#7148#7154#7159#7164 = false
+      2: 
+      ########_var0#7148#7154#7159#7164::UNION{BOOL,INT64}
+      $(Expr(:boundscheck, false))
+      GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
+      GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
+      ############_var0#7146#7147#7149#7155#7160#7165 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      goto 3
+      ############_var0#7146#7147#7149#7155#7160#7165 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      ####ri#7156#7161 = (Base.box)(UInt64,(Base.and_int)((Base.box)(UInt64,############_var0#7146#7147#7149#7155#7160#7165::Float64),0x000fffffffffffff))
+      ####idx#7157#7162 = (Base.box)(UInt64,(Base.and_int)(####ri#7156#7161::UInt64,(Base.box)(UInt64,(Base.zext_int)(UInt64,0xff))))
+      ####x#7158#7163 = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.uitofp)(Float64,####ri#7156#7161::UInt64)),(Base.arrayref)(Base.Random.we,(Base.box)(Int64,(Base.check_top_bit)((Base.box)(UInt64,(Base.add_int)(####idx#7157#7162::UInt64,(Base.box)(UInt64,(Base.check_top_bit)(1)))))))::Float64))
+      unless (Base.ult_int)(####ri#7156#7161::UInt64,(Base.arrayref)(Base.Random.ke,(Base.box)(Int64,(Base.check_top_bit)((Base.box)(UInt64,(Base.add_int)(####idx#7157#7162::UInt64,(Base.box)(UInt64,(Base.check_top_bit)(1)))))))::UInt64)::Bool goto 4
+      ##_var0#7166 = ####x#7158#7163::Float64
+      goto 5
+      4: 
+      ##_var0#7166 = (Base.Random.randexp_unlikely)(Base.Random.GLOBAL_RNG,####idx#7157#7162::UInt64,####x#7158#7163::Float64)::Float64
+      goto 5
+      ##_var0#7166 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      5: 
+      return (Base.box)(Base.Float64,(Base.mul_float)(##_var0#7166::Float64,(top(getfield))(d::Distributions.Exponential{Float64},:θ)::Float64))
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ####ri#7156#7172::UInt64
+  ####idx#7157#7173::UInt64
+  ####x#7158#7174::Float64
+  ########_var0#7148#7154#7159#7175::UNION{BOOL,INT64}
+  ############_var0#7146#7147#7149#7155#7160#7176::Float64
+  ##_var0#7177::Float64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 88:
+      $(Expr(:boundscheck, false))
+      unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
+      ########_var0#7148#7154#7159#7175 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      goto 2
+      1: 
+      ########_var0#7148#7154#7159#7175 = false
+      2: 
+      ########_var0#7148#7154#7159#7175::UNION{BOOL,INT64}
+      $(Expr(:boundscheck, false))
+      GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
+      GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
+      ############_var0#7146#7147#7149#7155#7160#7176 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      goto 3
+      ############_var0#7146#7147#7149#7155#7160#7176 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      ####ri#7156#7172 = (Base.box)(UInt64,(Base.and_int)((Base.box)(UInt64,############_var0#7146#7147#7149#7155#7160#7176::Float64),0x000fffffffffffff))
+      ####idx#7157#7173 = (Base.box)(UInt64,(Base.and_int)(####ri#7156#7172::UInt64,(Base.box)(UInt64,(Base.zext_int)(UInt64,0xff))))
+      ####x#7158#7174 = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.uitofp)(Float64,####ri#7156#7172::UInt64)),(Base.arrayref)(Base.Random.we,(Base.box)(Int64,(Base.check_top_bit)((Base.box)(UInt64,(Base.add_int)(####idx#7157#7173::UInt64,(Base.box)(UInt64,(Base.check_top_bit)(1)))))))::Float64))
+      unless (Base.ult_int)(####ri#7156#7172::UInt64,(Base.arrayref)(Base.Random.ke,(Base.box)(Int64,(Base.check_top_bit)((Base.box)(UInt64,(Base.add_int)(####idx#7157#7173::UInt64,(Base.box)(UInt64,(Base.check_top_bit)(1)))))))::UInt64)::Bool goto 4
+      ##_var0#7177 = ####x#7158#7174::Float64
+      goto 5
+      4: 
+      ##_var0#7177 = (Base.Random.randexp_unlikely)(Base.Random.GLOBAL_RNG,####idx#7157#7173::UInt64,####x#7158#7174::Float64)::Float64
+      goto 5
+      ##_var0#7177 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      5: 
+      return (Distributions.xval)(d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},##_var0#7177::Float64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+
+
+
+
+____________________________
+pdf
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+  x::Int64
+  λ::Float64
+  ##fx#7178::Float64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 65:
+      λ = (Base.box)(Base.Float64,(Base.div_float)(1.0,(top(getfield))(d::Distributions.Exponential{Float64},:θ)::Float64))
+      ##fx#7178 = (Base.box)(Float64,(Base.sitofp)(Float64,x::Int64))
+      unless (Base.box)(Base.Bool,(Base.or_int)((Base.lt_float)(##fx#7178::Float64,0.0)::Bool,(Base.box)(Base.Bool,(Base.and_int)((Base.eq_float)(##fx#7178::Float64,0.0)::Bool,(Base.box)(Base.Bool,(Base.or_int)((Base.eq_float)(##fx#7178::Float64,9.223372036854776e18)::Bool,(Base.slt_int)(x::Int64,(Base.box)(Int64,(Base.fptosi)(Int64,##fx#7178::Float64)))::Bool)))))) goto 0
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
+      0: 
+      GenSym(1) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.neg_float)(λ::Float64)),(Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)))),0)::Float64
+      return (Base.box)(Base.Float64,(Base.mul_float)(λ::Float64,GenSym(1)))
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+  x::Int64
+  λ::Float64
+  ##fx#7178::Float64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 65:
+      λ = (Base.box)(Base.Float64,(Base.div_float)(1.0,(top(getfield))(d::Distributions.Exponential{Float64},:θ)::Float64))
+      ##fx#7178 = (Base.box)(Float64,(Base.sitofp)(Float64,x::Int64))
+      unless (Base.box)(Base.Bool,(Base.or_int)((Base.lt_float)(##fx#7178::Float64,0.0)::Bool,(Base.box)(Base.Bool,(Base.and_int)((Base.eq_float)(##fx#7178::Float64,0.0)::Bool,(Base.box)(Base.Bool,(Base.or_int)((Base.eq_float)(##fx#7178::Float64,9.223372036854776e18)::Bool,(Base.slt_int)(x::Int64,(Base.box)(Int64,(Base.fptosi)(Int64,##fx#7178::Float64)))::Bool)))))) goto 0
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
+      0: 
+      GenSym(1) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.neg_float)(λ::Float64)),(Base.box)(Float64,(Base.sitofp)(Float64,x::Int64)))),0)::Float64
+      return (Base.box)(Base.Float64,(Base.mul_float)(λ::Float64,GenSym(1)))
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  x::Int64
+  λ::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  ##fx#7216::Float64
+  ######tup#7192#7193#7217::Tuple{}
+  ####_var0#7194#7218::Tuple{}
+  ######tup#7195#7198#7219::Tuple{}
+  ######x#7196#7199#7220::Int64
+  ####_var0#7200#7221::Tuple{}
+  ######types#7197#7201#7222::Tuple{Type{Int64}}
+  ##exp_a#7223::Float64
+  ####G#7202#7224::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7067#7073#7203#7225::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7068#7070#7074#7204#7226::Tuple{}
+  ##########x#7069#7071#7075#7205#7227::Float64
+  ########_var0#7072#7076#7206#7228::Tuple{}
+  ##a1#7229::Float64
+  ##a2#7230::Float64
+  ######a#7207#7211#7231::Tuple{}
+  ######b#7208#7212#7232::Tuple{}
+  ######afactor#7209#7213#7233::Float64
+  ######bfactor#7210#7214#7234::Float64
+  ####_var0#7215#7235::Tuple{}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 65:
+      λ = (Distributions.rate)(d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      ##fx#7216 = (Base.box)(Float64,(Base.sitofp)(Float64,x::Int64))
+      unless (Base.box)(Base.Bool,(Base.or_int)((Base.lt_float)(##fx#7216::Float64,0.0)::Bool,(Base.box)(Base.Bool,(Base.and_int)((Base.eq_float)(##fx#7216::Float64,0.0)::Bool,(Base.box)(Base.Bool,(Base.or_int)((Base.eq_float)(##fx#7216::Float64,9.223372036854776e18)::Bool,(Base.slt_int)(x::Int64,(Base.box)(Int64,(Base.fptosi)(Int64,##fx#7216::Float64)))::Bool)))))) goto 0
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      0: 
+      $(Expr(:boundscheck, false))
+      ####_var0#7194#7218 = (top(tuple))()::Tuple{}
+      goto 4
+      ####_var0#7194#7218 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      4: 
+      $(Expr(:boundscheck, false))
+      ####_var0#7200#7221 = (top(tuple))()::Tuple{}
+      goto 6
+      ####_var0#7200#7221 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      6: 
+      ##exp_a#7223 = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.neg_float)((top(getfield))(λ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,x::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64,0)::Float64
+      ####G#7202#7224 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7072#7076#7206#7228 = (top(tuple))()::Tuple{}
+      goto 8
+      ########_var0#7072#7076#7206#7228 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      8: 
+      GenSym(1) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##exp_a#7223::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      GenSym(2) = (top(getfield))(λ::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
+      GenSym(3) = (top(getfield))(GenSym(1),:value)::Float64
+      ##a1#7229 = GenSym(2)
+      ##a2#7230 = GenSym(3)
+      $(Expr(:boundscheck, false))
+      ####_var0#7215#7235 = (top(tuple))()::Tuple{}
+      goto 10
+      ####_var0#7215#7235 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      10: 
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a1#7229::Float64,##a2#7230::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+
+
+
+
+____________________________
+mgf
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+  t::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 82:
+      return (Base.box)(Base.Float64,(Base.div_float)(1.0,(Base.box)(Base.Float64,(Base.sub_float)(1.0,(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)),(top(getfield))(d::Distributions.Exponential{Float64},:θ)::Float64))))))
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+  t::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 82:
+      return (Base.box)(Base.Float64,(Base.div_float)(1.0,(Base.box)(Base.Float64,(Base.sub_float)(1.0,(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)),(top(getfield))(d::Distributions.Exponential{Float64},:θ)::Float64))))))
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  t::Int64
+  ########tup#7195#7198#7236#7243::Tuple{}
+  ########x#7196#7199#7237#7244::Int64
+  ######_var0#7200#7238#7245::Tuple{}
+  ########types#7197#7201#7239#7246::Tuple{Type{Int64}}
+  ######tup#7192#7240#7247::Tuple{}
+  ####_var0#7241#7248::Tuple{}
+  ######types#7109#7242#7249::Tuple{Type{Float64}}
+  ##a#7250::Float64
+  ##div_a#7251::Float64
+  ##deriv#7252::Float64
+  ####G#7179#7253::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7067#7073#7180#7254::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7068#7070#7074#7181#7255::Tuple{}
+  ##########x#7069#7071#7075#7182#7256::Float64
+  ########_var0#7072#7076#7183#7257::Tuple{}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 82:
+      $(Expr(:boundscheck, false))
+      ######_var0#7200#7238#7245 = (top(tuple))()::Tuple{}
+      goto 2
+      ######_var0#7200#7238#7245 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      2: 
+      $(Expr(:boundscheck, false))
+      ####_var0#7241#7248 = (top(tuple))()::Tuple{}
+      goto 4
+      ####_var0#7241#7248 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      4: 
+      ##a#7250 = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.sub_float)(1.0,(top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))((top(getfield))(d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:θ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64
+      ##div_a#7251 = (Base.box)(Base.Float64,(Base.div_float)(1.0,##a#7250::Float64))
+      ##deriv#7252 = (Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Base.Float64,(Base.div_float)(##div_a#7251::Float64,##a#7250::Float64))))
+      ####G#7179#7253 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7072#7076#7183#7257 = (top(tuple))()::Tuple{}
+      goto 6
+      ########_var0#7072#7076#7183#7257 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      6: 
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##div_a#7251::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+
+
+
+
+____________________________
+cf
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+  t::Int64
+  ##xs#7258::Tuple{}
+  ##re#7259::Float64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 83:
+      GenSym(0) = (top(getfield))(d::Distributions.Exponential{Float64},:θ)::Float64
+      GenSym(1) = $(Expr(:new, Complex{Int64}, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:re)::Bool,t::Int64,((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)(t::Int64,0)::Bool,(Base.box)(Int64,(Base.neg_int)(0)),0)::Int64)::Int64), :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:im)::Bool,t::Int64,((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)(t::Int64,0)::Bool,(Base.box)(Int64,(Base.neg_int)(0)),0)::Int64)::Int64)))
+      GenSym(2) = $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.mul_float)(GenSym(0),(Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(GenSym(1),:re)::Int64))))), :((Base.box)(Base.Float64,(Base.mul_float)(GenSym(0),(Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(GenSym(1),:im)::Int64)))))))
+      ##re#7259 = (Base.box)(Base.Float64,(Base.sub_float)(1.0,(top(getfield))(GenSym(2),:re)::Float64))
+      GenSym(3) = $(Expr(:new, Complex{Float64}, :(##re#7259::Float64), :((Base.box)(Base.Float64,(Base.neg_float)((top(getfield))(GenSym(2),:im)::Float64)))))
+      GenSym(4) = (Base.inv)(GenSym(3))::Complex{Float64}
+      return $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.mul_float)(1.0,(top(getfield))(GenSym(4),:re)::Float64))), :((Base.box)(Base.Float64,(Base.mul_float)(1.0,(top(getfield))(GenSym(4),:im)::Float64)))))
+  end::Complex{Float64}
+
+----float----
+
+Variables:
+  d::Distributions.Exponential{Float64}
+  t::Int64
+  ##xs#7258::Tuple{}
+  ##re#7259::Float64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 83:
+      GenSym(0) = (top(getfield))(d::Distributions.Exponential{Float64},:θ)::Float64
+      GenSym(1) = $(Expr(:new, Complex{Int64}, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:re)::Bool,t::Int64,((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)(t::Int64,0)::Bool,(Base.box)(Int64,(Base.neg_int)(0)),0)::Int64)::Int64), :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:im)::Bool,t::Int64,((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)(t::Int64,0)::Bool,(Base.box)(Int64,(Base.neg_int)(0)),0)::Int64)::Int64)))
+      GenSym(2) = $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.mul_float)(GenSym(0),(Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(GenSym(1),:re)::Int64))))), :((Base.box)(Base.Float64,(Base.mul_float)(GenSym(0),(Base.box)(Float64,(Base.sitofp)(Float64,(top(getfield))(GenSym(1),:im)::Int64)))))))
+      ##re#7259 = (Base.box)(Base.Float64,(Base.sub_float)(1.0,(top(getfield))(GenSym(2),:re)::Float64))
+      GenSym(3) = $(Expr(:new, Complex{Float64}, :(##re#7259::Float64), :((Base.box)(Base.Float64,(Base.neg_float)((top(getfield))(GenSym(2),:im)::Float64)))))
+      GenSym(4) = (Base.inv)(GenSym(3))::Complex{Float64}
+      return $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.mul_float)(1.0,(top(getfield))(GenSym(4),:re)::Float64))), :((Base.box)(Base.Float64,(Base.mul_float)(1.0,(top(getfield))(GenSym(4),:im)::Float64)))))
+  end::Complex{Float64}
+
+----dual----
+
+Variables:
+  d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  t::Int64
+  ##xs#7342::Tuple{}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/continuous/exponential.jl, line 83:
+      GenSym(0) = $(Expr(:new, Complex{Int64}, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:re)::Bool,t::Int64,((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)(t::Int64,0)::Bool,(Base.box)(Int64,(Base.neg_int)(0)),0)::Int64)::Int64), :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:im)::Bool,t::Int64,((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)(t::Int64,0)::Bool,(Base.box)(Int64,(Base.neg_int)(0)),0)::Int64)::Int64))) * (top(getfield))(d::Distributions.Exponential{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:θ)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+      GenSym(1) = 1.0 - GenSym(0)::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+      return 1.0 * ((Base.conj)(GenSym(1))::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}} / (Base.abs2)(GenSym(1))::ForwardDiff.GradientNumber{0,Float64,Tuple{}})::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  end::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+
+
+

@@ -1,0 +1,1381 @@
+____________________________
+ntrials
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+succprob
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+failprob
+____________________________
+
+----integer----
+
+
+----float----
+
+
+----dual----
+
+
+
+
+
+____________________________
+params
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 55:
+      return (top(tuple))((top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1})::Tuple{Array{Float64,1}}
+  end::Tuple{Array{Float64,1}}
+
+----float----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 55:
+      return (top(tuple))((top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1})::Tuple{Array{Float64,1}}
+  end::Tuple{Array{Float64,1}}
+
+----dual----
+
+Variables:
+  d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 55:
+      return (top(tuple))((top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1})::Tuple{Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1}}
+  end::Tuple{Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1}}
+
+
+
+
+____________________________
+mean
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 69:
+      return (Distributions.categorical_mean)((top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1})::Float64
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 69:
+      return (Distributions.categorical_mean)((top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1})::Float64
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 69:
+      return (Distributions.categorical_mean)((top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1})::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+
+
+
+
+____________________________
+var
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+  k::Int64
+  p::Array{Float64,1}
+  m::Float64
+  s::Float64
+  #s25::Int64
+  i::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 84:
+      k = (top(getfield))(d::Distributions.Categorical{Float64},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 85:
+      p = (top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 86:
+      m = (Distributions.categorical_mean)(p::Array{Float64,1})::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 87:
+      s = (Base.box)(Float64,(Base.sitofp)(Float64,0)) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 88:
+      GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,k::Int64)::Bool,k::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
+      #s25 = (top(getfield))(GenSym(0),:start)::Int64
+      unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
+      2: 
+      GenSym(3) = #s25::Int64
+      GenSym(4) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      i = GenSym(3)
+      #s25 = GenSym(4) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 89:
+      $(Expr(:boundscheck, false))
+      GenSym(2) = (Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,i::Int64)),m::Float64))
+      s = (Base.box)(Base.Float64,(Base.add_float)(s::Float64,(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)(GenSym(2),GenSym(2))),(Base.arrayref)(p::Array{Float64,1},i::Int64)::Float64))))
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 91:
+      return s::Float64
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+  k::Int64
+  p::Array{Float64,1}
+  m::Float64
+  s::Float64
+  #s25::Int64
+  i::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 84:
+      k = (top(getfield))(d::Distributions.Categorical{Float64},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 85:
+      p = (top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 86:
+      m = (Distributions.categorical_mean)(p::Array{Float64,1})::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 87:
+      s = (Base.box)(Float64,(Base.sitofp)(Float64,0)) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 88:
+      GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,k::Int64)::Bool,k::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
+      #s25 = (top(getfield))(GenSym(0),:start)::Int64
+      unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
+      2: 
+      GenSym(3) = #s25::Int64
+      GenSym(4) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      i = GenSym(3)
+      #s25 = GenSym(4) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 89:
+      $(Expr(:boundscheck, false))
+      GenSym(2) = (Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,i::Int64)),m::Float64))
+      s = (Base.box)(Base.Float64,(Base.add_float)(s::Float64,(Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Base.Float64,(Base.mul_float)(GenSym(2),GenSym(2))),(Base.arrayref)(p::Array{Float64,1},i::Int64)::Float64))))
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 91:
+      return s::Float64
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  k::Int64
+  p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1}
+  m::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  s::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  #s25::Int64
+  i::Int64
+  ######tup#7057#7174#7201::Tuple{}
+  ####_var0#7175#7202::Tuple{}
+  ######types#7064#7176#7203::Tuple{Type{Int64}}
+  ##a#7204::Float64
+  ####G#7187#7205::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7177#7183#7188#7206::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7178#7180#7184#7189#7207::Tuple{}
+  ##########x#7179#7181#7185#7190#7208::Float64
+  ########_var0#7182#7186#7191#7209::Tuple{}
+  ##a1#7210::Float64
+  ##a2#7211::Float64
+  ######a#7192#7196#7212::Tuple{}
+  ######b#7193#7197#7213::Tuple{}
+  ######afactor#7194#7198#7214::Float64
+  ######bfactor#7195#7199#7215::Float64
+  ####_var0#7200#7216::Tuple{}
+  ######a#7034#7036#7217::Tuple{}
+  ######b#7035#7037#7218::Tuple{}
+  ####_var0#7038#7219::Tuple{}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 84:
+      k = (top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 85:
+      p = (top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 86:
+      m = (Distributions.categorical_mean)(p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1})::ForwardDiff.GradientNumber{0,Float64,Tuple{}} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 87:
+      s = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 88:
+      GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,k::Int64)::Bool,k::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
+      #s25 = (top(getfield))(GenSym(0),:start)::Int64
+      unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
+      2: 
+      GenSym(7) = #s25::Int64
+      GenSym(8) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      i = GenSym(7)
+      #s25 = GenSym(8) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 89:
+      $(Expr(:boundscheck, false))
+      $(Expr(:boundscheck, false))
+      ####_var0#7175#7202 = (top(tuple))()::Tuple{}
+      goto 14
+      ####_var0#7175#7202 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      14: 
+      ##a#7204 = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,i::Int64)),(top(getfield))(m::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64
+      ####G#7187#7205 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7182#7186#7191#7209 = (top(tuple))()::Tuple{}
+      goto 16
+      ########_var0#7182#7186#7191#7209 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      16: 
+      GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a#7204::Float64,##a#7204::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      GenSym(2) = (Base.arrayref)(p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1},i::Int64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      GenSym(4) = (top(getfield))(GenSym(3),:value)::Float64
+      GenSym(5) = (top(getfield))(GenSym(2),:value)::Float64
+      ##a1#7210 = GenSym(4)
+      ##a2#7211 = GenSym(5)
+      $(Expr(:boundscheck, false))
+      ####_var0#7200#7216 = (top(tuple))()::Tuple{}
+      goto 18
+      ####_var0#7200#7216 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      18: 
+      GenSym(6) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a1#7210::Float64,##a2#7211::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      $(Expr(:boundscheck, false))
+      ####_var0#7038#7219 = (top(tuple))()::Tuple{}
+      goto 20
+      ####_var0#7038#7219 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      20: 
+      s = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(s::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(top(getfield))(GenSym(6),:value)::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 91:
+      return s::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+
+
+
+
+____________________________
+mode
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 139:
+      GenSym(0) = (Base.findmax)((top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1})::Tuple{Float64,Int64}
+      return (Base.getfield)(GenSym(0),2)::Int64
+  end::Int64
+
+----float----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 139:
+      GenSym(0) = (Base.findmax)((top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1})::Tuple{Float64,Int64}
+      return (Base.getfield)(GenSym(0),2)::Int64
+  end::Int64
+
+----dual----
+
+Variables:
+  d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 139:
+      GenSym(0) = (Base.findmax)((top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1})::Tuple{ForwardDiff.GradientNumber{0,Float64,Tuple{}},Int64}
+      return (Base.getfield)(GenSym(0),2)::Int64
+  end::Int64
+
+
+
+
+____________________________
+modes
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+  K::Int64
+  p::Array{Float64,1}
+  maxp::Float64
+  r::Array{Int64,1}
+  #s25::Int64
+  k::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 142:
+      K = (top(getfield))(d::Distributions.Categorical{Float64},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 143:
+      p = (top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 144:
+      maxp = (Base._mapreduce)($(Expr(:new, :((top(getfield))(Base,:IdFun)::Type{Base.IdFun}))),$(Expr(:new, :((top(getfield))(Base,:MaxFun)::Type{Base.MaxFun}))),$(Expr(:new, :((top(getfield))(Base,:LinearFast)::Type{Base.LinearFast}))),p::Array{Float64,1})::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 145:
+      r = (top(ccall))(:jl_alloc_array_1d,(top(apply_type))(Base.Array,Int64,1)::Type{Array{Int64,1}},(top(svec))(Base.Any,Base.Int)::SimpleVector,Array{Int64,1},0,0,0)::Array{Int64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 146:
+      GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,K::Int64)::Bool,K::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
+      #s25 = (top(getfield))(GenSym(0),:start)::Int64
+      unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
+      2: 
+      GenSym(5) = #s25::Int64
+      GenSym(6) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      k = GenSym(5)
+      #s25 = GenSym(6) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 147:
+      $(Expr(:boundscheck, false))
+      unless (Base.eq_float)((Base.arrayref)(p::Array{Float64,1},k::Int64)::Float64,maxp::Float64)::Bool goto 4 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 148:
+      GenSym(3) = (Base.box)(UInt64,(Base.check_top_bit)(1))
+      (top(ccall))(:jl_array_grow_end,Base.Void,(top(svec))(Base.Any,Base.UInt)::SimpleVector,r::Array{Int64,1},0,GenSym(3),0)::Void
+      GenSym(4) = (Base.arraylen)(r::Array{Int64,1})::Int64
+      (Base.arrayset)(r::Array{Int64,1},k::Int64,GenSym(4))::Array{Int64,1}
+      r::Array{Int64,1}
+      4: 
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 151:
+      return r::Array{Int64,1}
+  end::Array{Int64,1}
+
+----float----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+  K::Int64
+  p::Array{Float64,1}
+  maxp::Float64
+  r::Array{Int64,1}
+  #s25::Int64
+  k::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 142:
+      K = (top(getfield))(d::Distributions.Categorical{Float64},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 143:
+      p = (top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 144:
+      maxp = (Base._mapreduce)($(Expr(:new, :((top(getfield))(Base,:IdFun)::Type{Base.IdFun}))),$(Expr(:new, :((top(getfield))(Base,:MaxFun)::Type{Base.MaxFun}))),$(Expr(:new, :((top(getfield))(Base,:LinearFast)::Type{Base.LinearFast}))),p::Array{Float64,1})::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 145:
+      r = (top(ccall))(:jl_alloc_array_1d,(top(apply_type))(Base.Array,Int64,1)::Type{Array{Int64,1}},(top(svec))(Base.Any,Base.Int)::SimpleVector,Array{Int64,1},0,0,0)::Array{Int64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 146:
+      GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,K::Int64)::Bool,K::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
+      #s25 = (top(getfield))(GenSym(0),:start)::Int64
+      unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
+      2: 
+      GenSym(5) = #s25::Int64
+      GenSym(6) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      k = GenSym(5)
+      #s25 = GenSym(6) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 147:
+      $(Expr(:boundscheck, false))
+      unless (Base.eq_float)((Base.arrayref)(p::Array{Float64,1},k::Int64)::Float64,maxp::Float64)::Bool goto 4 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 148:
+      GenSym(3) = (Base.box)(UInt64,(Base.check_top_bit)(1))
+      (top(ccall))(:jl_array_grow_end,Base.Void,(top(svec))(Base.Any,Base.UInt)::SimpleVector,r::Array{Int64,1},0,GenSym(3),0)::Void
+      GenSym(4) = (Base.arraylen)(r::Array{Int64,1})::Int64
+      (Base.arrayset)(r::Array{Int64,1},k::Int64,GenSym(4))::Array{Int64,1}
+      r::Array{Int64,1}
+      4: 
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 151:
+      return r::Array{Int64,1}
+  end::Array{Int64,1}
+
+----dual----
+
+Variables:
+  d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  K::Int64
+  p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1}
+  maxp::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  r::Array{Int64,1}
+  #s25::Int64
+  k::Int64
+  _var0::Bool
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 142:
+      K = (top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 143:
+      p = (top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 144:
+      maxp = (Base._mapreduce)($(Expr(:new, :((top(getfield))(Base,:IdFun)::Type{Base.IdFun}))),$(Expr(:new, :((top(getfield))(Base,:MaxFun)::Type{Base.MaxFun}))),$(Expr(:new, :((top(getfield))(Base,:LinearFast)::Type{Base.LinearFast}))),p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1})::ForwardDiff.GradientNumber{0,Float64,Tuple{}} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 145:
+      r = (top(ccall))(:jl_alloc_array_1d,(top(apply_type))(Base.Array,Int64,1)::Type{Array{Int64,1}},(top(svec))(Base.Any,Base.Int)::SimpleVector,Array{Int64,1},0,0,0)::Array{Int64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 146:
+      GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,K::Int64)::Bool,K::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
+      #s25 = (top(getfield))(GenSym(0),:start)::Int64
+      unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
+      2: 
+      GenSym(6) = #s25::Int64
+      GenSym(7) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      k = GenSym(6)
+      #s25 = GenSym(7) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 147:
+      $(Expr(:boundscheck, false))
+      GenSym(3) = (Base.arrayref)(p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1},k::Int64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      unless (Base.eq_float)((top(getfield))(GenSym(3),:value)::Float64,(top(getfield))(maxp::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64)::Bool goto 16
+      _var0 = (top(getfield))((top(getfield))(GenSym(3),:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{} == (top(getfield))((top(getfield))(maxp::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:partials)::ForwardDiff.Partials{Float64,Tuple{}},:data)::Tuple{}::Bool
+      goto 17
+      16: 
+      _var0 = false
+      17: 
+      unless _var0::Bool goto 4 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 148:
+      GenSym(4) = (Base.box)(UInt64,(Base.check_top_bit)(1))
+      (top(ccall))(:jl_array_grow_end,Base.Void,(top(svec))(Base.Any,Base.UInt)::SimpleVector,r::Array{Int64,1},0,GenSym(4),0)::Void
+      GenSym(5) = (Base.arraylen)(r::Array{Int64,1})::Int64
+      (Base.arrayset)(r::Array{Int64,1},k::Int64,GenSym(5))::Array{Int64,1}
+      r::Array{Int64,1}
+      4: 
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 151:
+      return r::Array{Int64,1}
+  end::Array{Int64,1}
+
+
+
+
+____________________________
+median
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+  k::Int64
+  p::Array{Float64,1}
+  cp::Float64
+  i::Int64
+  #s25::Bool
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 72:
+      k = (top(getfield))(d::Distributions.Categorical{Float64},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 73:
+      p = (top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 74:
+      cp = 0.0 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 75:
+      i = 0 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 76:
+      NewvarNode(symbol("#s25"))
+      2: 
+      unless (Base.lt_float)(cp::Float64,0.5)::Bool goto 3
+      #s25 = (Base.sle_int)(i::Int64,k::Int64)::Bool
+      goto 4
+      3: 
+      #s25 = false
+      4: 
+      unless #s25::Bool goto 1 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 77:
+      i = (Base.box)(Base.Int,(Base.add_int)(i::Int64,1)) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 78:
+      $(Expr(:boundscheck, false))
+      cp = (Base.box)(Base.Float64,(Base.add_float)(cp::Float64,(Base.arrayref)(p::Array{Float64,1},i::Int64)::Float64))
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      5: 
+      goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 80:
+      return i::Int64
+  end::Int64
+
+----float----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+  k::Int64
+  p::Array{Float64,1}
+  cp::Float64
+  i::Int64
+  #s25::Bool
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 72:
+      k = (top(getfield))(d::Distributions.Categorical{Float64},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 73:
+      p = (top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 74:
+      cp = 0.0 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 75:
+      i = 0 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 76:
+      NewvarNode(symbol("#s25"))
+      2: 
+      unless (Base.lt_float)(cp::Float64,0.5)::Bool goto 3
+      #s25 = (Base.sle_int)(i::Int64,k::Int64)::Bool
+      goto 4
+      3: 
+      #s25 = false
+      4: 
+      unless #s25::Bool goto 1 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 77:
+      i = (Base.box)(Base.Int,(Base.add_int)(i::Int64,1)) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 78:
+      $(Expr(:boundscheck, false))
+      cp = (Base.box)(Base.Float64,(Base.add_float)(cp::Float64,(Base.arrayref)(p::Array{Float64,1},i::Int64)::Float64))
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      5: 
+      goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 80:
+      return i::Int64
+  end::Int64
+
+----dual----
+
+Variables:
+  d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  k::Int64
+  p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1}
+  cp::ANY
+  i::Int64
+  #s25::Bool
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 72:
+      k = (top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 73:
+      p = (top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 74:
+      cp = 0.0 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 75:
+      i = 0 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 76:
+      NewvarNode(symbol("#s25"))
+      2: 
+      unless cp::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}} < 0.5::Bool goto 3
+      #s25 = (Base.sle_int)(i::Int64,k::Int64)::Bool
+      goto 4
+      3: 
+      #s25 = false
+      4: 
+      unless #s25::Bool goto 1 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 77:
+      i = (Base.box)(Base.Int,(Base.add_int)(i::Int64,1)) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 78:
+      $(Expr(:boundscheck, false))
+      cp = cp::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}} + (Base.arrayref)(p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1},i::Int64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      5: 
+      goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 80:
+      return i::Int64
+  end::Int64
+
+
+
+
+____________________________
+skewness
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+  k::Int64
+  p::Array{Float64,1}
+  m::Float64
+  s::Float64
+  v::Float64
+  #s25::Int64
+  i::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 95:
+      NewvarNode(:v)
+      k = (top(getfield))(d::Distributions.Categorical{Float64},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 96:
+      p = (top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 97:
+      m = (Distributions.categorical_mean)(p::Array{Float64,1})::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 98:
+      s = 0.0 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 99:
+      GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,k::Int64)::Bool,k::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
+      #s25 = (top(getfield))(GenSym(0),:start)::Int64
+      unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
+      2: 
+      GenSym(2) = #s25::Int64
+      GenSym(3) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      i = GenSym(2)
+      #s25 = GenSym(3) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 100:
+      $(Expr(:boundscheck, false))
+      s = (Base.box)(Base.Float64,(Base.add_float)(s::Float64,(Base.box)(Base.Float64,(Base.mul_float)((Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,i::Int64)),m::Float64)),(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,3))))::Float64,(Base.arrayref)(p::Array{Float64,1},i::Int64)::Float64))))
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 102:
+      v = (Distributions.var)(d::Distributions.Categorical{Float64})::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 103:
+      return (Base.box)(Base.Float64,(Base.div_float)(s::Float64,(Base.box)(Base.Float64,(Base.mul_float)(v::Float64,(Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)(v::Float64))::Float64))))
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+  k::Int64
+  p::Array{Float64,1}
+  m::Float64
+  s::Float64
+  v::Float64
+  #s25::Int64
+  i::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 95:
+      NewvarNode(:v)
+      k = (top(getfield))(d::Distributions.Categorical{Float64},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 96:
+      p = (top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 97:
+      m = (Distributions.categorical_mean)(p::Array{Float64,1})::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 98:
+      s = 0.0 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 99:
+      GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,k::Int64)::Bool,k::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
+      #s25 = (top(getfield))(GenSym(0),:start)::Int64
+      unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
+      2: 
+      GenSym(2) = #s25::Int64
+      GenSym(3) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      i = GenSym(2)
+      #s25 = GenSym(3) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 100:
+      $(Expr(:boundscheck, false))
+      s = (Base.box)(Base.Float64,(Base.add_float)(s::Float64,(Base.box)(Base.Float64,(Base.mul_float)((Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,i::Int64)),m::Float64)),(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,3))))::Float64,(Base.arrayref)(p::Array{Float64,1},i::Int64)::Float64))))
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 102:
+      v = (Distributions.var)(d::Distributions.Categorical{Float64})::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 103:
+      return (Base.box)(Base.Float64,(Base.div_float)(s::Float64,(Base.box)(Base.Float64,(Base.mul_float)(v::Float64,(Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)(v::Float64))::Float64))))
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  k::Int64
+  p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1}
+  m::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  s::ANY
+  v::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  #s25::Int64
+  i::Int64
+  ######tup#7057#7174#7259::Tuple{}
+  ####_var0#7175#7260::Tuple{}
+  ######types#7064#7176#7261::Tuple{Type{Int64}}
+  ##a#7262::Float64
+  ##exp_a#7263::Float64
+  ##deriv#7264::Float64
+  ####G#7230#7265::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7177#7183#7231#7266::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7178#7180#7184#7232#7267::Tuple{}
+  ##########x#7179#7181#7185#7233#7268::Float64
+  ########_var0#7182#7186#7234#7269::Tuple{}
+  ##a1#7270::Float64
+  ##a2#7271::Float64
+  ######a#7192#7196#7272::Tuple{}
+  ######b#7193#7197#7273::Tuple{}
+  ######afactor#7194#7198#7274::Float64
+  ######bfactor#7195#7199#7275::Float64
+  ####_var0#7200#7276::Tuple{}
+  ##sqrt_a#7277::Float64
+  ##deriv#7278::Float64
+  ####G#7235#7279::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7177#7183#7236#7280::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7178#7180#7184#7237#7281::Tuple{}
+  ##########x#7179#7181#7185#7238#7282::Float64
+  ########_var0#7182#7186#7239#7283::Tuple{}
+  ##a1#7284::Float64
+  ##a2#7285::Float64
+  ######a#7192#7196#7286::Tuple{}
+  ######b#7193#7197#7287::Tuple{}
+  ######afactor#7194#7198#7288::Float64
+  ######bfactor#7195#7199#7289::Float64
+  ####_var0#7200#7290::Tuple{}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 95:
+      NewvarNode(:v)
+      k = (top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 96:
+      p = (top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 97:
+      m = (Distributions.categorical_mean)(p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1})::ForwardDiff.GradientNumber{0,Float64,Tuple{}} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 98:
+      s = 0.0 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 99:
+      GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,k::Int64)::Bool,k::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
+      #s25 = (top(getfield))(GenSym(0),:start)::Int64
+      unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
+      2: 
+      GenSym(9) = #s25::Int64
+      GenSym(10) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      i = GenSym(9)
+      #s25 = GenSym(10) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 100:
+      $(Expr(:boundscheck, false))
+      $(Expr(:boundscheck, false))
+      ####_var0#7175#7260 = (top(tuple))()::Tuple{}
+      goto 13
+      ####_var0#7175#7260 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      13: 
+      ##a#7262 = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,i::Int64)),(top(getfield))(m::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64
+      ##exp_a#7263 = (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7262::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,3)))::ANY)::Float64
+      ##deriv#7264 = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,3)),(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7262::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,(Base.box)(Int64,(Base.sub_int)(3,1))))))::Float64))
+      ####G#7230#7265 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7182#7186#7234#7269 = (top(tuple))()::Tuple{}
+      goto 15
+      ########_var0#7182#7186#7234#7269 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      15: 
+      GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##exp_a#7263::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      GenSym(2) = (Base.arrayref)(p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1},i::Int64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      GenSym(4) = (top(getfield))(GenSym(3),:value)::Float64
+      GenSym(5) = (top(getfield))(GenSym(2),:value)::Float64
+      ##a1#7270 = GenSym(4)
+      ##a2#7271 = GenSym(5)
+      $(Expr(:boundscheck, false))
+      ####_var0#7200#7276 = (top(tuple))()::Tuple{}
+      goto 17
+      ####_var0#7200#7276 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      17: 
+      s = s::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}} + $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a1#7270::Float64,##a2#7271::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 102:
+      v = (Distributions.var)(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 103:
+      ##sqrt_a#7277 = (Base.Math.box)(Base.Math.Float64,(Base.Math.sqrt_llvm)((top(getfield))(v::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64)::ANY)::Float64
+      ##deriv#7278 = (Base.box)(Base.Float64,(Base.div_float)(0.5,##sqrt_a#7277::Float64))
+      ####G#7235#7279 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7182#7186#7239#7283 = (top(tuple))()::Tuple{}
+      goto 22
+      ########_var0#7182#7186#7239#7283 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      22: 
+      GenSym(6) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##sqrt_a#7277::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      GenSym(7) = (top(getfield))(v::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64
+      GenSym(8) = (top(getfield))(GenSym(6),:value)::Float64
+      ##a1#7284 = GenSym(7)
+      ##a2#7285 = GenSym(8)
+      $(Expr(:boundscheck, false))
+      ####_var0#7200#7290 = (top(tuple))()::Tuple{}
+      goto 24
+      ####_var0#7200#7290 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      24: 
+      return s::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}} / $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a1#7284::Float64,##a2#7285::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+
+
+
+
+____________________________
+kurtosis
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+  k::Int64
+  p::Array{Float64,1}
+  m::Float64
+  s::Float64
+  #s25::Int64
+  i::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 107:
+      k = (top(getfield))(d::Distributions.Categorical{Float64},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 108:
+      p = (top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 109:
+      m = (Distributions.categorical_mean)(p::Array{Float64,1})::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 110:
+      s = 0.0 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 111:
+      GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,k::Int64)::Bool,k::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
+      #s25 = (top(getfield))(GenSym(0),:start)::Int64
+      unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
+      2: 
+      GenSym(3) = #s25::Int64
+      GenSym(4) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      i = GenSym(3)
+      #s25 = GenSym(4) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 112:
+      $(Expr(:boundscheck, false))
+      s = (Base.box)(Base.Float64,(Base.add_float)(s::Float64,(Base.box)(Base.Float64,(Base.mul_float)((Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,i::Int64)),m::Float64)),(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,4))))::Float64,(Base.arrayref)(p::Array{Float64,1},i::Int64)::Float64))))
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 114:
+      GenSym(2) = (Distributions.var)(d::Distributions.Categorical{Float64})::Float64
+      return (Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Base.Float64,(Base.div_float)(s::Float64,(Base.box)(Base.Float64,(Base.mul_float)(GenSym(2),GenSym(2))))),3.0))
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+  k::Int64
+  p::Array{Float64,1}
+  m::Float64
+  s::Float64
+  #s25::Int64
+  i::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 107:
+      k = (top(getfield))(d::Distributions.Categorical{Float64},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 108:
+      p = (top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 109:
+      m = (Distributions.categorical_mean)(p::Array{Float64,1})::Float64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 110:
+      s = 0.0 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 111:
+      GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,k::Int64)::Bool,k::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
+      #s25 = (top(getfield))(GenSym(0),:start)::Int64
+      unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
+      2: 
+      GenSym(3) = #s25::Int64
+      GenSym(4) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      i = GenSym(3)
+      #s25 = GenSym(4) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 112:
+      $(Expr(:boundscheck, false))
+      s = (Base.box)(Base.Float64,(Base.add_float)(s::Float64,(Base.box)(Base.Float64,(Base.mul_float)((Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,i::Int64)),m::Float64)),(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,4))))::Float64,(Base.arrayref)(p::Array{Float64,1},i::Int64)::Float64))))
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 114:
+      GenSym(2) = (Distributions.var)(d::Distributions.Categorical{Float64})::Float64
+      return (Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Base.Float64,(Base.div_float)(s::Float64,(Base.box)(Base.Float64,(Base.mul_float)(GenSym(2),GenSym(2))))),3.0))
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  k::Int64
+  p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1}
+  m::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  s::ANY
+  #s25::Int64
+  i::Int64
+  ######tup#7057#7174#7294::Tuple{}
+  ####_var0#7175#7295::Tuple{}
+  ######types#7064#7176#7296::Tuple{Type{Int64}}
+  ##a#7297::Float64
+  ##exp_a#7298::Float64
+  ##deriv#7299::Float64
+  ####G#7230#7300::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7177#7183#7231#7301::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7178#7180#7184#7232#7302::Tuple{}
+  ##########x#7179#7181#7185#7233#7303::Float64
+  ########_var0#7182#7186#7234#7304::Tuple{}
+  ##a1#7305::Float64
+  ##a2#7306::Float64
+  ######a#7192#7196#7307::Tuple{}
+  ######b#7193#7197#7308::Tuple{}
+  ######afactor#7194#7198#7309::Float64
+  ######bfactor#7195#7199#7310::Float64
+  ####_var0#7200#7311::Tuple{}
+  ##a#7312::Float64
+  ####G#7187#7313::Type{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ########types#7177#7183#7188#7314::Tuple{Type{Float64},Type{Float64}}
+  ##########tup#7178#7180#7184#7189#7315::Tuple{}
+  ##########x#7179#7181#7185#7190#7316::Float64
+  ########_var0#7182#7186#7191#7317::Tuple{}
+  ######types#7224#7293#7318::Tuple{Type{Float64}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 107:
+      k = (top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 108:
+      p = (top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 109:
+      m = (Distributions.categorical_mean)(p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1})::ForwardDiff.GradientNumber{0,Float64,Tuple{}} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 110:
+      s = 0.0 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 111:
+      GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,k::Int64)::Bool,k::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
+      #s25 = (top(getfield))(GenSym(0),:start)::Int64
+      unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
+      2: 
+      GenSym(8) = #s25::Int64
+      GenSym(9) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      i = GenSym(8)
+      #s25 = GenSym(9) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 112:
+      $(Expr(:boundscheck, false))
+      $(Expr(:boundscheck, false))
+      ####_var0#7175#7295 = (top(tuple))()::Tuple{}
+      goto 13
+      ####_var0#7175#7295 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      13: 
+      ##a#7297 = (top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.sub_float)((Base.box)(Float64,(Base.sitofp)(Float64,i::Int64)),(top(getfield))(m::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64
+      ##exp_a#7298 = (Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7297::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,4)))::ANY)::Float64
+      ##deriv#7299 = (Base.box)(Base.Float64,(Base.mul_float)((Base.box)(Float64,(Base.sitofp)(Float64,4)),(Base.Math.box)(Base.Math.Float64,(Base.Math.powi_llvm)(##a#7297::Float64,(Base.box)(Int32,(Base.checked_trunc_sint)(Int32,(Base.box)(Int64,(Base.sub_int)(4,1))))))::Float64))
+      ####G#7230#7300 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7182#7186#7234#7304 = (top(tuple))()::Tuple{}
+      goto 15
+      ########_var0#7182#7186#7234#7304 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      15: 
+      GenSym(3) = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :(##exp_a#7298::Float64), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      GenSym(2) = (Base.arrayref)(p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1},i::Int64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      GenSym(4) = (top(getfield))(GenSym(3),:value)::Float64
+      GenSym(5) = (top(getfield))(GenSym(2),:value)::Float64
+      ##a1#7305 = GenSym(4)
+      ##a2#7306 = GenSym(5)
+      $(Expr(:boundscheck, false))
+      ####_var0#7200#7311 = (top(tuple))()::Tuple{}
+      goto 17
+      ####_var0#7200#7311 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      17: 
+      s = s::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}} + $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a1#7305::Float64,##a2#7306::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 114:
+      GenSym(6) = (Distributions.var)(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}})::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      ##a#7312 = (top(getfield))(GenSym(6),:value)::Float64
+      ####G#7187#7313 = ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      $(Expr(:boundscheck, false))
+      ########_var0#7182#7186#7191#7317 = (top(tuple))()::Tuple{}
+      goto 22
+      ########_var0#7182#7186#7191#7317 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      22: 
+      GenSym(7) = s::UNION{FLOAT64,FORWARDDIFF.GRADIENTNUMBER{0,FLOAT64,TUPLE{}}} / $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)(##a#7312::Float64,##a#7312::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.sub_float)((top(getfield))(GenSym(7),:value)::Float64,3.0))), :((top(getfield))(GenSym(7),:partials)::ForwardDiff.Partials{Float64,Tuple{}})))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+
+
+
+
+____________________________
+entropy
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 117:
+      return (Distributions.entropy)((top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1})::Float64
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 117:
+      return (Distributions.entropy)((top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1})::Float64
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 117:
+      return (Distributions.entropy)((top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1})::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+
+
+
+
+____________________________
+rand
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+  ####_var0#7344#7346::UNION{BOOL,INT64}
+  ########_var0#7342#7343#7345#7347::Float64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
+      unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
+      ####_var0#7344#7346 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      goto 2
+      1: 
+      ####_var0#7344#7346 = false
+      2: 
+      ####_var0#7344#7346::UNION{BOOL,INT64}
+      $(Expr(:boundscheck, false))
+      GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
+      GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
+      ########_var0#7342#7343#7345#7347 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      goto 3
+      ########_var0#7342#7343#7345#7347 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      return (Distributions.quantile)(d::Distributions.Categorical{Float64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7342#7343#7345#7347::Float64,1.0)))::Int64
+  end::Int64
+
+----float----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+  ####_var0#7344#7346::UNION{BOOL,INT64}
+  ########_var0#7342#7343#7345#7347::Float64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
+      unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
+      ####_var0#7344#7346 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      goto 2
+      1: 
+      ####_var0#7344#7346 = false
+      2: 
+      ####_var0#7344#7346::UNION{BOOL,INT64}
+      $(Expr(:boundscheck, false))
+      GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
+      GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
+      ########_var0#7342#7343#7345#7347 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      goto 3
+      ########_var0#7342#7343#7345#7347 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      return (Distributions.quantile)(d::Distributions.Categorical{Float64},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7342#7343#7345#7347::Float64,1.0)))::Int64
+  end::Int64
+
+----dual----
+
+Variables:
+  d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  ####_var0#7344#7351::UNION{BOOL,INT64}
+  ########_var0#7342#7343#7345#7352::Float64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariates.jl, line 64:
+      unless (top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64 === (Base.box)(Int64,(Base.sext_int)(Int64,Base.Random.MTCacheLength))::Bool goto 1
+      ####_var0#7344#7351 = (Base.Random.gen_rand)(Base.Random.GLOBAL_RNG)::Int64
+      goto 2
+      1: 
+      ####_var0#7344#7351 = false
+      2: 
+      ####_var0#7344#7351::UNION{BOOL,INT64}
+      $(Expr(:boundscheck, false))
+      GenSym(1) = (top(getfield))(Base.Random.GLOBAL_RNG,:vals)::Array{Float64,1}
+      GenSym(0) = (top(setfield!))(Base.Random.GLOBAL_RNG,:idx,(Base.box)(Base.Int,(Base.add_int)((top(getfield))(Base.Random.GLOBAL_RNG,:idx)::Int64,1)))::Int64
+      ########_var0#7342#7343#7345#7352 = (Base.arrayref)(GenSym(1),GenSym(0))::Float64
+      goto 3
+      ########_var0#7342#7343#7345#7352 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      return (Distributions.quantile)(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},(Base.box)(Base.Float64,(Base.sub_float)(########_var0#7342#7343#7345#7352::Float64,1.0)))::Int64
+  end::Int64
+
+
+
+
+____________________________
+pdf
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+  x::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 169:
+      unless (Distributions.insupport)(d::Distributions.Categorical{Float64},x::Int64)::Bool goto 0
+      return (Base.arrayref)((top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1},x::Int64)::Float64
+      0: 
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+  x::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 169:
+      unless (Distributions.insupport)(d::Distributions.Categorical{Float64},x::Int64)::Bool goto 0
+      return (Base.arrayref)((top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1},x::Int64)::Float64
+      0: 
+      return (Base.box)(Float64,(Base.sitofp)(Float64,0))
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  x::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 169:
+      unless (Distributions.insupport)(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},x::Int64)::Bool goto 0
+      return (Base.arrayref)((top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1},x::Int64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      0: 
+      return $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+
+
+
+
+____________________________
+mgf
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+  t::Int64
+  k::Int64
+  p::Array{Float64,1}
+  s::Float64
+  #s25::Int64
+  i::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 120:
+      k = (top(getfield))(d::Distributions.Categorical{Float64},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 121:
+      p = (top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 122:
+      s = (Base.box)(Float64,(Base.sitofp)(Float64,0)) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 123:
+      GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,k::Int64)::Bool,k::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
+      #s25 = (top(getfield))(GenSym(0),:start)::Int64
+      unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
+      2: 
+      GenSym(5) = #s25::Int64
+      GenSym(6) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      i = GenSym(5)
+      #s25 = GenSym(6) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 124:
+      $(Expr(:boundscheck, false))
+      GenSym(4) = (Base.arrayref)(p::Array{Float64,1},i::Int64)::Float64
+      GenSym(3) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)),0)::Float64
+      s = (Base.box)(Base.Float64,(Base.add_float)(s::Float64,(Base.box)(Base.Float64,(Base.mul_float)(GenSym(4),GenSym(3)))))
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 126:
+      return s::Float64
+  end::Float64
+
+----float----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+  t::Int64
+  k::Int64
+  p::Array{Float64,1}
+  s::Float64
+  #s25::Int64
+  i::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 120:
+      k = (top(getfield))(d::Distributions.Categorical{Float64},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 121:
+      p = (top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 122:
+      s = (Base.box)(Float64,(Base.sitofp)(Float64,0)) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 123:
+      GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,k::Int64)::Bool,k::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
+      #s25 = (top(getfield))(GenSym(0),:start)::Int64
+      unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
+      2: 
+      GenSym(5) = #s25::Int64
+      GenSym(6) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      i = GenSym(5)
+      #s25 = GenSym(6) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 124:
+      $(Expr(:boundscheck, false))
+      GenSym(4) = (Base.arrayref)(p::Array{Float64,1},i::Int64)::Float64
+      GenSym(3) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)),0)::Float64
+      s = (Base.box)(Base.Float64,(Base.add_float)(s::Float64,(Base.box)(Base.Float64,(Base.mul_float)(GenSym(4),GenSym(3)))))
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 126:
+      return s::Float64
+  end::Float64
+
+----dual----
+
+Variables:
+  d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  t::Int64
+  k::Int64
+  p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1}
+  s::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  #s25::Int64
+  i::Int64
+  ######tup#7178#7355#7359::Tuple{}
+  ######x#7179#7356#7360::Float64
+  ####_var0#7357#7361::Tuple{}
+  ######types#7224#7358#7362::Tuple{Type{Float64}}
+  ######a#7034#7036#7363::Tuple{}
+  ######b#7035#7037#7364::Tuple{}
+  ####_var0#7038#7365::Tuple{}
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 120:
+      k = (top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 121:
+      p = (top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 122:
+      s = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 123:
+      GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,k::Int64)::Bool,k::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
+      #s25 = (top(getfield))(GenSym(0),:start)::Int64
+      unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
+      2: 
+      GenSym(5) = #s25::Int64
+      GenSym(6) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      i = GenSym(5)
+      #s25 = GenSym(6) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 124:
+      $(Expr(:boundscheck, false))
+      GenSym(4) = (Base.arrayref)(p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1},i::Int64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      GenSym(3) = (top(ccall))((top(tuple))("exp",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,(Base.box)(Float64,(Base.sitofp)(Float64,t::Int64)),0)::Float64
+      $(Expr(:boundscheck, false))
+      ####_var0#7357#7361 = (top(tuple))()::Tuple{}
+      goto 15
+      ####_var0#7357#7361 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      15: 
+      $(Expr(:boundscheck, false))
+      ####_var0#7038#7365 = (top(tuple))()::Tuple{}
+      goto 17
+      ####_var0#7038#7365 = $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      17: 
+      s = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(s::ForwardDiff.GradientNumber{0,Float64,Tuple{}},:value)::Float64,(top(getfield))($(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Base.Float64,(Base.mul_float)((top(getfield))(GenSym(4),:value)::Float64,GenSym(3)))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))),:value)::Float64))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{}))))))
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 126:
+      return s::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+  end::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+
+
+
+
+____________________________
+cf
+____________________________
+
+----integer----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+  t::Int64
+  k::Int64
+  p::Array{Float64,1}
+  s::Complex{Float64}
+  #s25::Int64
+  i::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 130:
+      k = (top(getfield))(d::Distributions.Categorical{Float64},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 131:
+      p = (top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 132:
+      GenSym(2) = (Base.box)(Float64,(Base.sitofp)(Float64,0))
+      GenSym(3) = $(Expr(:new, Complex{Float64}, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:re)::Bool,GenSym(2),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)((Base.box)(Int64,GenSym(2)),0)::Bool,(Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)))),(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Float64)::Float64), :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:im)::Bool,GenSym(2),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)((Base.box)(Int64,GenSym(2)),0)::Bool,(Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)))),(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Float64)::Float64)))
+      s = $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.add_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)),(top(getfield))(GenSym(3),:re)::Float64))), :((top(getfield))(GenSym(3),:im)::Float64))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 133:
+      GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,k::Int64)::Bool,k::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
+      #s25 = (top(getfield))(GenSym(0),:start)::Int64
+      unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
+      2: 
+      GenSym(13) = #s25::Int64
+      GenSym(14) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      i = GenSym(13)
+      #s25 = GenSym(14) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 134:
+      $(Expr(:boundscheck, false))
+      GenSym(10) = (Base.arrayref)(p::Array{Float64,1},i::Int64)::Float64
+      GenSym(7) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
+      GenSym(9) = (top(ccall))((top(tuple))("cos",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(7),0)::Float64
+      GenSym(4) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
+      GenSym(6) = (top(ccall))((top(tuple))("sin",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(4),0)::Float64
+      GenSym(11) = $(Expr(:new, Complex{Float64}, :((Base.Math.nan_dom_err)(GenSym(9),GenSym(7))::Float64), :((Base.Math.nan_dom_err)(GenSym(6),GenSym(4))::Float64)))
+      GenSym(12) = $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.mul_float)(GenSym(10),(top(getfield))(GenSym(11),:re)::Float64))), :((Base.box)(Base.Float64,(Base.mul_float)(GenSym(10),(top(getfield))(GenSym(11),:im)::Float64)))))
+      s = $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(s::Complex{Float64},:re)::Float64,(top(getfield))(GenSym(12),:re)::Float64))), :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(s::Complex{Float64},:im)::Float64,(top(getfield))(GenSym(12),:im)::Float64)))))
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 136:
+      return s::Complex{Float64}
+  end::Complex{Float64}
+
+----float----
+
+Variables:
+  d::Distributions.Categorical{Float64}
+  t::Int64
+  k::Int64
+  p::Array{Float64,1}
+  s::Complex{Float64}
+  #s25::Int64
+  i::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 130:
+      k = (top(getfield))(d::Distributions.Categorical{Float64},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 131:
+      p = (top(getfield))(d::Distributions.Categorical{Float64},:p)::Array{Float64,1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 132:
+      GenSym(2) = (Base.box)(Float64,(Base.sitofp)(Float64,0))
+      GenSym(3) = $(Expr(:new, Complex{Float64}, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:re)::Bool,GenSym(2),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)((Base.box)(Int64,GenSym(2)),0)::Bool,(Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)))),(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Float64)::Float64), :(((top(getfield))(Base.Intrinsics,:select_value)::I)((top(getfield))(Distributions.im,:im)::Bool,GenSym(2),((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.slt_int)((Base.box)(Int64,GenSym(2)),0)::Bool,(Base.box)(Base.Float64,(Base.neg_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)))),(Base.box)(Float64,(Base.sitofp)(Float64,0)))::Float64)::Float64)))
+      s = $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.add_float)((Base.box)(Float64,(Base.sitofp)(Float64,0)),(top(getfield))(GenSym(3),:re)::Float64))), :((top(getfield))(GenSym(3),:im)::Float64))) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 133:
+      GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,k::Int64)::Bool,k::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
+      #s25 = (top(getfield))(GenSym(0),:start)::Int64
+      unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
+      2: 
+      GenSym(13) = #s25::Int64
+      GenSym(14) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      i = GenSym(13)
+      #s25 = GenSym(14) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 134:
+      $(Expr(:boundscheck, false))
+      GenSym(10) = (Base.arrayref)(p::Array{Float64,1},i::Int64)::Float64
+      GenSym(7) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
+      GenSym(9) = (top(ccall))((top(tuple))("cos",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(7),0)::Float64
+      GenSym(4) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
+      GenSym(6) = (top(ccall))((top(tuple))("sin",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(4),0)::Float64
+      GenSym(11) = $(Expr(:new, Complex{Float64}, :((Base.Math.nan_dom_err)(GenSym(9),GenSym(7))::Float64), :((Base.Math.nan_dom_err)(GenSym(6),GenSym(4))::Float64)))
+      GenSym(12) = $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.mul_float)(GenSym(10),(top(getfield))(GenSym(11),:re)::Float64))), :((Base.box)(Base.Float64,(Base.mul_float)(GenSym(10),(top(getfield))(GenSym(11),:im)::Float64)))))
+      s = $(Expr(:new, Complex{Float64}, :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(s::Complex{Float64},:re)::Float64,(top(getfield))(GenSym(12),:re)::Float64))), :((Base.box)(Base.Float64,(Base.add_float)((top(getfield))(s::Complex{Float64},:im)::Float64,(top(getfield))(GenSym(12),:im)::Float64)))))
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 136:
+      return s::Complex{Float64}
+  end::Complex{Float64}
+
+----dual----
+
+Variables:
+  d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  t::Int64
+  k::Int64
+  p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1}
+  s::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  #s25::Int64
+  i::Int64
+
+Body:
+  begin  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 130:
+      k = (top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:K)::Int64 # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 131:
+      p = (top(getfield))(d::Distributions.Categorical{ForwardDiff.GradientNumber{0,Float64,Tuple{}}},:p)::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 132:
+      s = $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) + $(Expr(:new, ForwardDiff.GradientNumber{0,Float64,Tuple{}}, :((Base.box)(Float64,(Base.sitofp)(Float64,0))), :($(Expr(:new, ForwardDiff.Partials{Float64,Tuple{}}, :((top(tuple))()::Tuple{})))))) * Distributions.im::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}} # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 133:
+      GenSym(0) = $(Expr(:new, UnitRange{Int64}, 1, :(((top(getfield))(Base.Intrinsics,:select_value)::I)((Base.sle_int)(1,k::Int64)::Bool,k::Int64,(Base.box)(Int64,(Base.sub_int)(1,1)))::Int64)))
+      #s25 = (top(getfield))(GenSym(0),:start)::Int64
+      unless (Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)) goto 1
+      2: 
+      GenSym(9) = #s25::Int64
+      GenSym(10) = (Base.box)(Base.Int,(Base.add_int)(#s25::Int64,1))
+      i = GenSym(9)
+      #s25 = GenSym(10) # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 134:
+      $(Expr(:boundscheck, false))
+      GenSym(8) = (Base.arrayref)(p::Array{ForwardDiff.GradientNumber{0,Float64,Tuple{}},1},i::Int64)::ForwardDiff.GradientNumber{0,Float64,Tuple{}}
+      GenSym(5) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
+      GenSym(7) = (top(ccall))((top(tuple))("cos",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(5),0)::Float64
+      GenSym(2) = (Base.box)(Float64,(Base.sitofp)(Float64,t::Int64))
+      GenSym(4) = (top(ccall))((top(tuple))("sin",Base.Math.libm)::Tuple{ASCIIString,ASCIIString},Base.Math.Float64,(top(svec))(Base.Math.Float64)::SimpleVector,GenSym(2),0)::Float64
+      s = s::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}} + GenSym(8) * $(Expr(:new, Complex{Float64}, :((Base.Math.nan_dom_err)(GenSym(7),GenSym(5))::Float64), :((Base.Math.nan_dom_err)(GenSym(4),GenSym(2))::Float64)))::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+      $(Expr(:boundscheck, :((top(getfield))(Base,:pop))))
+      3: 
+      unless (Base.box)(Base.Bool,(Base.not_int)((Base.box)(Base.Bool,(Base.not_int)(#s25::Int64 === (Base.box)(Base.Int,(Base.add_int)((top(getfield))(GenSym(0),:stop)::Int64,1))::Bool)))) goto 2
+      1: 
+      0:  # /Users/mrincredible/.julia/v0.4/Distributions/src/univariate/discrete/categorical.jl, line 136:
+      return s::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+  end::Complex{ForwardDiff.GradientNumber{0,Float64,Tuple{}}}
+
+
+
+
